@@ -27,13 +27,6 @@ var NAVTREE =
   [ "EVC ARU FW and Tools", "index.html", [
     [ "Arduino", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ]
-      ] ]
-    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -56,8 +49,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "0___eco_system_restrictions_8h.html",
-"class_i_m_s_packets_a_p_i_core_1_1_packet.html#a8e49fc0e81b8b5c184b441ed7922773c",
-"group___packet_port_link.html#ga682cdb5fea2046b64c6de1c345085e2a"
+"class_test___a_p_i___node___default.html#ab8061d00985fad1354b9ef100ac80ffc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

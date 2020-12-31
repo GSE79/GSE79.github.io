@@ -19,11 +19,8 @@ var 1___language_constructs_8h =
     [ "TEMPLATE_SPDSET_toVALUE", "group___language_constructs.html#gab7336a082452f17ae1f795af8803ffe9", null ],
     [ "xstr", "group___language_constructs.html#gaeec40e2b433cc2844853d184006edff0", null ],
     [ "SPDValTypeEnum", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018d", [
-      [ "typeUINT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018da15420091001cb9f161d295524373b6e1", null ],
-      [ "typeINT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018da1642311e3934a689b876cdd774ddaa08", null ],
-      [ "typeFLT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018da294c11ce6d2d8301429778c9897ab0bc", null ],
-      [ "typeUINT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018da15420091001cb9f161d295524373b6e1", null ],
-      [ "typeINT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018da1642311e3934a689b876cdd774ddaa08", null ],
-      [ "typeFLT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018da294c11ce6d2d8301429778c9897ab0bc", null ]
+      [ "typeUINT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018daf499ce0ff5c7f13eeaeac175fc94ef12", null ],
+      [ "typeINT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018da8eb252101c166cb5095e84c5b5211a3f", null ],
+      [ "typeFLT", "1___language_constructs_8h.html#a9e352bf1863739853f63b35d99a7018da95b704ef26e416dd63acc76bc735ef00", null ]
     ] ]
 ];
