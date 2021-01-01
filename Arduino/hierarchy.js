@@ -13,6 +13,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "ACU_Class", null, [
+      [ "ACU_INO", "class_a_c_u___i_n_o.html", null ]
+    ] ],
     [ "ARUAPICore::ARU_IFLTypes", "class_a_r_u_a_p_i_core_1_1_a_r_u___i_f_l_types.html", null ],
     [ "ARUAPICore::ARU_Terminal", "class_a_r_u_a_p_i_core_1_1_a_r_u___terminal.html", null ],
     [ "ARUAPICore::ModemStruct", "struct_a_r_u_a_p_i_core_1_1_modem_struct.html", null ],
