@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "ACU_API", null, [
-      [ "ACU_Class", "class_a_c_u___a_p_i_1_1_a_c_u___class.html", "class_a_c_u___a_p_i_1_1_a_c_u___class" ]
+      [ "ACU_Node", "class_a_c_u___a_p_i_1_1_a_c_u___node.html", "class_a_c_u___a_p_i_1_1_a_c_u___node" ]
     ] ],
     [ "ARUAPICore", null, [
       [ "ARU_API_Node", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node" ],

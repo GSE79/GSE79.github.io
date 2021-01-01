@@ -3,7 +3,7 @@ var hierarchy =
     [ "IMSPacketsAPICore::AbstractDataExecution", "class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html", [
       [ "IMSPacketsAPICore::API_NODE", "class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html", [
         [ "ARUAPICore::ARU_API_Node", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html", [
-          [ "ACU_API::ACU_Class", "class_a_c_u___a_p_i_1_1_a_c_u___class.html", [
+          [ "ACU_API::ACU_Node", "class_a_c_u___a_p_i_1_1_a_c_u___node.html", [
             [ "ACU_Class_Tests", "class_a_c_u___class___tests.html", null ]
           ] ]
         ] ],
