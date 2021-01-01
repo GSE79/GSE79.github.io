@@ -2,7 +2,11 @@ var hierarchy =
 [
     [ "IMSPacketsAPICore::AbstractDataExecution", "class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html", [
       [ "IMSPacketsAPICore::API_NODE", "class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html", [
-        [ "ARUAPICore::ARU_API_Node", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html", null ],
+        [ "ARUAPICore::ARU_API_Node", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html", [
+          [ "ACU_API::ACU_Class", "class_a_c_u___a_p_i_1_1_a_c_u___class.html", [
+            [ "ACU_Class_Tests", "class_a_c_u___class___tests.html", null ]
+          ] ]
+        ] ],
         [ "Test_API_Node_Default", "class_test___a_p_i___node___default.html", [
           [ "CoreTest_Console_Node", "class_core_test___console___node.html", null ],
           [ "CoreTest_CustomConsole_Node", "class_core_test___custom_console___node.html", null ]
@@ -14,6 +18,8 @@ var hierarchy =
     [ "ARUAPICore::ModemStruct", "struct_a_r_u_a_p_i_core_1_1_modem_struct.html", null ],
     [ "IMSPacketsAPICore::Packet", "class_i_m_s_packets_a_p_i_core_1_1_packet.html", [
       [ "IMSPacketsAPICore::HDR_Packet", "class_i_m_s_packets_a_p_i_core_1_1_h_d_r___packet.html", [
+        [ "ARUAPICore::Packet_DAT", "class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html", null ],
+        [ "ARUAPICore::Packet_VAEQ", "class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html", null ],
         [ "IMSPacketsAPICore::Packet_Version", "class_i_m_s_packets_a_p_i_core_1_1_packet___version.html", null ]
       ] ]
     ] ],

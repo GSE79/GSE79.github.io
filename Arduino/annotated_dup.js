@@ -1,10 +1,15 @@
 var annotated_dup =
 [
+    [ "ACU_API", null, [
+      [ "ACU_Class", "class_a_c_u___a_p_i_1_1_a_c_u___class.html", "class_a_c_u___a_p_i_1_1_a_c_u___class" ]
+    ] ],
     [ "ARUAPICore", null, [
       [ "ARU_API_Node", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node" ],
       [ "ARU_IFLTypes", "class_a_r_u_a_p_i_core_1_1_a_r_u___i_f_l_types.html", "class_a_r_u_a_p_i_core_1_1_a_r_u___i_f_l_types" ],
       [ "ARU_Terminal", "class_a_r_u_a_p_i_core_1_1_a_r_u___terminal.html", "class_a_r_u_a_p_i_core_1_1_a_r_u___terminal" ],
-      [ "ModemStruct", "struct_a_r_u_a_p_i_core_1_1_modem_struct.html", "struct_a_r_u_a_p_i_core_1_1_modem_struct" ]
+      [ "ModemStruct", "struct_a_r_u_a_p_i_core_1_1_modem_struct.html", "struct_a_r_u_a_p_i_core_1_1_modem_struct" ],
+      [ "Packet_DAT", "class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html", "class_a_r_u_a_p_i_core_1_1_packet___d_a_t" ],
+      [ "Packet_VAEQ", "class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html", "class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q" ]
     ] ],
     [ "IMSPacketsAPICore", null, [
       [ "AbstractDataExecution", "class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html", "class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution" ],
@@ -23,6 +28,7 @@ var annotated_dup =
       [ "SPDASCIIInterfaceBuffer", "class_i_m_s_packets_a_p_i_core_1_1_s_p_d_a_s_c_i_i_interface_buffer.html", "class_i_m_s_packets_a_p_i_core_1_1_s_p_d_a_s_c_i_i_interface_buffer" ],
       [ "SPDInterfaceBuffer", "class_i_m_s_packets_a_p_i_core_1_1_s_p_d_interface_buffer.html", "class_i_m_s_packets_a_p_i_core_1_1_s_p_d_interface_buffer" ]
     ] ],
+    [ "ACU_Class_Tests", "class_a_c_u___class___tests.html", "class_a_c_u___class___tests" ],
     [ "CoreTest_Console_Node", "class_core_test___console___node.html", "class_core_test___console___node" ],
     [ "CoreTest_CustomConsole_Node", "class_core_test___custom_console___node.html", "class_core_test___custom_console___node" ],
     [ "Test_API_Node_Default", "class_test___a_p_i___node___default.html", "class_test___a_p_i___node___default" ],
