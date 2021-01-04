@@ -50,69 +50,15 @@ $(document).ready(function(){initNavTree('class_a_r_u_a_p_i_core_1_1_a_r_u___i_f
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="class_a_r_u_a_p_i_core_1_1_a_r_u___i_f_l_types-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ARUAPICore::ARU_IFLTypes Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a13af6ba592b8dda7d3ad4944953a2702"><td class="memItemLeft" align="right" valign="top"><a id="a13af6ba592b8dda7d3ad4944953a2702"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ARU_IFLTypes</b> (char *TypeLabel_IN, float OD_in_IN, int MaxLenAtMaxVAEQ_ft_IN, float MaxLenLossAt1500MHz_dB_IN)</td></tr>
-<tr class="separator:a13af6ba592b8dda7d3ad4944953a2702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e1d0d9f68ed8f36812dc3475ac89a53"><td class="memItemLeft" align="right" valign="top"><a id="a2e1d0d9f68ed8f36812dc3475ac89a53"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ARU_IFLTypes</b> (const <a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___i_f_l_types.html">ARU_IFLTypes</a> *IFL_In)</td></tr>
-<tr class="separator:a2e1d0d9f68ed8f36812dc3475ac89a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8f939ff9e42c84fce332a7a6204f087"><td class="memItemLeft" align="right" valign="top"><a id="af8f939ff9e42c84fce332a7a6204f087"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getLabel</b> () const</td></tr>
-<tr class="separator:af8f939ff9e42c84fce332a7a6204f087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bbd54cec5c3b42724dee1accb3cbaa2"><td class="memItemLeft" align="right" valign="top"><a id="a9bbd54cec5c3b42724dee1accb3cbaa2"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getOD_in</b> () const</td></tr>
-<tr class="separator:a9bbd54cec5c3b42724dee1accb3cbaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebeee21010619e9fcb68810a8988d651"><td class="memItemLeft" align="right" valign="top"><a id="aebeee21010619e9fcb68810a8988d651"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxLenAtMaxVAEQ_ft</b> () const</td></tr>
-<tr class="separator:aebeee21010619e9fcb68810a8988d651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315da3e3119050dc6c28491489c5b41c"><td class="memItemLeft" align="right" valign="top"><a id="a315da3e3119050dc6c28491489c5b41c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxLenLossAt1500MHz</b> () const</td></tr>
-<tr class="separator:a315da3e3119050dc6c28491489c5b41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad11760d22e045748db4838e4401047d1"><td class="memItemLeft" align="right" valign="top"><a id="ad11760d22e045748db4838e4401047d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLength</b> (int length)</td></tr>
-<tr class="separator:ad11760d22e045748db4838e4401047d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eff7e3662cc7a65ac2ab4f118dda2cf"><td class="memItemLeft" align="right" valign="top"><a id="a2eff7e3662cc7a65ac2ab4f118dda2cf"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>calculateIFLAttenuatorLoss</b> (float length, float budget=20.0f) const</td></tr>
-<tr class="separator:a2eff7e3662cc7a65ac2ab4f118dda2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:acac842bca482903d7a78c92fd5ef87ee"><td class="memItemLeft" align="right" valign="top"><a id="acac842bca482903d7a78c92fd5ef87ee"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>calculateIFLAttenuatorLoss</b> (float slope, float lossAt1500MHz, bool useSlope, float budget=20.0f)</td></tr>
-<tr class="separator:acac842bca482903d7a78c92fd5ef87ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5bb61e0b9bdcae748d808eb7e4af796"><td class="memItemLeft" align="right" valign="top"><a id="ac5bb61e0b9bdcae748d808eb7e4af796"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>calculateIFLAttenuatorLoss</b> (int <a class="el" href="group___a_r_u___a_p_i___core.html#gad3b1296747347fe10ce6c792b11ebeec">VAEQ</a>, float lossAt1500MHz, float budget=20.0f)</td></tr>
-<tr class="separator:ac5bb61e0b9bdcae748d808eb7e4af796"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a435825ee09f3bd9b9b910590fb594eef"><td class="memItemLeft" align="right" valign="top"><a id="a435825ee09f3bd9b9b910590fb594eef"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>calculateSlopeAcrossBand</b> (float loss850MHz, float loss2250MHz)</td></tr>
-<tr class="separator:a435825ee09f3bd9b9b910590fb594eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cb13adda7271fca9dcab7b0241bd1bd"><td class="memItemLeft" align="right" valign="top"><a id="a0cb13adda7271fca9dcab7b0241bd1bd"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>getAttenuationOffset</b> (int <a class="el" href="group___a_r_u___a_p_i___core.html#gad3b1296747347fe10ce6c792b11ebeec">VAEQ</a>)</td></tr>
-<tr class="separator:a0cb13adda7271fca9dcab7b0241bd1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7f17eeea415776033307f5301fbde2"><td class="memItemLeft" align="right" valign="top"><a id="a7e7f17eeea415776033307f5301fbde2"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>roundFloat</b> (float x)</td></tr>
-<tr class="separator:a7e7f17eeea415776033307f5301fbde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebfc3122eaaa4dca781f435c717cbbbf"><td class="memItemLeft" align="right" valign="top"><a id="aebfc3122eaaa4dca781f435c717cbbbf"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>absoluteValue</b> (float x)</td></tr>
-<tr class="separator:aebfc3122eaaa4dca781f435c717cbbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_a_r_u___i_f_l_types_8h_source.html#l00045">45</a> of file <a class="el" href="_a_r_u___i_f_l_types_8h_source.html">ARU_IFLTypes.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>libraries/ARU_Common/src/<a class="el" href="_a_r_u___i_f_l_types_8h_source.html">ARU_IFLTypes.h</a></li>
-<li>libraries/ARU_Common/src/<a class="el" href="_a_r_u___i_f_l_types_8cpp_source.html">ARU_IFLTypes.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -48,8 +48,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"0___eco_system_restrictions_8h.html",
-"class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#a8b257908e32945b2fdbfcb98f87b1a82"
+"",
+"group___a_p_i_node_link.html#ga1c6d5de492ac61ad29aec7aa9a436bbf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

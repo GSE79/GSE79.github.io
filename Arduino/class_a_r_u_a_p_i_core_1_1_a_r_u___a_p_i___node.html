@@ -64,10 +64,11 @@ Inheritance diagram for ARUAPICore::ARU_API_Node:</div>
  <div class="center">
   <img src="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.png" usemap="#ARUAPICore::ARU_5FAPI_5FNode_map" alt=""/>
   <map id="ARUAPICore::ARU_5FAPI_5FNode_map" name="ARUAPICore::ARU_5FAPI_5FNode_map">
-<area href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html" title="API Node for HDR_Packets." alt="IMSPacketsAPICore::API_NODE" shape="rect" coords="0,56,260,80"/>
-<area href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html" title="An Abstraction of the Distributed Data and Execution System." alt="IMSPacketsAPICore::AbstractDataExecution" shape="rect" coords="0,0,260,24"/>
-<area href="class_a_c_u___a_p_i_1_1_a_c_u___node.html" title="Abstract Base of the ACU PCB within the ARU." alt="ACU_API::ACU_Node" shape="rect" coords="0,168,260,192"/>
+<area href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html" title="API Node for HDR_Packets." alt="IMSPacketsAPICore::API_NODE" shape="rect" coords="135,56,395,80"/>
+<area href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html" title="An Abstraction of the Distributed Data and Execution System." alt="IMSPacketsAPICore::AbstractDataExecution" shape="rect" coords="135,0,395,24"/>
+<area href="class_a_c_u___a_p_i_1_1_a_c_u___node.html" title="Abstract Base of the ACU PCB within the ARU." alt="ACU_API::ACU_Node" shape="rect" coords="135,168,395,192"/>
 <area href="class_a_c_u___class___tests.html" alt="ACU_Class_Tests" shape="rect" coords="0,224,260,248"/>
+<area href="class_a_c_u___i_n_o.html" alt="ACU_INO" shape="rect" coords="270,224,530,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -104,12 +105,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DAT_Handler</
 <tr class="memitem:afb808b91d7875286e8589906c9bf314d"><td class="memItemLeft" align="right" valign="top"><a id="afb808b91d7875286e8589906c9bf314d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DAT_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *outPack)=0</td></tr>
 <tr class="separator:afb808b91d7875286e8589906c9bf314d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a52ae4d41f765e6fb9d0cf96700776"><td class="memItemLeft" align="right" valign="top"><a id="a86a52ae4d41f765e6fb9d0cf96700776"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *inPack)=0</td></tr>
-<tr class="separator:a86a52ae4d41f765e6fb9d0cf96700776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d81caddd648bbeaf367f6793c7d9b3"><td class="memItemLeft" align="right" valign="top"><a id="a77d81caddd648bbeaf367f6793c7d9b3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *outPack)=0</td></tr>
-<tr class="separator:a77d81caddd648bbeaf367f6793c7d9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c786dbd56234f63689d41838bfcd374"><td class="memItemLeft" align="right" valign="top"><a id="a1c786dbd56234f63689d41838bfcd374"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html">Packet_VAEQ</a> *inPack)</td></tr>
+<tr class="separator:a1c786dbd56234f63689d41838bfcd374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2dab5e831e1c563f905278afa80489"><td class="memItemLeft" align="right" valign="top"><a id="a0b2dab5e831e1c563f905278afa80489"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html">Packet_VAEQ</a> *outPack)</td></tr>
+<tr class="separator:a0b2dab5e831e1c563f905278afa80489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3941bc2bc2ff3022e1cfbf09fbc8f46f"><td class="memItemLeft" align="right" valign="top"><a id="a3941bc2bc2ff3022e1cfbf09fbc8f46f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>API_CustomShared_PrepareTx</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_h_d_r___packet.html">HDR_Packet</a> *TxPackOutPtr)</td></tr>
 <tr class="separator:a3941bc2bc2ff3022e1cfbf09fbc8f46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +130,7 @@ virtual const int&#160;</td><td class="memItemRight" valign="bottom"><b>getNumPa
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html#l00124">124</a> of file <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html">4_ARU_API_Core.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html#l00127">127</a> of file <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html">4_ARU_API_Core.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad55054dd28e583247e7b927852af895e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad55054dd28e583247e7b927852af895e">&#9670;&nbsp;</a></span>Setup()</h2>
@@ -158,6 +159,8 @@ virtual const int&#160;</td><td class="memItemRight" valign="bottom"><b>getNumPa
 <p>Called by the top level main function of an api node's running application </p>
 
 <p>Implements <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#aa9f135d4ad44201159cddbb1201f07f9">IMSPacketsAPICore::AbstractDataExecution</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_a_c_u___i_n_o.html#ae3b0ae717215567ec2fa53a6dd7100c1">ACU_INO</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html#l00194">194</a> of file <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html">4_ARU_API_Core.h</a>.</p>
 

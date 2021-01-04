@@ -68,10 +68,11 @@ Inheritance diagram for ACU_API::ACU_Node:</div>
  <div class="center">
   <img src="class_a_c_u___a_p_i_1_1_a_c_u___node.png" usemap="#ACU_5FAPI::ACU_5FNode_map" alt=""/>
   <map id="ACU_5FAPI::ACU_5FNode_map" name="ACU_5FAPI::ACU_5FNode_map">
-<area href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html" alt="ARUAPICore::ARU_API_Node" shape="rect" coords="0,112,260,136"/>
-<area href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html" title="API Node for HDR_Packets." alt="IMSPacketsAPICore::API_NODE" shape="rect" coords="0,56,260,80"/>
-<area href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html" title="An Abstraction of the Distributed Data and Execution System." alt="IMSPacketsAPICore::AbstractDataExecution" shape="rect" coords="0,0,260,24"/>
+<area href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html" alt="ARUAPICore::ARU_API_Node" shape="rect" coords="135,112,395,136"/>
+<area href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html" title="API Node for HDR_Packets." alt="IMSPacketsAPICore::API_NODE" shape="rect" coords="135,56,395,80"/>
+<area href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html" title="An Abstraction of the Distributed Data and Execution System." alt="IMSPacketsAPICore::AbstractDataExecution" shape="rect" coords="135,0,395,24"/>
 <area href="class_a_c_u___class___tests.html" alt="ACU_Class_Tests" shape="rect" coords="0,224,260,248"/>
+<area href="class_a_c_u___i_n_o.html" alt="ACU_INO" shape="rect" coords="270,224,530,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -80,15 +81,24 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a96055ab23db40cc6b9b88446417147dc"><td class="memItemLeft" align="right" valign="top"><a id="a96055ab23db40cc6b9b88446417147dc"></a>
 virtual ACU_MatrixOrbital_LCD *&#160;</td><td class="memItemRight" valign="bottom"><b>getARUFrontPanel</b> ()=0</td></tr>
 <tr class="separator:a96055ab23db40cc6b9b88446417147dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5ef4d2a0e1937107d8e6a0930f46975"><td class="memItemLeft" align="right" valign="top"><a id="aa5ef4d2a0e1937107d8e6a0930f46975"></a>
-virtual ACU_DiversitySwitchCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>getARUDiversitySwitchController</b> ()=0</td></tr>
-<tr class="separator:aa5ef4d2a0e1937107d8e6a0930f46975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe287859de597ad0bfbf90e1e376d53c"><td class="memItemLeft" align="right" valign="top"><a id="afe287859de597ad0bfbf90e1e376d53c"></a>
 virtual <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPDUPort</b> ()=0</td></tr>
 <tr class="separator:afe287859de597ad0bfbf90e1e376d53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a875d076a5b0b1c57ad2a885415bf20f2"><td class="memItemLeft" align="right" valign="top"><a id="a875d076a5b0b1c57ad2a885415bf20f2"></a>
 virtual <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getMCU1Port</b> ()=0</td></tr>
 <tr class="separator:a875d076a5b0b1c57ad2a885415bf20f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f493a59c230f43e98406651469d03ab"><td class="memItemLeft" align="right" valign="top"><a id="a4f493a59c230f43e98406651469d03ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DAT_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *inPack)</td></tr>
+<tr class="separator:a4f493a59c230f43e98406651469d03ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7354d56a5a6da1f2ed7c061f32c3070e"><td class="memItemLeft" align="right" valign="top"><a id="a7354d56a5a6da1f2ed7c061f32c3070e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DAT_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *outPack)</td></tr>
+<tr class="separator:a7354d56a5a6da1f2ed7c061f32c3070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704350d089f754044c977d5f627925ce"><td class="memItemLeft" align="right" valign="top"><a id="a704350d089f754044c977d5f627925ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *inPack)</td></tr>
+<tr class="separator:a704350d089f754044c977d5f627925ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2af8146ac945fb36ad5b3a2ffee7da"><td class="memItemLeft" align="right" valign="top"><a id="add2af8146ac945fb36ad5b3a2ffee7da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *outPack)</td></tr>
+<tr class="separator:add2af8146ac945fb36ad5b3a2ffee7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html">ARUAPICore::ARU_API_Node</a></td></tr>
 <tr class="memitem:a4f3eed2d05821063db9d604c2c973fed inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a4f3eed2d05821063db9d604c2c973fed"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomLoop</b> ()</td></tr>
@@ -99,18 +109,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_Handler</b> (
 <tr class="memitem:af550c6f452f9225dc5dffeba2698a597 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="af550c6f452f9225dc5dffeba2698a597"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_Packager</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet___version.html">Packet_Version</a> *outPack)</td></tr>
 <tr class="separator:af550c6f452f9225dc5dffeba2698a597 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d51ee2e64566e1c6a5fe94f58a63c4 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a64d51ee2e64566e1c6a5fe94f58a63c4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DAT_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *inPack)=0</td></tr>
-<tr class="separator:a64d51ee2e64566e1c6a5fe94f58a63c4 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb808b91d7875286e8589906c9bf314d inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="afb808b91d7875286e8589906c9bf314d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DAT_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *outPack)=0</td></tr>
-<tr class="separator:afb808b91d7875286e8589906c9bf314d inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a52ae4d41f765e6fb9d0cf96700776 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a86a52ae4d41f765e6fb9d0cf96700776"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *inPack)=0</td></tr>
-<tr class="separator:a86a52ae4d41f765e6fb9d0cf96700776 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d81caddd648bbeaf367f6793c7d9b3 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a77d81caddd648bbeaf367f6793c7d9b3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *outPack)=0</td></tr>
-<tr class="separator:a77d81caddd648bbeaf367f6793c7d9b3 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c786dbd56234f63689d41838bfcd374 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a1c786dbd56234f63689d41838bfcd374"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html">Packet_VAEQ</a> *inPack)</td></tr>
+<tr class="separator:a1c786dbd56234f63689d41838bfcd374 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2dab5e831e1c563f905278afa80489 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a0b2dab5e831e1c563f905278afa80489"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html">Packet_VAEQ</a> *outPack)</td></tr>
+<tr class="separator:a0b2dab5e831e1c563f905278afa80489 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3941bc2bc2ff3022e1cfbf09fbc8f46f inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a3941bc2bc2ff3022e1cfbf09fbc8f46f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>API_CustomShared_PrepareTx</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_h_d_r___packet.html">HDR_Packet</a> *TxPackOutPtr)</td></tr>
 <tr class="separator:a3941bc2bc2ff3022e1cfbf09fbc8f46f inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>

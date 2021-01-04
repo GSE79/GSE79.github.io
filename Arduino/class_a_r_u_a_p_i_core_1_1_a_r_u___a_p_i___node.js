@@ -7,8 +7,8 @@ var class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node =
     [ "DAT_Handler", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#a64d51ee2e64566e1c6a5fe94f58a63c4", null ],
     [ "DAT_Packager", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#afb808b91d7875286e8589906c9bf314d", null ],
     [ "Setup", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#ad55054dd28e583247e7b927852af895e", null ],
-    [ "VAEQ_Handler", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#a86a52ae4d41f765e6fb9d0cf96700776", null ],
-    [ "VAEQ_Packager", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#a77d81caddd648bbeaf367f6793c7d9b3", null ],
+    [ "VAEQ_Handler", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#a1c786dbd56234f63689d41838bfcd374", null ],
+    [ "VAEQ_Packager", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#a0b2dab5e831e1c563f905278afa80489", null ],
     [ "VERSION_Handler", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#a75d341a8ad1dfb6c484fc2c6bc2ae07c", null ],
     [ "VERSION_Packager", "class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#af550c6f452f9225dc5dffeba2698a597", null ]
 ];
