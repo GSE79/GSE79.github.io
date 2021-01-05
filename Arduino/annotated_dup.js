@@ -28,6 +28,16 @@ var annotated_dup =
       [ "SPDASCIIInterfaceBuffer", "class_i_m_s_packets_a_p_i_core_1_1_s_p_d_a_s_c_i_i_interface_buffer.html", "class_i_m_s_packets_a_p_i_core_1_1_s_p_d_a_s_c_i_i_interface_buffer" ],
       [ "SPDInterfaceBuffer", "class_i_m_s_packets_a_p_i_core_1_1_s_p_d_interface_buffer.html", "class_i_m_s_packets_a_p_i_core_1_1_s_p_d_interface_buffer" ]
     ] ],
+    [ "MCU_API", null, [
+      [ "MCU_Node", "class_m_c_u___a_p_i_1_1_m_c_u___node.html", "class_m_c_u___a_p_i_1_1_m_c_u___node" ]
+    ] ],
+    [ "PDU_API", null, [
+      [ "PDU_Node", "class_p_d_u___a_p_i_1_1_p_d_u___node.html", "class_p_d_u___a_p_i_1_1_p_d_u___node" ]
+    ] ],
     [ "ACU_Class_Tests", "class_a_c_u___class___tests.html", "class_a_c_u___class___tests" ],
-    [ "ACU_INO", "class_a_c_u___i_n_o.html", "class_a_c_u___i_n_o" ]
+    [ "ACU_INO", "class_a_c_u___i_n_o.html", "class_a_c_u___i_n_o" ],
+    [ "MCU_Class_Tests", "class_m_c_u___class___tests.html", "class_m_c_u___class___tests" ],
+    [ "MCU_INO", "class_m_c_u___i_n_o.html", "class_m_c_u___i_n_o" ],
+    [ "PDU_Class_Tests", "class_p_d_u___class___tests.html", "class_p_d_u___class___tests" ],
+    [ "PDU_INO", "class_p_d_u___i_n_o.html", "class_p_d_u___i_n_o" ]
 ];
