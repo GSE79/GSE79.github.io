@@ -1,0 +1,8 @@
+digraph "MCU" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_9838586c8e1b8c41d059e79659516442 [shape=box, label="MCU", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9838586c8e1b8c41d059e79659516442.html"];
+  dir_bc0718b08fb2015b8e59c47b2805f60c [shape=box label="libraries" fillcolor="white" style="filled" color="red" URL="dir_bc0718b08fb2015b8e59c47b2805f60c.html"];
+  dir_9838586c8e1b8c41d059e79659516442->dir_bc0718b08fb2015b8e59c47b2805f60c [headlabel="1", labeldistance=1.5 headhref="dir_000006_000002.html"];
+}

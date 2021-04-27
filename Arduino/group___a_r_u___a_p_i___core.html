@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -50,8 +51,6 @@ $(document).ready(function(){initNavTree('group___a_r_u___a_p_i___core.html','')
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">ARU_API_Core</div>  </div>
 </div><!--header-->
@@ -59,81 +58,12 @@ $(document).ready(function(){initNavTree('group___a_r_u___a_p_i___core.html','')
 
 <p>API Node and Interface Objects.  
 <a href="#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gaf11067c9b4babd694af06756ae7a5a0c"><td class="memItemLeft" align="right" valign="top"><a id="gaf11067c9b4babd694af06756ae7a5a0c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_u___a_p_i___core.html#gaf11067c9b4babd694af06756ae7a5a0c">DAT_Offset</a>&#160;&#160;&#160;IndexHDR_PackOPTION</td></tr>
-<tr class="memdesc:gaf11067c9b4babd694af06756ae7a5a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index Offset for DAT Packet. <br /></td></tr>
-<tr class="separator:gaf11067c9b4babd694af06756ae7a5a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a536e0e3915309f57e752e905779479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_u___a_p_i___core.html#ga4a536e0e3915309f57e752e905779479">DAT</a>&#160;&#160;&#160;(<a class="el" href="group___a_p_i_node_link.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>+1)</td></tr>
-<tr class="memdesc:ga4a536e0e3915309f57e752e905779479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token ID value for DAT Packet.  <a href="group___a_r_u___a_p_i___core.html#ga4a536e0e3915309f57e752e905779479">More...</a><br /></td></tr>
-<tr class="separator:ga4a536e0e3915309f57e752e905779479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6227a8614d171f0c18bd9ef5dba30d1"><td class="memItemLeft" align="right" valign="top"><a id="gac6227a8614d171f0c18bd9ef5dba30d1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexDAT_AntennaNumber</b>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#gaf11067c9b4babd694af06756ae7a5a0c">DAT_Offset</a>+1)</td></tr>
-<tr class="separator:gac6227a8614d171f0c18bd9ef5dba30d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c1f55c95eb501f2009283c831e631c4"><td class="memItemLeft" align="right" valign="top"><a id="ga3c1f55c95eb501f2009283c831e631c4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexDAT_AttennuatorValue</b>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#gaf11067c9b4babd694af06756ae7a5a0c">DAT_Offset</a>+2)</td></tr>
-<tr class="separator:ga3c1f55c95eb501f2009283c831e631c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga35186528271b5e67b463cf76a7d5e37e"><td class="memItemLeft" align="right" valign="top"><a id="ga35186528271b5e67b463cf76a7d5e37e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_u___a_p_i___core.html#ga35186528271b5e67b463cf76a7d5e37e">VAEQ_Offset</a>&#160;&#160;&#160;<a class="el" href="group___a_r_u___a_p_i___core.html#gaf11067c9b4babd694af06756ae7a5a0c">DAT_Offset</a></td></tr>
-<tr class="memdesc:ga35186528271b5e67b463cf76a7d5e37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index Offset for VAEQ Packet. <br /></td></tr>
-<tr class="separator:ga35186528271b5e67b463cf76a7d5e37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3b1296747347fe10ce6c792b11ebeec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_u___a_p_i___core.html#gad3b1296747347fe10ce6c792b11ebeec">VAEQ</a>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#ga4a536e0e3915309f57e752e905779479">DAT</a>+1)</td></tr>
-<tr class="memdesc:gad3b1296747347fe10ce6c792b11ebeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token ID value for VAEQ Packet.  <a href="group___a_r_u___a_p_i___core.html#gad3b1296747347fe10ce6c792b11ebeec">More...</a><br /></td></tr>
-<tr class="separator:gad3b1296747347fe10ce6c792b11ebeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27d935167764cc015dc013b358ab91ed"><td class="memItemLeft" align="right" valign="top"><a id="ga27d935167764cc015dc013b358ab91ed"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVAEQ_AntennaNumber</b>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#ga35186528271b5e67b463cf76a7d5e37e">VAEQ_Offset</a>+1)</td></tr>
-<tr class="separator:ga27d935167764cc015dc013b358ab91ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89933bef58967ea11ab97af4a3effeff"><td class="memItemLeft" align="right" valign="top"><a id="ga89933bef58967ea11ab97af4a3effeff"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVAEQ_EqualizerValue</b>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#ga35186528271b5e67b463cf76a7d5e37e">VAEQ_Offset</a>+2)</td></tr>
-<tr class="separator:ga89933bef58967ea11ab97af4a3effeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API Node and Interface Objects. </p>
 <p>Here is the first level of personalization to make the abstract elements of the IMS_PacketsAPI_Core.h file specific to the Envistacom's ARU FW.</p>
 <p>The language of the distributed ARU FW system is described here as a structure of Packet objects. Knowledge of the language is shared by including Packet strutures in ARU_API_Node objects which derive from the AbstractDataExecution class</p>
 <p><br  />
  </p>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga4a536e0e3915309f57e752e905779479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a536e0e3915309f57e752e905779479">&#9670;&nbsp;</a></span>DAT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DAT&#160;&#160;&#160;(<a class="el" href="group___a_p_i_node_link.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>+1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Token ID value for DAT Packet. </p>
-<p>DAT is the Digital Attenuator Commmand </p>
-
-<p class="definition">Definition at line <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html#l00034">34</a> of file <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html">4_ARU_API_Core.h</a>.</p>
-
-</div>
-</div>
-<a id="gad3b1296747347fe10ce6c792b11ebeec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3b1296747347fe10ce6c792b11ebeec">&#9670;&nbsp;</a></span>VAEQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VAEQ&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#ga4a536e0e3915309f57e752e905779479">DAT</a>+1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Token ID value for VAEQ Packet. </p>
-<p>VAEQ is the Equalizer Voltage Commmand </p>
-
-<p class="definition">Definition at line <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html#l00064">64</a> of file <a class="el" href="4___a_r_u___a_p_i___core_8h_source.html">4_ARU_API_Core.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

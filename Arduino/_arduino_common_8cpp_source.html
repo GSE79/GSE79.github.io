@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -59,26 +60,122 @@ $(document).ready(function(){initNavTree('_arduino_common_8cpp_source.html','');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;Adafruit_FlashTransport_QSPI    flashTransport(PIN_QSPI_SCK, PIN_QSPI_CS, PIN_QSPI_IO0, PIN_QSPI_IO1, PIN_QSPI_IO2, PIN_QSPI_IO3);</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;Adafruit_SPIFlash               flash(&amp;flashTransport);</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;FatFileSystem                   fatfs;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;Adafruit_NeoPixel               PCB_LED;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>                   currentMillis;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>                   startMillis;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> CommonINO_Setup()</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">asm</span>(<span class="stringliteral">&quot;.global _printf_float&quot;</span>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    PCB_LED.begin();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//Light Index, R, G, B</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    PCB_LED.setPixelColor(0, 15, 0, 0);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    PCB_LED.show(); <span class="comment">// Initialize al pixels to &#39;Red&#39;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    startMillis = millis();  <span class="comment">//initial start time</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef EVC_ARU_ACU_M4</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Wire.begin();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    SPI.begin();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    DebugSerial.begin(115200);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;File                            settingsFile;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">bool</span>                            is_EOF = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;Adafruit_NeoPixel               PCB_LED(1, 88, NEO_GRB + NEO_KHZ800);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>                   currentMillis;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>                   startMillis;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> CommonINO_Setup()</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">asm</span>(<span class="stringliteral">&quot;.global _printf_float&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    PCB_LED.begin();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    PCB_LED.setPixelColor(0, 0, 0, 0);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    PCB_LED.show(); <span class="comment">// Initialize al pixels to off</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    startMillis = millis();  <span class="comment">//initial start time</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef EVC_ARU_ACU_M4</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Wire.begin();    </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    pinMode(PIN_SPI_MISO, OUTPUT);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    pinMode(PIN_SPI_MOSI, OUTPUT);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    pinMode(PIN_SPI_SCK, OUTPUT);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    SPI.begin();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    DebugSerial.begin(115200);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;ArduinoStream_In_Interface::ArduinoStream_In_Interface(Stream* StreamPtrIn) :</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html">PacketInterface_ASCII</a>() {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    InStreamPtr = StreamPtrIn;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> ArduinoStream_In_Interface::CustomReadFrom()</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// must read characters from Stream into token buffer</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> inChar = InStreamPtr-&gt;read();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (inChar &gt; -1) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        TokenBuffer.chars[CharIndex++] = (char)(inChar &amp; 0x00ff);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_arduino_stream___in___interface.html#a971b2ea187dae189926a44e6beca9e50">   42</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_arduino_stream___in___interface.html#a971b2ea187dae189926a44e6beca9e50">ArduinoStream_In_Interface::DeSerializePacket</a>()</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> DeSerializePacket_ASCII(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;ArduinoStream_Out_Interface::ArduinoStream_Out_Interface(Stream* StreamPtrIn) :</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html">PacketInterface_ASCII</a>() {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    OutStreamPtr = StreamPtrIn;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> ArduinoStream_Out_Interface::CustomWriteTo()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// must write characters to Stream from token buffer</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> charwritten = OutStreamPtr-&gt;write(&amp;(TokenBuffer.chars[0]), serializedPacketSize);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">bool</span> ArduinoStream_Out_Interface::SerializePacket()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#a428799716b53401245a56a64ee24da0a">SerializePacket_ASCII</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;ArduinoFile_In_Interface::ArduinoFile_In_Interface() :  <a class="code" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html">PacketInterface_ASCII</a>() { ; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> ArduinoFile_In_Interface::CustomReadFrom()</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// must read characters from File into token buffer</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> inChar = settingsFile.read();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (inChar &gt; -1) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        is_EOF = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        TokenBuffer.chars[CharIndex++] = (char)(inChar &amp; 0x00ff);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        is_EOF = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_arduino_file___in___interface.html#a60b881e599767cec056e1f723ea1f23e">   75</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_arduino_file___in___interface.html#a60b881e599767cec056e1f723ea1f23e">ArduinoFile_In_Interface::DeSerializePacket</a>()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#a8b534d30cf809703a1bb1d189a45c52e">DeSerializePacket_ASCII</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;ArduinoFile_Out_Interface::ArduinoFile_Out_Interface() : <a class="code" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html">PacketInterface_ASCII</a>() { ; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> ArduinoFile_Out_Interface::CustomWriteTo()</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// must write characters to Stream from token buffer</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> charwritten = settingsFile.write(&amp;(TokenBuffer.chars[0]), serializedPacketSize);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    is_EOF = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">bool</span> ArduinoFile_Out_Interface::SerializePacket()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#a428799716b53401245a56a64ee24da0a">SerializePacket_ASCII</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> SelfTest::HandleStatus() <span class="comment">//Handle Status Variable. Call this function on throw</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (_status &gt; 0) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        UpdateLED(PIXEL_RED);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        UpdateLED(PIXEL_GREEN);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> SelfTest::ClearStatus()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//Add other operations necessary for clearing errors</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    UpdateStatus(0);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    HandleStatus();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> SelfTest::UpdateStatus(<span class="keywordtype">int</span> Status)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    _status = Status;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_arduino_stream___in___interface_html_a971b2ea187dae189926a44e6beca9e50"><div class="ttname"><a href="class_arduino_stream___in___interface.html#a971b2ea187dae189926a44e6beca9e50">ArduinoStream_In_Interface::DeSerializePacket</a></div><div class="ttdeci">bool DeSerializePacket()</div><div class="ttdoc">Default ASCII Deserialization.</div><div class="ttdef"><b>Definition:</b> <a href="_arduino_common_8cpp_source.html#l00042">ArduinoCommon.cpp:42</a></div></div>
+<div class="ttc" id="aclass_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i_html_a8b534d30cf809703a1bb1d189a45c52e"><div class="ttname"><a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#a8b534d30cf809703a1bb1d189a45c52e">IMSPacketsAPICore::PacketInterface_ASCII::DeSerializePacket_ASCII</a></div><div class="ttdeci">static bool DeSerializePacket_ASCII(PacketInterface_ASCII *PcktInterface)</div><div class="ttdoc">Default ASCII Deserialization.</div><div class="ttdef"><b>Definition:</b> <a href="3___a_p_i_node_link_8cpp_source.html#l00191">3_APINodeLink.cpp:191</a></div></div>
+<div class="ttc" id="aclass_arduino_file___in___interface_html_a60b881e599767cec056e1f723ea1f23e"><div class="ttname"><a href="class_arduino_file___in___interface.html#a60b881e599767cec056e1f723ea1f23e">ArduinoFile_In_Interface::DeSerializePacket</a></div><div class="ttdeci">bool DeSerializePacket()</div><div class="ttdoc">Default ASCII Deserialization.</div><div class="ttdef"><b>Definition:</b> <a href="_arduino_common_8cpp_source.html#l00075">ArduinoCommon.cpp:75</a></div></div>
+<div class="ttc" id="aclass_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i_html"><div class="ttname"><a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html">IMSPacketsAPICore::PacketInterface_ASCII</a></div><div class="ttdoc">API Node ASCII Interface for HDR_Packets.</div><div class="ttdef"><b>Definition:</b> <a href="3___a_p_i_node_link_8h_source.html#l00117">3_APINodeLink.h:118</a></div></div>
+<div class="ttc" id="aclass_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i_html_a428799716b53401245a56a64ee24da0a"><div class="ttname"><a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#a428799716b53401245a56a64ee24da0a">IMSPacketsAPICore::PacketInterface_ASCII::SerializePacket_ASCII</a></div><div class="ttdeci">static bool SerializePacket_ASCII(PacketInterface_ASCII *PcktInterface)</div><div class="ttdoc">Default ASCII Serialization.</div><div class="ttdef"><b>Definition:</b> <a href="3___a_p_i_node_link_8cpp_source.html#l00261">3_APINodeLink.cpp:261</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

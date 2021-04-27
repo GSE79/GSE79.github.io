@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -68,28 +69,25 @@ Inheritance diagram for IMSPacketsAPICore::AbstractDataExecution:</div>
  <div class="center">
   <img src="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.png" usemap="#IMSPacketsAPICore::AbstractDataExecution_map" alt=""/>
   <map id="IMSPacketsAPICore::AbstractDataExecution_map" name="IMSPacketsAPICore::AbstractDataExecution_map">
-<area href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html" title="API Node for HDR_Packets." alt="IMSPacketsAPICore::API_NODE" shape="rect" coords="675,56,935,80"/>
-<area href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html" alt="ARUAPICore::ARU_API_Node" shape="rect" coords="675,112,935,136"/>
-<area href="class_a_c_u___a_p_i_1_1_a_c_u___node.html" title="Abstract Base of the ACU PCB within the ARU." alt="ACU_API::ACU_Node" shape="rect" coords="135,168,395,192"/>
-<area href="class_m_c_u___a_p_i_1_1_m_c_u___node.html" title="Abstract Base of the MCU PCB within the ARU." alt="MCU_API::MCU_Node" shape="rect" coords="675,168,935,192"/>
-<area href="class_p_d_u___a_p_i_1_1_p_d_u___node.html" title="Abstract Base of the PDU PCB within the ARU." alt="PDU_API::PDU_Node" shape="rect" coords="1215,168,1475,192"/>
-<area href="class_a_c_u___class___tests.html" alt="ACU_Class_Tests" shape="rect" coords="0,224,260,248"/>
-<area href="class_a_c_u___i_n_o.html" alt="ACU_INO" shape="rect" coords="270,224,530,248"/>
-<area href="class_m_c_u___class___tests.html" alt="MCU_Class_Tests" shape="rect" coords="540,224,800,248"/>
-<area href="class_m_c_u___i_n_o.html" alt="MCU_INO" shape="rect" coords="810,224,1070,248"/>
-<area href="class_p_d_u___class___tests.html" alt="PDU_Class_Tests" shape="rect" coords="1080,224,1340,248"/>
-<area href="class_p_d_u___i_n_o.html" alt="PDU_INO" shape="rect" coords="1350,224,1610,248"/>
+<area href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html" title="API Node for HDR_Packets." alt="IMSPacketsAPICore::API_NODE" shape="rect" coords="270,56,530,80"/>
+<area href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html" alt="ARUAPICore::ARU_API_Node" shape="rect" coords="270,112,530,136"/>
+<area href="class_a_c_u___a_p_i_1_1_a_c_u___node.html" title="Abstract Base of the ACU PCB within the ARU." alt="ACU_API::ACU_Node" shape="rect" coords="0,168,260,192"/>
+<area href="class_m_c_u___a_p_i_1_1_m_c_u___node.html" title="Abstract Base of the MCU PCB within the ARU." alt="MCU_API::MCU_Node" shape="rect" coords="270,168,530,192"/>
+<area href="class_p_d_u___a_p_i_1_1_p_d_u___node.html" title="Abstract Base of the PDU PCB within the ARU." alt="PDU_API::PDU_Node" shape="rect" coords="540,168,800,192"/>
+<area href="class_a_c_u___i_n_o.html" alt="ACU_INO" shape="rect" coords="0,224,260,248"/>
+<area href="class_m_c_u___i_n_o.html" alt="MCU_INO" shape="rect" coords="270,224,530,248"/>
+<area href="class_p_d_u___i_n_o.html" alt="PDU_INO" shape="rect" coords="540,224,800,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4a9b5ec278e2956773a36ca91ac919c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a4a9b5ec278e2956773a36ca91ac919c7">HandleRxPacket</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *RxPackInPtr)=0</td></tr>
-<tr class="memdesc:a4a9b5ec278e2956773a36ca91ac919c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract HandleRxPacket Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a4a9b5ec278e2956773a36ca91ac919c7">More...</a><br /></td></tr>
-<tr class="separator:a4a9b5ec278e2956773a36ca91ac919c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831e864e8047410ee24cb4ffd54136c9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a831e864e8047410ee24cb4ffd54136c9">PrepareTxPacket</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *TxPackOutPtr)=0</td></tr>
-<tr class="memdesc:a831e864e8047410ee24cb4ffd54136c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract PrepareTxPacket Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a831e864e8047410ee24cb4ffd54136c9">More...</a><br /></td></tr>
-<tr class="separator:a831e864e8047410ee24cb4ffd54136c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af77ab14e4dfa2fa50f8bc9ad7c0057"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a3af77ab14e4dfa2fa50f8bc9ad7c0057">HandleRxPacket</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *PackPortPtr)=0</td></tr>
+<tr class="memdesc:a3af77ab14e4dfa2fa50f8bc9ad7c0057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract HandleRxPacket Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a3af77ab14e4dfa2fa50f8bc9ad7c0057">More...</a><br /></td></tr>
+<tr class="separator:a3af77ab14e4dfa2fa50f8bc9ad7c0057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa255b7c645012e61e42f9c4d880278d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#aaa255b7c645012e61e42f9c4d880278d">PrepareTxPacket</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *PackPortPtr)=0</td></tr>
+<tr class="memdesc:aaa255b7c645012e61e42f9c4d880278d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract PrepareTxPacket Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#aaa255b7c645012e61e42f9c4d880278d">More...</a><br /></td></tr>
+<tr class="separator:aaa255b7c645012e61e42f9c4d880278d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f135d4ad44201159cddbb1201f07f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#aa9f135d4ad44201159cddbb1201f07f9">Setup</a> ()=0</td></tr>
 <tr class="memdesc:aa9f135d4ad44201159cddbb1201f07f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Initialization Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#aa9f135d4ad44201159cddbb1201f07f9">More...</a><br /></td></tr>
 <tr class="separator:aa9f135d4ad44201159cddbb1201f07f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,10 +99,10 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>An Abstraction of the Distributed Data and Execution System. </p>
 <p>Provides two public packet handler functions, one to execute on incomming packet receipt and another to execute when packaging a packet for transmission. An application member must inherit from this base and add application specific language, data, and api endpoints. </p>
 
-<p class="definition">Definition at line <a class="el" href="2___packet_port_link_8h_source.html#l00126">126</a> of file <a class="el" href="2___packet_port_link_8h_source.html">2_PacketPortLink.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="2___packet_port_link_8h_source.html#l00147">147</a> of file <a class="el" href="2___packet_port_link_8h_source.html">2_PacketPortLink.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4a9b5ec278e2956773a36ca91ac919c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a9b5ec278e2956773a36ca91ac919c7">&#9670;&nbsp;</a></span>HandleRxPacket()</h2>
+<a id="a3af77ab14e4dfa2fa50f8bc9ad7c0057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af77ab14e4dfa2fa50f8bc9ad7c0057">&#9670;&nbsp;</a></span>HandleRxPacket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,8 +113,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void IMSPacketsAPICore::AbstractDataExecution::HandleRxPacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>RxPackInPtr</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *&#160;</td>
+          <td class="paramname"><em>PackPortPtr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -130,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <p>Abstract HandleRxPacket Function. </p>
 <p>Called by a PacketPort Instance to execute API Endpoints on packet receipt </p>
 
-<p>Implemented in <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a2553695b585dae44400d96d4aaaa77de">IMSPacketsAPICore::API_NODE</a>.</p>
+<p>Implemented in <a class="el" href="class_p_d_u___a_p_i_1_1_p_d_u___node.html#ab145b62ba3d28a721faf43b0e567e21b">PDU_API::PDU_Node</a>, <a class="el" href="class_m_c_u___a_p_i_1_1_m_c_u___node.html#af35c709186cdc370412684e66b94348b">MCU_API::MCU_Node</a>, and <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html#ac2a7b37bf5bae43be343588f88588bd7">ACU_API::ACU_Node</a>.</p>
 
 </div>
 </div>
@@ -160,12 +158,12 @@ Public Member Functions</h2></td></tr>
 <p>Abstract Cyclic Execution Function. </p>
 <p>Called by the top level main function of an api node's running application. Ideally this function will be designed as cyclic and non-blocking, though it is a design choice and not a design restriction. </p>
 
-<p>Implemented in <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a6c16377a468a8a6c2b5fbbee59d9f360">IMSPacketsAPICore::API_NODE</a>.</p>
+<p>Implemented in <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#ac8112352dd8d6e52dc4090d2669cf88d">IMSPacketsAPICore::API_NODE</a>.</p>
 
 </div>
 </div>
-<a id="a831e864e8047410ee24cb4ffd54136c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a831e864e8047410ee24cb4ffd54136c9">&#9670;&nbsp;</a></span>PrepareTxPacket()</h2>
+<a id="aaa255b7c645012e61e42f9c4d880278d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa255b7c645012e61e42f9c4d880278d">&#9670;&nbsp;</a></span>PrepareTxPacket()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,8 +174,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool IMSPacketsAPICore::AbstractDataExecution::PrepareTxPacket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *&#160;</td>
-          <td class="paramname"><em>TxPackOutPtr</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *&#160;</td>
+          <td class="paramname"><em>PackPortPtr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -191,7 +189,7 @@ Public Member Functions</h2></td></tr>
 <p>Abstract PrepareTxPacket Function. </p>
 <p>Called by a PacketPort Instance to deque packet objects and write them to the <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html" title="An Abstraction of the serial interface connecting two api nodes.">PacketInterface</a> buffer </p>
 
-<p>Implemented in <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a89b689a574f42687b60f1266ac5cabf4">IMSPacketsAPICore::API_NODE</a>.</p>
+<p>Implemented in <a class="el" href="class_p_d_u___a_p_i_1_1_p_d_u___node.html#a9a0932b06a9653f5bc30d73eb3c27b1c">PDU_API::PDU_Node</a>, <a class="el" href="class_m_c_u___a_p_i_1_1_m_c_u___node.html#a3eca5e887014b4393c1bc5948acf258f">MCU_API::MCU_Node</a>, and <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html#ac14141ceb7a3c504d0a73a36c8bb247c">ACU_API::ACU_Node</a>.</p>
 
 </div>
 </div>
@@ -221,7 +219,7 @@ Public Member Functions</h2></td></tr>
 <p>Abstract Initialization Function. </p>
 <p>Called by the top level main function of an api node's running application </p>
 
-<p>Implemented in <a class="el" href="class_p_d_u___i_n_o.html#aa243eb0ed65b2d1207a8642ffda02652">PDU_INO</a>, <a class="el" href="class_m_c_u___i_n_o.html#aa1794106f28273e978d7e472af3af93d">MCU_INO</a>, <a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#ad55054dd28e583247e7b927852af895e">ARUAPICore::ARU_API_Node</a>, and <a class="el" href="class_a_c_u___i_n_o.html#ae3b0ae717215567ec2fa53a6dd7100c1">ACU_INO</a>.</p>
+<p>Implemented in <a class="el" href="class_p_d_u___i_n_o.html#aa243eb0ed65b2d1207a8642ffda02652">PDU_INO</a>, <a class="el" href="class_m_c_u___i_n_o.html#aa1794106f28273e978d7e472af3af93d">MCU_INO</a>, and <a class="el" href="class_a_c_u___i_n_o.html#ae3b0ae717215567ec2fa53a6dd7100c1">ACU_INO</a>.</p>
 
 </div>
 </div>

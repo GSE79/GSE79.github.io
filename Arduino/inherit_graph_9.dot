@@ -1,0 +1,14 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="IMSPacketsAPICore::\lPolymorphicPacketPort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html",tooltip="An Abstraction of the Distributed Node Link."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="IMSPacketsAPICore::\lPacketPort_FileSystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_m_s_packets_a_p_i_core_1_1_packet_port___file_system.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="IMSPacketsAPICore::\lPacketPort_SR_Responder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_m_s_packets_a_p_i_core_1_1_packet_port___s_r___responder.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="IMSPacketsAPICore::\lPacketPort_SR_Sender",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_m_s_packets_a_p_i_core_1_1_packet_port___s_r___sender.html",tooltip=" "];
+}

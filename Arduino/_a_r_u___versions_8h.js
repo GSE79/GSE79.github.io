@@ -7,6 +7,5 @@ var _a_r_u___versions_8h =
     [ "ARU_VERSIONDATE", "_a_r_u___versions_8h.html#a0de54974214137281c39ef69d02a9833", null ],
     [ "ARU_VERSIONDATESTRING", "_a_r_u___versions_8h.html#a468aa0c06b0b55bb687bdc0159c87adc", null ],
     [ "ARU_VERSIONNUMBER", "_a_r_u___versions_8h.html#a296dd39e471b6f15b3bed75e6b402910", null ],
-    [ "ARU_VERSIONSTRING", "_a_r_u___versions_8h.html#a305cf672b5d67d57e2d7942c73f47c87", null ],
-    [ "TWO_TERMINAL_ARU", "_a_r_u___versions_8h.html#aa8207093d82f4d20cc663cc1ec88b819", null ]
+    [ "ARU_VERSIONSTRING", "_a_r_u___versions_8h.html#a305cf672b5d67d57e2d7942c73f47c87", null ]
 ];

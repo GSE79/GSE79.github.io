@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -73,83 +74,479 @@ Inheritance diagram for ACU_INO:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a02119843e3e3555c18a548e3046c7b0f"><td class="memItemLeft" align="right" valign="top"><a id="a02119843e3e3555c18a548e3046c7b0f"></a>
+<tr class="memitem:a3315e118a5f49031cfab943f4aac6f35"><td class="memItemLeft" align="right" valign="top"><a id="a3315e118a5f49031cfab943f4aac6f35"></a>
 <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPacketPortat</b> (int i)</td></tr>
-<tr class="separator:a02119843e3e3555c18a548e3046c7b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb99c995467141347e43d1e196e0d831"><td class="memItemLeft" align="right" valign="top"><a id="abb99c995467141347e43d1e196e0d831"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>getNumPacketPorts</b> ()</td></tr>
-<tr class="separator:abb99c995467141347e43d1e196e0d831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3315e118a5f49031cfab943f4aac6f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd98f9dad4c1d267727f64a0ee5f24c9"><td class="memItemLeft" align="right" valign="top"><a id="acd98f9dad4c1d267727f64a0ee5f24c9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getNumPacketPorts</b> ()</td></tr>
+<tr class="separator:acd98f9dad4c1d267727f64a0ee5f24c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3b0ae717215567ec2fa53a6dd7100c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_u___i_n_o.html#ae3b0ae717215567ec2fa53a6dd7100c1">Setup</a> ()</td></tr>
 <tr class="memdesc:ae3b0ae717215567ec2fa53a6dd7100c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Initialization Function.  <a href="class_a_c_u___i_n_o.html#ae3b0ae717215567ec2fa53a6dd7100c1">More...</a><br /></td></tr>
 <tr class="separator:ae3b0ae717215567ec2fa53a6dd7100c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html">ACU_API::ACU_Node</a></td></tr>
+<tr class="memitem:ac2a7b37bf5bae43be343588f88588bd7 inherit pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html#ac2a7b37bf5bae43be343588f88588bd7">HandleRxPacket</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *PortPtr)</td></tr>
+<tr class="memdesc:ac2a7b37bf5bae43be343588f88588bd7 inherit pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract HandleRxPacket Function.  <a href="class_a_c_u___a_p_i_1_1_a_c_u___node.html#ac2a7b37bf5bae43be343588f88588bd7">More...</a><br /></td></tr>
+<tr class="separator:ac2a7b37bf5bae43be343588f88588bd7 inherit pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14141ceb7a3c504d0a73a36c8bb247c inherit pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html#ac14141ceb7a3c504d0a73a36c8bb247c">PrepareTxPacket</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *PortPtr)</td></tr>
+<tr class="memdesc:ac14141ceb7a3c504d0a73a36c8bb247c inherit pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract PrepareTxPacket Function.  <a href="class_a_c_u___a_p_i_1_1_a_c_u___node.html#ac14141ceb7a3c504d0a73a36c8bb247c">More...</a><br /></td></tr>
+<tr class="separator:ac14141ceb7a3c504d0a73a36c8bb247c inherit pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab503c783588f87776b7d22c7caf732a1 inherit pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ab503c783588f87776b7d22c7caf732a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomLoop</b> ()</td></tr>
+<tr class="separator:ab503c783588f87776b7d22c7caf732a1 inherit pub_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html">IMSPacketsAPICore::API_NODE</a></td></tr>
-<tr class="memitem:a6c16377a468a8a6c2b5fbbee59d9f360 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a6c16377a468a8a6c2b5fbbee59d9f360">Loop</a> ()</td></tr>
-<tr class="memdesc:a6c16377a468a8a6c2b5fbbee59d9f360 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Cyclic Execution Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a6c16377a468a8a6c2b5fbbee59d9f360">More...</a><br /></td></tr>
-<tr class="separator:a6c16377a468a8a6c2b5fbbee59d9f360 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2553695b585dae44400d96d4aaaa77de inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a2553695b585dae44400d96d4aaaa77de">HandleRxPacket</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *RxPackInPtr)</td></tr>
-<tr class="memdesc:a2553695b585dae44400d96d4aaaa77de inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract HandleRxPacket Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a2553695b585dae44400d96d4aaaa77de">More...</a><br /></td></tr>
-<tr class="separator:a2553695b585dae44400d96d4aaaa77de inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89b689a574f42687b60f1266ac5cabf4 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a89b689a574f42687b60f1266ac5cabf4">PrepareTxPacket</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *TxPackOutPtr)</td></tr>
-<tr class="memdesc:a89b689a574f42687b60f1266ac5cabf4 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract PrepareTxPacket Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a89b689a574f42687b60f1266ac5cabf4">More...</a><br /></td></tr>
-<tr class="separator:a89b689a574f42687b60f1266ac5cabf4 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8112352dd8d6e52dc4090d2669cf88d inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#ac8112352dd8d6e52dc4090d2669cf88d">Loop</a> ()</td></tr>
+<tr class="memdesc:ac8112352dd8d6e52dc4090d2669cf88d inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Cyclic Execution Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#ac8112352dd8d6e52dc4090d2669cf88d">More...</a><br /></td></tr>
+<tr class="separator:ac8112352dd8d6e52dc4090d2669cf88d inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af79606a301f6d08b007c7b31a075673a"><td class="memItemLeft" align="right" valign="top"><a id="af79606a301f6d08b007c7b31a075673a"></a>
-ACU_MatrixOrbital_LCD *&#160;</td><td class="memItemRight" valign="bottom"><b>getARUFrontPanel</b> ()</td></tr>
-<tr class="separator:af79606a301f6d08b007c7b31a075673a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac86d3ca03d6baecc61e5bc5c83db326"><td class="memItemLeft" align="right" valign="top"><a id="aac86d3ca03d6baecc61e5bc5c83db326"></a>
-ACU_DiversitySwitchCtrl *&#160;</td><td class="memItemRight" valign="bottom"><b>getARUDiversitySwitchController</b> ()</td></tr>
-<tr class="separator:aac86d3ca03d6baecc61e5bc5c83db326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e18fc14d4caa864c5ae7f0d03b90dbe"><td class="memItemLeft" align="right" valign="top"><a id="a8e18fc14d4caa864c5ae7f0d03b90dbe"></a>
-<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPDUPort</b> ()</td></tr>
-<tr class="separator:a8e18fc14d4caa864c5ae7f0d03b90dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a752d606f9ee1fd7caf3f32b96f07d"><td class="memItemLeft" align="right" valign="top"><a id="ac5a752d606f9ee1fd7caf3f32b96f07d"></a>
-<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html">PolymorphicPacketPort</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getMCU1Port</b> ()</td></tr>
-<tr class="separator:ac5a752d606f9ee1fd7caf3f32b96f07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59aa5612c539a31afc66f86e2009a48d"><td class="memItemLeft" align="right" valign="top"><a id="a59aa5612c539a31afc66f86e2009a48d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueuePackets</b> ()</td></tr>
+<tr class="separator:a59aa5612c539a31afc66f86e2009a48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811bddc393f5a1cee4d8b8ab640d5137"><td class="memItemLeft" align="right" valign="top"><a id="a811bddc393f5a1cee4d8b8ab640d5137"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintLCDMenu</b> (int LineNum)</td></tr>
+<tr class="separator:a811bddc393f5a1cee4d8b8ab640d5137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72426b272804c635ba004d7198d1600d"><td class="memItemLeft" align="right" valign="top"><a id="a72426b272804c635ba004d7198d1600d"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>GetLCDMenuChar</b> ()</td></tr>
+<tr class="separator:a72426b272804c635ba004d7198d1600d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3b1046a4e4751b5632a91f7094faae"><td class="memItemLeft" align="right" valign="top"><a id="acf3b1046a4e4751b5632a91f7094faae"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>GetLCDDownChar</b> ()</td></tr>
+<tr class="separator:acf3b1046a4e4751b5632a91f7094faae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e47fc18c8f4c186534863a41971e6d1"><td class="memItemLeft" align="right" valign="top"><a id="a1e47fc18c8f4c186534863a41971e6d1"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>GetLCDUpChar</b> ()</td></tr>
+<tr class="separator:a1e47fc18c8f4c186534863a41971e6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ffbf6de9f74700d01e18a5a29c4852"><td class="memItemLeft" align="right" valign="top"><a id="a15ffbf6de9f74700d01e18a5a29c4852"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>GetLCDForwardChar</b> ()</td></tr>
+<tr class="separator:a15ffbf6de9f74700d01e18a5a29c4852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae936fbff8335ace5ed545b3aeeb904c1"><td class="memItemLeft" align="right" valign="top"><a id="ae936fbff8335ace5ed545b3aeeb904c1"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>GetLCDCenterChar</b> ()</td></tr>
+<tr class="separator:ae936fbff8335ace5ed545b3aeeb904c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f85a6ea57cedfb2aeda11fd0bce73c0"><td class="memItemLeft" align="right" valign="top"><a id="a0f85a6ea57cedfb2aeda11fd0bce73c0"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>GetLCDBackChar</b> ()</td></tr>
+<tr class="separator:a0f85a6ea57cedfb2aeda11fd0bce73c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed56de0dcf94bb8f46b257a208764ff7"><td class="memItemLeft" align="right" valign="top"><a id="aed56de0dcf94bb8f46b257a208764ff7"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>GetLCDHomeChar</b> ()</td></tr>
+<tr class="separator:aed56de0dcf94bb8f46b257a208764ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeabad612e6069e9126701082d0dfc28c"><td class="memItemLeft" align="right" valign="top"><a id="aeabad612e6069e9126701082d0dfc28c"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>GetLCDAlarmChar</b> ()</td></tr>
+<tr class="separator:aeabad612e6069e9126701082d0dfc28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e98134f2bccc855a3bdb946208d3fe2"><td class="memItemLeft" align="right" valign="top"><a id="a1e98134f2bccc855a3bdb946208d3fe2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayLCDLogo</b> ()</td></tr>
+<tr class="separator:a1e98134f2bccc855a3bdb946208d3fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6b82d5486cf949b49a369dd45c3834"><td class="memItemLeft" align="right" valign="top"><a id="a8a6b82d5486cf949b49a369dd45c3834"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeLCDBackColor</b> (int ColorOption)</td></tr>
+<tr class="separator:a8a6b82d5486cf949b49a369dd45c3834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a20866b5df55d3a94c2d5ece0a230c2"><td class="memItemLeft" align="right" valign="top"><a id="a5a20866b5df55d3a94c2d5ece0a230c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeLCDBrightDim</b> (bool Bright)</td></tr>
+<tr class="separator:a5a20866b5df55d3a94c2d5ece0a230c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71c58c4e80b381aa8196a04cf75ee20"><td class="memItemLeft" align="right" valign="top"><a id="ab71c58c4e80b381aa8196a04cf75ee20"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeLEDColor</b> (int led, int color)</td></tr>
+<tr class="separator:ab71c58c4e80b381aa8196a04cf75ee20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c80850d3eddd17bddbe7e0911f53fdf"><td class="memItemLeft" align="right" valign="top"><a id="a5c80850d3eddd17bddbe7e0911f53fdf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenPacketPortFile</b> (bool ToWrite)</td></tr>
+<tr class="separator:a5c80850d3eddd17bddbe7e0911f53fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e1d2ef0a21a9037d7fe3569e580282"><td class="memItemLeft" align="right" valign="top"><a id="a13e1d2ef0a21a9037d7fe3569e580282"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClosePacketPortFile</b> ()</td></tr>
+<tr class="separator:a13e1d2ef0a21a9037d7fe3569e580282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e73faaa01828cb750e0c930a9bec5cb"><td class="memItemLeft" align="right" valign="top"><a id="a9e73faaa01828cb750e0c930a9bec5cb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEOF</b> ()</td></tr>
+<tr class="separator:a9e73faaa01828cb750e0c930a9bec5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01dcd3a146c28bc3707a59d9ad4e0efd"><td class="memItemLeft" align="right" valign="top"><a id="a01dcd3a146c28bc3707a59d9ad4e0efd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentMS</b> ()</td></tr>
+<tr class="separator:a01dcd3a146c28bc3707a59d9ad4e0efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342c27aa1d06c3c7f340bd5400a4292e"><td class="memItemLeft" align="right" valign="top"><a id="a342c27aa1d06c3c7f340bd5400a4292e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RubidiumMandC</b> ()</td></tr>
+<tr class="separator:a342c27aa1d06c3c7f340bd5400a4292e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e2cf12397cb4e3c759453d38700d06"><td class="memItemLeft" align="right" valign="top"><a id="a28e2cf12397cb4e3c759453d38700d06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DiversitySwitchControl</b> ()</td></tr>
+<tr class="separator:a28e2cf12397cb4e3c759453d38700d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfb5065502c61a709cae56e339bc6e3"><td class="memItemLeft" align="right" valign="top"><a id="a7cfb5065502c61a709cae56e339bc6e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceSNMPInterface</b> ()</td></tr>
+<tr class="separator:a7cfb5065502c61a709cae56e339bc6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a1af770dce0daa7d3513af0e48fb3c"><td class="memItemLeft" align="right" valign="top"><a id="ab3a1af770dce0daa7d3513af0e48fb3c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineSwitch</b> (int Ant1Modem, int Ant2Modem)</td></tr>
+<tr class="separator:ab3a1af770dce0daa7d3513af0e48fb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79571ea063d00f9ddf055efcdfb0274"><td class="memItemLeft" align="right" valign="top"><a id="aa79571ea063d00f9ddf055efcdfb0274"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>HandleMessage</b> ()</td></tr>
+<tr class="separator:aa79571ea063d00f9ddf055efcdfb0274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef9ba4603ec46f9206519b97f7b8979"><td class="memItemLeft" align="right" valign="top"><a id="acef9ba4603ec46f9206519b97f7b8979"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ReadNVIDIASerial</b> ()</td></tr>
+<tr class="separator:acef9ba4603ec46f9206519b97f7b8979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade67dcd85e7ad2dc846ee9a68700c25d"><td class="memItemLeft" align="right" valign="top"><a id="ade67dcd85e7ad2dc846ee9a68700c25d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteNVIDIASerial</b> (char *string)</td></tr>
+<tr class="separator:ade67dcd85e7ad2dc846ee9a68700c25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2db43011554bd292333a4de97ce9445"><td class="memItemLeft" align="right" valign="top"><a id="ae2db43011554bd292333a4de97ce9445"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteNVIDIASerial</b> (uint8_t byte)</td></tr>
+<tr class="separator:ae2db43011554bd292333a4de97ce9445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58943a93f99892f284cd75762e97aa6a"><td class="memItemLeft" align="right" valign="top"><a id="a58943a93f99892f284cd75762e97aa6a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CommitChangesToMiB</b> ()</td></tr>
+<tr class="separator:a58943a93f99892f284cd75762e97aa6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421a2d297aca4585129e47472a54edaf"><td class="memItemLeft" align="right" valign="top"><a id="a421a2d297aca4585129e47472a54edaf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateNodeArray</b> (int Offset)</td></tr>
+<tr class="separator:a421a2d297aca4585129e47472a54edaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3410af07d6e4db7123fd9c523387e7c"><td class="memItemLeft" align="right" valign="top"><a id="ad3410af07d6e4db7123fd9c523387e7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateNodeArray</b> (int Offset, const char *Value)</td></tr>
+<tr class="separator:ad3410af07d6e4db7123fd9c523387e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html">ACU_API::ACU_Node</a></td></tr>
-<tr class="memitem:a4f493a59c230f43e98406651469d03ab inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a4f493a59c230f43e98406651469d03ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DAT_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *inPack)</td></tr>
-<tr class="separator:a4f493a59c230f43e98406651469d03ab inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7354d56a5a6da1f2ed7c061f32c3070e inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a7354d56a5a6da1f2ed7c061f32c3070e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DAT_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *outPack)</td></tr>
-<tr class="separator:a7354d56a5a6da1f2ed7c061f32c3070e inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a704350d089f754044c977d5f627925ce inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a704350d089f754044c977d5f627925ce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *inPack)</td></tr>
-<tr class="separator:a704350d089f754044c977d5f627925ce inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2af8146ac945fb36ad5b3a2ffee7da inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="add2af8146ac945fb36ad5b3a2ffee7da"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">Packet_DAT</a> *outPack)</td></tr>
-<tr class="separator:add2af8146ac945fb36ad5b3a2ffee7da inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html">ARUAPICore::ARU_API_Node</a></td></tr>
-<tr class="memitem:a4f3eed2d05821063db9d604c2c973fed inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a4f3eed2d05821063db9d604c2c973fed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomLoop</b> ()</td></tr>
-<tr class="separator:a4f3eed2d05821063db9d604c2c973fed inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d341a8ad1dfb6c484fc2c6bc2ae07c inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a75d341a8ad1dfb6c484fc2c6bc2ae07c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_Handler</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet___version.html">Packet_Version</a> *inPack)</td></tr>
-<tr class="separator:a75d341a8ad1dfb6c484fc2c6bc2ae07c inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af550c6f452f9225dc5dffeba2698a597 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="af550c6f452f9225dc5dffeba2698a597"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION_Packager</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet___version.html">Packet_Version</a> *outPack)</td></tr>
-<tr class="separator:af550c6f452f9225dc5dffeba2698a597 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c786dbd56234f63689d41838bfcd374 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a1c786dbd56234f63689d41838bfcd374"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Handler</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html">Packet_VAEQ</a> *inPack)</td></tr>
-<tr class="separator:a1c786dbd56234f63689d41838bfcd374 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b2dab5e831e1c563f905278afa80489 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a0b2dab5e831e1c563f905278afa80489"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VAEQ_Packager</b> (<a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html">Packet_VAEQ</a> *outPack)</td></tr>
-<tr class="separator:a0b2dab5e831e1c563f905278afa80489 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3941bc2bc2ff3022e1cfbf09fbc8f46f inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a3941bc2bc2ff3022e1cfbf09fbc8f46f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>API_CustomShared_PrepareTx</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_h_d_r___packet.html">HDR_Packet</a> *TxPackOutPtr)</td></tr>
-<tr class="separator:a3941bc2bc2ff3022e1cfbf09fbc8f46f inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1f0c03c6af62cedd87f28ee34dd38d0 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="ac1f0c03c6af62cedd87f28ee34dd38d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>API_CustomShared_HandleRx</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_h_d_r___packet.html">HDR_Packet</a> *RxPackInPtr)</td></tr>
-<tr class="separator:ac1f0c03c6af62cedd87f28ee34dd38d0 inherit pro_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html">IMSPacketsAPICore::API_NODE</a></td></tr>
-<tr class="memitem:a7bd9c2f63134b236902ffbc8e9c70ef0 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top"><a id="a7bd9c2f63134b236902ffbc8e9c70ef0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setVersionPackTrigger</b> ()</td></tr>
-<tr class="separator:a7bd9c2f63134b236902ffbc8e9c70ef0 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df15ebbd1e55cbd17b92bd26798a740 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a2df15ebbd1e55cbd17b92bd26798a740"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>pSTRUCT</b> (ARUVERSIONS) theARUVersions</td></tr>
+<tr class="separator:a2df15ebbd1e55cbd17b92bd26798a740 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48fba6698d7b9badf052ba1da21b6a8b inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a48fba6698d7b9badf052ba1da21b6a8b"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>pSTRUCT</b> (PDU) thePDU</td></tr>
+<tr class="separator:a48fba6698d7b9badf052ba1da21b6a8b inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff3f823d0229df6082eecd671855d72 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a3ff3f823d0229df6082eecd671855d72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset2FactoryDefaults</b> ()</td></tr>
+<tr class="separator:a3ff3f823d0229df6082eecd671855d72 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5e24aaf9a612fc118b1598110433bc inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a0c5e24aaf9a612fc118b1598110433bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceLCDMenu</b> (bool Skip)</td></tr>
+<tr class="separator:a0c5e24aaf9a612fc118b1598110433bc inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666da90519a046d4cc6db168d64ca120 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a666da90519a046d4cc6db168d64ca120"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceLEDs</b> ()</td></tr>
+<tr class="separator:a666da90519a046d4cc6db168d64ca120 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa73161a3a2d0489c64eb3d76c87a705 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="afa73161a3a2d0489c64eb3d76c87a705"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessLCDMenuInput</b> (char inChar)</td></tr>
+<tr class="separator:afa73161a3a2d0489c64eb3d76c87a705 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fb0eb15c02ee2da7d1254911789020 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a13fb0eb15c02ee2da7d1254911789020"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>BuildLCDMenuOutput</b> (int lineNum)</td></tr>
+<tr class="separator:a13fb0eb15c02ee2da7d1254911789020 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84988d320a6ada42694c35a4fab45eb inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aa84988d320a6ada42694c35a4fab45eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceNVIDIA</b> ()</td></tr>
+<tr class="separator:aa84988d320a6ada42694c35a4fab45eb inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe0708885b40b9f353517bb142bc8cf inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a6fe0708885b40b9f353517bb142bc8cf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumAlarms</b> ()</td></tr>
+<tr class="separator:a6fe0708885b40b9f353517bb142bc8cf inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af643449af5a0331343d7f353494554c1 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="af643449af5a0331343d7f353494554c1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumWarnings</b> ()</td></tr>
+<tr class="separator:af643449af5a0331343d7f353494554c1 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3fe00fd9e636eaca39fb4c59bb3304 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a1d3fe00fd9e636eaca39fb4c59bb3304"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SlopeNGainCalcs</b> ()</td></tr>
+<tr class="separator:a1d3fe00fd9e636eaca39fb4c59bb3304 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b99d15e735b2c002455567ca37c74de inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a7b99d15e735b2c002455567ca37c74de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CorrectAttenuation</b> (float TotalAttenuation, float *DAT1, float *DAT2)</td></tr>
+<tr class="separator:a7b99d15e735b2c002455567ca37c74de inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc0ed0a855be567a6882df783a55e08 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a1fc0ed0a855be567a6882df783a55e08"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SNMP_ChangeDetect</b> ()</td></tr>
+<tr class="separator:a1fc0ed0a855be567a6882df783a55e08 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248de4a5b39c900be87d8e689476f5d6 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a248de4a5b39c900be87d8e689476f5d6"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>transport2node_info</b> ()</td></tr>
+<tr class="separator:a248de4a5b39c900be87d8e689476f5d6 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4efb10b84b0cf49a660510b40362c895 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a4efb10b84b0cf49a660510b40362c895"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SendChangeToMnC</b> (<a class="el" href="structnode__transport__struct.html">node_transport_struct</a> *node, char *data)</td></tr>
+<tr class="separator:a4efb10b84b0cf49a660510b40362c895 inherit pro_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html">ACU_API::ACU_Node</a></td></tr>
+<tr class="memitem:a302340bcb375518e7cf7833a99af474d inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a302340bcb375518e7cf7833a99af474d"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>staticPackager_ARUVERSIONS</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, pSTRUCT(ARUVERSIONS) *srcStruct)</td></tr>
+<tr class="separator:a302340bcb375518e7cf7833a99af474d inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f81b58d107b9234eec2517830c7a76c inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a2f81b58d107b9234eec2517830c7a76c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>staticHandler_ARUSETTINGS</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, pSTRUCT(ARUSETTINGS) *dstStruct)</td></tr>
+<tr class="separator:a2f81b58d107b9234eec2517830c7a76c inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb11ccc818e648ba124652e953eb416 inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a0eb11ccc818e648ba124652e953eb416"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>staticPackager_ARUSETTINGS</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, int PackOption, pSTRUCT(ARUSETTINGS) *srcStruct)</td></tr>
+<tr class="separator:a0eb11ccc818e648ba124652e953eb416 inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9d03caaf3e881c3150738f975a1957 inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a6e9d03caaf3e881c3150738f975a1957"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>staticHandler_ARUPRESETS</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, pSTRUCT(ARUPRESETS) *dstStruct)</td></tr>
+<tr class="separator:a6e9d03caaf3e881c3150738f975a1957 inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b376e08f1a251ab438e3259d5cf004 inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ab1b376e08f1a251ab438e3259d5cf004"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>staticPackager_ARUPRESETS</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, int PackOption, pSTRUCT(ARUPRESETS) *srcStruct)</td></tr>
+<tr class="separator:ab1b376e08f1a251ab438e3259d5cf004 inherit pub_static_methods_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html">ARUAPICore::ARU_API_Node</a></td></tr>
+<tr class="memitem:a96cda533ac3082b3e2f1fb599be74bec inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a96cda533ac3082b3e2f1fb599be74bec"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>staticHandler_VERSION</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, pSTRUCT(VERSION) *dstStruct)</td></tr>
+<tr class="separator:a96cda533ac3082b3e2f1fb599be74bec inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389de6b43dc253c2f1000a9582de8c98 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a389de6b43dc253c2f1000a9582de8c98"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>staticPackager_VERSION</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType)</td></tr>
+<tr class="separator:a389de6b43dc253c2f1000a9582de8c98 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330b49c1ff7d6d4ced464470da660aee inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a330b49c1ff7d6d4ced464470da660aee"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>limitDATcmd</b> (float *DATptr)</td></tr>
+<tr class="separator:a330b49c1ff7d6d4ced464470da660aee inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8b5e9b442a56ac73a261010491c0f6 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="aaa8b5e9b442a56ac73a261010491c0f6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>limitVAEQcmd</b> (int32_t *VAEQptr)</td></tr>
+<tr class="separator:aaa8b5e9b442a56ac73a261010491c0f6 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade34432512221ee723dc0b27c447f870 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="ade34432512221ee723dc0b27c447f870"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>staticHandler_MCU</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, pSTRUCT(MCU) *dstStruct)</td></tr>
+<tr class="separator:ade34432512221ee723dc0b27c447f870 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8bc40f641b939dbdf7f56575ed23b4 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a2a8bc40f641b939dbdf7f56575ed23b4"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>staticPackager_MCU</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, int PackOption, pSTRUCT(MCU) *srcStruct)</td></tr>
+<tr class="separator:a2a8bc40f641b939dbdf7f56575ed23b4 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff82b66a630e837bcbd1919a88c30fbd inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="aff82b66a630e837bcbd1919a88c30fbd"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>limitLNAvCMD</b> (float *LNAvCmdPtr)</td></tr>
+<tr class="separator:aff82b66a630e837bcbd1919a88c30fbd inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60eedfd080dacf3296cf30361f26404 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="ae60eedfd080dacf3296cf30361f26404"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>staticHandler_PDU</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, pSTRUCT(PDU) *dstStruct)</td></tr>
+<tr class="separator:ae60eedfd080dacf3296cf30361f26404 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a389c8c5bbd1a695f3d1a606e5327e3 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a0a389c8c5bbd1a695f3d1a606e5327e3"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>staticPackager_PDU</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, pSTRUCT(PDU) *srcStruct)</td></tr>
+<tr class="separator:a0a389c8c5bbd1a695f3d1a606e5327e3 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318ca660af855323894fa4ca95dbbac0 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a318ca660af855323894fa4ca95dbbac0"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>DevFlagString</b> (int DevFlag)</td></tr>
+<tr class="separator:a318ca660af855323894fa4ca95dbbac0 inherit pub_static_methods_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html">IMSPacketsAPICore::API_NODE</a></td></tr>
+<tr class="memitem:a52ea6ebfdc5164f9b657d247607d9a67 inherit pub_static_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top"><a id="a52ea6ebfdc5164f9b657d247607d9a67"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceSynchronousPorts</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html">API_NODE</a> *nodePtr)</td></tr>
+<tr class="separator:a52ea6ebfdc5164f9b657d247607d9a67 inherit pub_static_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f25acc1014bd7057ee820fe1579944 inherit pub_static_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top"><a id="ab9f25acc1014bd7057ee820fe1579944"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>staticHandler_HDRPACK</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, pSTRUCT(HDRPACK) *dstStruct)</td></tr>
+<tr class="separator:ab9f25acc1014bd7057ee820fe1579944 inherit pub_static_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e80a366ffb8b570de9c4bf7c3ae4238 inherit pub_static_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top"><a id="a5e80a366ffb8b570de9c4bf7c3ae4238"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>staticPackager_HDRPACK</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *PacketPtr, enum PacketTypes PackType, int PackOption)</td></tr>
+<tr class="separator:a5e80a366ffb8b570de9c4bf7c3ae4238 inherit pub_static_methods_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html">ARUAPICore::ARU_API_Node</a></td></tr>
+<tr class="memitem:a63c7e3a4bca1b1f0a3b110b77f245383 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a63c7e3a4bca1b1f0a3b110b77f245383"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>ARU_MajorVersion</b> = ARU_MAJORVERSION</td></tr>
+<tr class="separator:a63c7e3a4bca1b1f0a3b110b77f245383 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed53b8224c743726da2d5466ff2e0540 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="aed53b8224c743726da2d5466ff2e0540"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>ARU_MinorVersion</b> = ARU_MINORVERSION</td></tr>
+<tr class="separator:aed53b8224c743726da2d5466ff2e0540 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193be4ecdb52e532eb5ad2bc763e110b inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a193be4ecdb52e532eb5ad2bc763e110b"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>ARU_BuildNumber</b> = ARU_BUILDNUMBER</td></tr>
+<tr class="separator:a193be4ecdb52e532eb5ad2bc763e110b inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904d8e7d52309ef1f4df94c967cf6997 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a904d8e7d52309ef1f4df94c967cf6997"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>ARU_isReleaseBuild</b> = false</td></tr>
+<tr class="separator:a904d8e7d52309ef1f4df94c967cf6997 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3beac946e24be96542a91973936172ff inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a3beac946e24be96542a91973936172ff"></a>
+static const char&#160;</td><td class="memItemRight" valign="bottom"><b>ARU_VersionString</b> [] = ARU_VERSIONSTRING</td></tr>
+<tr class="separator:a3beac946e24be96542a91973936172ff inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b4d325a43a0b0209eaa73089f28d64 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a25b4d325a43a0b0209eaa73089f28d64"></a>
+static const char&#160;</td><td class="memItemRight" valign="bottom"><b>onString</b> [] = &quot;On&quot;</td></tr>
+<tr class="separator:a25b4d325a43a0b0209eaa73089f28d64 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20db609b09b4029c6dbeebc8310ab12 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="aa20db609b09b4029c6dbeebc8310ab12"></a>
+static const char&#160;</td><td class="memItemRight" valign="bottom"><b>offString</b> [] = &quot;Off&quot;</td></tr>
+<tr class="separator:aa20db609b09b4029c6dbeebc8310ab12 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd0fc3a09e174813a75e2cfa8f98520 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a9fd0fc3a09e174813a75e2cfa8f98520"></a>
+static const char&#160;</td><td class="memItemRight" valign="bottom"><b>enabledString</b> [] = &quot;Enabled&quot;</td></tr>
+<tr class="separator:a9fd0fc3a09e174813a75e2cfa8f98520 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbc86388be1a14f3ee3db26e7441529 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a5fbc86388be1a14f3ee3db26e7441529"></a>
+static const char&#160;</td><td class="memItemRight" valign="bottom"><b>disabledString</b> [] = &quot;Disabled&quot;</td></tr>
+<tr class="separator:a5fbc86388be1a14f3ee3db26e7441529 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642adb56cf705d70347a56fd5f0b93af inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="a642adb56cf705d70347a56fd5f0b93af"></a>
+static const char&#160;</td><td class="memItemRight" valign="bottom"><b>debugPortMenuString</b> [] = &quot;Console Menu&quot;</td></tr>
+<tr class="separator:a642adb56cf705d70347a56fd5f0b93af inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41e7d1b18e3ae2c4966167e7edb0898 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memItemLeft" align="right" valign="top"><a id="ad41e7d1b18e3ae2c4966167e7edb0898"></a>
+static const char&#160;</td><td class="memItemRight" valign="bottom"><b>debugPortPacketString</b> [] = &quot;Packet Port&quot;</td></tr>
+<tr class="separator:ad41e7d1b18e3ae2c4966167e7edb0898 inherit pub_static_attribs_class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html">IMSPacketsAPICore::API_NODE</a></td></tr>
+<tr class="memitem:ab6639cf8e4604413e4261b785fc2ad89 inherit pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top"><a id="ab6639cf8e4604413e4261b785fc2ad89"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>ECOSYSTEM_MajorVersion</b> = ECOSYSTEM_MAJORVERSION</td></tr>
+<tr class="separator:ab6639cf8e4604413e4261b785fc2ad89 inherit pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6162d713e55f5c624e59e8471b461c5a inherit pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top"><a id="a6162d713e55f5c624e59e8471b461c5a"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>ECOSYSTEM_MinorVersion</b> = ECOSYSTEM_MINORVERSION</td></tr>
+<tr class="separator:a6162d713e55f5c624e59e8471b461c5a inherit pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa775303b0c34b9bae6b87220f73573f3 inherit pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top"><a id="aa775303b0c34b9bae6b87220f73573f3"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>ECOSYSTEM_BuildNumber</b> = ECOSYSTEM_BUILDNUMBER</td></tr>
+<tr class="separator:aa775303b0c34b9bae6b87220f73573f3 inherit pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91fabcfe351cd6e6dbddab1427d2b893 inherit pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memItemLeft" align="right" valign="top"><a id="a91fabcfe351cd6e6dbddab1427d2b893"></a>
+static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>ECOSYSTEM_isReleaseBuild</b> = false</td></tr>
+<tr class="separator:a91fabcfe351cd6e6dbddab1427d2b893 inherit pub_static_attribs_class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html">ACU_API::ACU_Node</a></td></tr>
+<tr class="memitem:a00c0f77d87f23686ff13601c4bc9a114 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a00c0f77d87f23686ff13601c4bc9a114"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RubidimReferenceLock</b> = false</td></tr>
+<tr class="separator:a00c0f77d87f23686ff13601c4bc9a114 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc87b32d9049a2dba0221ee39854fd5 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a8fc87b32d9049a2dba0221ee39854fd5"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_a_r_u_terminal.html">ARUTerminal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Antenna1</b></td></tr>
+<tr class="separator:a8fc87b32d9049a2dba0221ee39854fd5 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a63a357599caadc30383561b9712a5 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ac0a63a357599caadc30383561b9712a5"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_a_r_u_terminal.html">ARUTerminal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Prev_Antenna1</b></td></tr>
+<tr class="separator:ac0a63a357599caadc30383561b9712a5 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f768a8a7143b4e5a0cef7390961ba6e inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a4f768a8a7143b4e5a0cef7390961ba6e"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_a_r_u_terminal.html">ARUTerminal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Antenna2</b></td></tr>
+<tr class="separator:a4f768a8a7143b4e5a0cef7390961ba6e inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8092973d71cdac29e87163bb1eb9212 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ac8092973d71cdac29e87163bb1eb9212"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_a_r_u_terminal.html">ARUTerminal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Prev_Antenna2</b></td></tr>
+<tr class="separator:ac8092973d71cdac29e87163bb1eb9212 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c333a38f29f76cb14ca50e94ff8eb8 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aa8c333a38f29f76cb14ca50e94ff8eb8"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>Rb_Warning_Alarm</b> = 0</td></tr>
+<tr class="separator:aa8c333a38f29f76cb14ca50e94ff8eb8 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4601e261823538e69bd5dcbf1bb64af8 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a4601e261823538e69bd5dcbf1bb64af8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>SNMP_CurrentState</b> = IDLE</td></tr>
+<tr class="separator:a4601e261823538e69bd5dcbf1bb64af8 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c0edab7c8c43e0e64482f34de8c007 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a79c0edab7c8c43e0e64482f34de8c007"></a>
+message_type_t&#160;</td><td class="memItemRight" valign="bottom"><b>SNMP_mType</b></td></tr>
+<tr class="separator:a79c0edab7c8c43e0e64482f34de8c007 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66117cd97e8cc772c738474385b94594 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a66117cd97e8cc772c738474385b94594"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>SNMP_CurrentOffset</b></td></tr>
+<tr class="separator:a66117cd97e8cc772c738474385b94594 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5ef7908dca656497532b3cdc6bb83d inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a3e5ef7908dca656497532b3cdc6bb83d"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>SNMP_ReadBuffer</b> [MAX_OID_LENGTH] = &quot;&quot;</td></tr>
+<tr class="separator:a3e5ef7908dca656497532b3cdc6bb83d inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b173d3111ffd48f25fd9a1a55e2d70 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a31b173d3111ffd48f25fd9a1a55e2d70"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>SNMP_ReadBuffer_Index</b> = 0</td></tr>
+<tr class="separator:a31b173d3111ffd48f25fd9a1a55e2d70 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade515ab6aa138d74048c9e828cad6903 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ade515ab6aa138d74048c9e828cad6903"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SNMP_StateSustain</b> = false</td></tr>
+<tr class="separator:ade515ab6aa138d74048c9e828cad6903 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2440dd37ee045febfd52cfd682de60 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a1e2440dd37ee045febfd52cfd682de60"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>triggerSendNow</b> = false</td></tr>
+<tr class="separator:a1e2440dd37ee045febfd52cfd682de60 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f13581e44cd93f167686b8c7a84a01 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a15f13581e44cd93f167686b8c7a84a01"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_menu_node.html">MenuNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>theActiveNodePtr</b> = nullptr</td></tr>
+<tr class="separator:a15f13581e44cd93f167686b8c7a84a01 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a571f88093cea49d61462cb64b2323fc5 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a571f88093cea49d61462cb64b2323fc5"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_root_node.html">RootNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theRootNode</b></td></tr>
+<tr class="separator:a571f88093cea49d61462cb64b2323fc5 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04ab88e55b687d11962be4808bb0abe inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aa04ab88e55b687d11962be4808bb0abe"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_main_menu_node.html">MainMenuNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theMainMenuNode</b></td></tr>
+<tr class="separator:aa04ab88e55b687d11962be4808bb0abe inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57fc44879b15de1c55aa443bfcdf0464 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a57fc44879b15de1c55aa443bfcdf0464"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_alarms_warning_node.html">AlarmsWarningNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theAlarmsWarningNode</b></td></tr>
+<tr class="separator:a57fc44879b15de1c55aa443bfcdf0464 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ae4263ce94d49b182ad1a5a6256cbb inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a53ae4263ce94d49b182ad1a5a6256cbb"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_alarm_details_node.html">AlarmDetailsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theAlarmDetailsNode</b></td></tr>
+<tr class="separator:a53ae4263ce94d49b182ad1a5a6256cbb inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39cbb4d82ddacef9f97adb97827dce57 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a39cbb4d82ddacef9f97adb97827dce57"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_warning_details_node.html">WarningDetailsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theWarningDetailsNode</b></td></tr>
+<tr class="separator:a39cbb4d82ddacef9f97adb97827dce57 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7c3ed5da21f8e8950c3fd63eb179ae inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a9b7c3ed5da21f8e8950c3fd63eb179ae"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_system_volts_and_curr_node.html">SystemVoltsAndCurrNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theVoltsAndCurrNode</b></td></tr>
+<tr class="separator:a9b7c3ed5da21f8e8950c3fd63eb179ae inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68843beb1a60d0e70c099491b6f0581f inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a68843beb1a60d0e70c099491b6f0581f"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_antenna_volts_and_curr_node.html">AntennaVoltsAndCurrNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theAntennaVoltsAndCurrNode</b></td></tr>
+<tr class="separator:a68843beb1a60d0e70c099491b6f0581f inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3774563995be95fdc41e3a9f089395 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a4f3774563995be95fdc41e3a9f089395"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_antenna_warnings_node.html">AntennaWarningsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theAntennaWarningsNode</b></td></tr>
+<tr class="separator:a4f3774563995be95fdc41e3a9f089395 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95410628cf87c6c63ba0aefe99600961 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a95410628cf87c6c63ba0aefe99600961"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_antenna_alarms_node.html">AntennaAlarmsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theAntennaAlarmsNode</b></td></tr>
+<tr class="separator:a95410628cf87c6c63ba0aefe99600961 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59571dc758375d9417d3743da17eb034 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a59571dc758375d9417d3743da17eb034"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_temperture_readings_node.html">TempertureReadingsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theTempertureReadsNode</b></td></tr>
+<tr class="separator:a59571dc758375d9417d3743da17eb034 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63332756b3c0ec6ad33a847010c0672 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ae63332756b3c0ec6ad33a847010c0672"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_current_settings_node.html">CurrentSettingsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theCurrentSettingsNode</b></td></tr>
+<tr class="separator:ae63332756b3c0ec6ad33a847010c0672 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac8d5f8f36ebce30c397498fc1dae61 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a2ac8d5f8f36ebce30c397498fc1dae61"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_i_f_l_settings_node.html">IFLSettingsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theIFLSettingsNode</b></td></tr>
+<tr class="separator:a2ac8d5f8f36ebce30c397498fc1dae61 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23126b87328b7066d8a30f3d7f735e2 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ac23126b87328b7066d8a30f3d7f735e2"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_modem_select_node.html">ModemSelectNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theModemSelectNode</b></td></tr>
+<tr class="separator:ac23126b87328b7066d8a30f3d7f735e2 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95cae6afd57d2a348c719017ac43752c inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a95cae6afd57d2a348c719017ac43752c"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_bias_settings_node.html">BiasSettingsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theBiasSettingsNode</b></td></tr>
+<tr class="separator:a95cae6afd57d2a348c719017ac43752c inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4865942db0a0fd92346d0f440cb3714c inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a4865942db0a0fd92346d0f440cb3714c"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_system_config_node.html">SystemConfigNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theSystemConfigNode</b></td></tr>
+<tr class="separator:a4865942db0a0fd92346d0f440cb3714c inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05666c6147f4c1d9fb75aa7a6809a600 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a05666c6147f4c1d9fb75aa7a6809a600"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_band_select_node.html">BandSelectNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theBandSelectNode</b></td></tr>
+<tr class="separator:a05666c6147f4c1d9fb75aa7a6809a600 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade9265dfc59542207a23a09897ed8eb inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aade9265dfc59542207a23a09897ed8eb"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_system_presets_node.html">SystemPresetsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theSystemPresestsNode</b></td></tr>
+<tr class="separator:aade9265dfc59542207a23a09897ed8eb inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6657ac95c7665ea0d6284d7210464cdb inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a6657ac95c7665ea0d6284d7210464cdb"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_manual_control_node.html">ManualControlNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theManualControlNode</b></td></tr>
+<tr class="separator:a6657ac95c7665ea0d6284d7210464cdb inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a629d63755eb4e45e4531d46a12dca2ee inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a629d63755eb4e45e4531d46a12dca2ee"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_d_a_t___v_a_e_q___sets_node.html">DAT_VAEQ_SetsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theDAT_VAEQ_SetsNode</b></td></tr>
+<tr class="separator:a629d63755eb4e45e4531d46a12dca2ee inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb9097cafea20da1dd7038d94a2fdea inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a9eb9097cafea20da1dd7038d94a2fdea"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_value_change_node.html">ValueChangeNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theValueChangeNode</b></td></tr>
+<tr class="separator:a9eb9097cafea20da1dd7038d94a2fdea inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9420634df28d163fc197c2309fa7352 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ae9420634df28d163fc197c2309fa7352"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_system_info_node.html">SystemInfoNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theSystemInfoNode</b></td></tr>
+<tr class="separator:ae9420634df28d163fc197c2309fa7352 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a68c5e2664d511ede12e6824757b327 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a6a68c5e2664d511ede12e6824757b327"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_versions_node.html">VersionsNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theVersionsNode</b></td></tr>
+<tr class="separator:a6a68c5e2664d511ede12e6824757b327 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16cead4106cc43c23b6e97054056ca15 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a16cead4106cc43c23b6e97054056ca15"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_secret_menu_node.html">SecretMenuNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theSecretMenuNode</b></td></tr>
+<tr class="separator:a16cead4106cc43c23b6e97054056ca15 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8edbdfbda5bd4aa2c28a7aa18f8c0d inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aea8edbdfbda5bd4aa2c28a7aa18f8c0d"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_presets_band_node.html">PresetsBandNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>thePresetsBandNode</b></td></tr>
+<tr class="separator:aea8edbdfbda5bd4aa2c28a7aa18f8c0d inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecdd084ee59ad4f347010a1387846bd9 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aecdd084ee59ad4f347010a1387846bd9"></a>
+<a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_secret_band_node.html">SecretBandNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>theSecretBandNode</b></td></tr>
+<tr class="separator:aecdd084ee59ad4f347010a1387846bd9 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96051d03e8b17bf8d65e7462f95d5b94 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a96051d03e8b17bf8d65e7462f95d5b94"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerFactoryReset</b> = false</td></tr>
+<tr class="separator:a96051d03e8b17bf8d65e7462f95d5b94 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6e0f6ac69e762e3e575cd7330cff4a inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aee6e0f6ac69e762e3e575cd7330cff4a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerPrintLCDMenu</b> = true</td></tr>
+<tr class="separator:aee6e0f6ac69e762e3e575cd7330cff4a inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53526d3bd374f5d75cb7b6cb0b44575b inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a53526d3bd374f5d75cb7b6cb0b44575b"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>LCDMenuText</b> [LCDLineCharCount] = &quot;&quot;</td></tr>
+<tr class="separator:a53526d3bd374f5d75cb7b6cb0b44575b inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2948bbfebdbb2ef5c211e2cc39eaf01f inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a2948bbfebdbb2ef5c211e2cc39eaf01f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoopHasRun</b> = false</td></tr>
+<tr class="separator:a2948bbfebdbb2ef5c211e2cc39eaf01f inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02034a04c6642ee67a7a3e465135831 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="af02034a04c6642ee67a7a3e465135831"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConsoleMenuAsyn</b> = true</td></tr>
+<tr class="separator:af02034a04c6642ee67a7a3e465135831 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc8454ba8dc3aa505b3f9eb642d1209 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a0dc8454ba8dc3aa505b3f9eb642d1209"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>DebugPortAsPacketPort</b> = false</td></tr>
+<tr class="separator:a0dc8454ba8dc3aa505b3f9eb642d1209 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f65ac288e00a12850d497fc55aaa98 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aa8f65ac288e00a12850d497fc55aaa98"></a>
+<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_port___file_system.html">PacketPort_FileSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FSPortPtr</b> = nullptr</td></tr>
+<tr class="separator:aa8f65ac288e00a12850d497fc55aaa98 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce57ec706bb9763b86e50cf4bcdf981 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a3ce57ec706bb9763b86e50cf4bcdf981"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerReadFromFS</b> = false</td></tr>
+<tr class="separator:a3ce57ec706bb9763b86e50cf4bcdf981 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0beb4a4334443d190439d5836f947b9d inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a0beb4a4334443d190439d5836f947b9d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerWriteToFS</b> = false</td></tr>
+<tr class="separator:a0beb4a4334443d190439d5836f947b9d inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147a2ad8bb2e7b019a80893e11ae2c49 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a147a2ad8bb2e7b019a80893e11ae2c49"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerNVIDIAUpdate</b> = false</td></tr>
+<tr class="separator:a147a2ad8bb2e7b019a80893e11ae2c49 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2144c12e586cdb15920769f515a02a1b inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a2144c12e586cdb15920769f515a02a1b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>LED_SystemFlickerMS</b> = 0</td></tr>
+<tr class="separator:a2144c12e586cdb15920769f515a02a1b inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3742cd5ce4a4a4e9b16832823e6813b7 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a3742cd5ce4a4a4e9b16832823e6813b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>LED_PowerFlickerMS</b> = 0</td></tr>
+<tr class="separator:a3742cd5ce4a4a4e9b16832823e6813b7 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7def5dcf3379f908b410ffbc318d8854 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a7def5dcf3379f908b410ffbc318d8854"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>FS_StartMS</b> = 0</td></tr>
+<tr class="separator:a7def5dcf3379f908b410ffbc318d8854 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9098881f6c0409584c2a7a2867c76555 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a9098881f6c0409584c2a7a2867c76555"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>MO_StartMS</b> = 0</td></tr>
+<tr class="separator:a9098881f6c0409584c2a7a2867c76555 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371af9dd4618e66cf2200c4ec5875c5b inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a371af9dd4618e66cf2200c4ec5875c5b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>SC_LockMS</b> = 0</td></tr>
+<tr class="separator:a371af9dd4618e66cf2200c4ec5875c5b inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8827d79160dcb2be9ef925c0587388 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="abe8827d79160dcb2be9ef925c0587388"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>PING_MS</b> = 0</td></tr>
+<tr class="separator:abe8827d79160dcb2be9ef925c0587388 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fb8feb1aaaccc5138e72726df7528c inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="ae7fb8feb1aaaccc5138e72726df7528c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentMS</b> = 0</td></tr>
+<tr class="separator:ae7fb8feb1aaaccc5138e72726df7528c inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176cc73762f4270ba0fdf56775534f39 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a176cc73762f4270ba0fdf56775534f39"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentSystemLED</b> = 0</td></tr>
+<tr class="separator:a176cc73762f4270ba0fdf56775534f39 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f7ffef0e871e9b3713844169d25c76 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a63f7ffef0e871e9b3713844169d25c76"></a>
+short&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentRbLED</b> = 0</td></tr>
+<tr class="separator:a63f7ffef0e871e9b3713844169d25c76 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d880444c5e9d1b626dba3b72ca6fbc inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a15d880444c5e9d1b626dba3b72ca6fbc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ScreenDimmed</b> = false</td></tr>
+<tr class="separator:a15d880444c5e9d1b626dba3b72ca6fbc inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf90c5984fa279a31ff140864d7ccc7 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="abbf90c5984fa279a31ff140864d7ccc7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MainMenuReturn</b> = true</td></tr>
+<tr class="separator:abbf90c5984fa279a31ff140864d7ccc7 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bcfb9396a7d5afcb03f2061f8d7ae8 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a44bcfb9396a7d5afcb03f2061f8d7ae8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>NVIDIA_On</b> = false</td></tr>
+<tr class="separator:a44bcfb9396a7d5afcb03f2061f8d7ae8 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaeeb8a089089514250ac95e62198fb2 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="afaeeb8a089089514250ac95e62198fb2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LED_Toggler</b> = true</td></tr>
+<tr class="separator:afaeeb8a089089514250ac95e62198fb2 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44397cb46cce02118bce1fc09e26287f inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a44397cb46cce02118bce1fc09e26287f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerDivSwitchControl</b> = true</td></tr>
+<tr class="separator:a44397cb46cce02118bce1fc09e26287f inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85aa9ee700edf476e0333b956da2d0a8 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a85aa9ee700edf476e0333b956da2d0a8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerSlopeNGainCalcs</b> = false</td></tr>
+<tr class="separator:a85aa9ee700edf476e0333b956da2d0a8 inherit pro_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html">ACU_API::ACU_Node</a></td></tr>
+<tr class="memitem:a471a83741ea01e4ce44db69b839713b5 inherit pro_static_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a471a83741ea01e4ce44db69b839713b5"></a>
+static <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_a_r_u_terminal.html">ARUTerminal</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>TerminalPtrs</b> [2] = { nullptr, nullptr }</td></tr>
+<tr class="separator:a471a83741ea01e4ce44db69b839713b5 inherit pro_static_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b72a764ab4419aa3fa82226dd778ff inherit pro_static_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="a83b72a764ab4419aa3fa82226dd778ff"></a>
+static <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node_1_1_a_r_u_terminal.html">ARUTerminal</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Prev_TerminalPtrs</b> [2] = { nullptr, nullptr }</td></tr>
+<tr class="separator:a83b72a764ab4419aa3fa82226dd778ff inherit pro_static_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7122db198666797b5b11cd43d4f1dd inherit pro_static_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memItemLeft" align="right" valign="top"><a id="aae7122db198666797b5b11cd43d4f1dd"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveTerminalIndex</b> = 0</td></tr>
+<tr class="separator:aae7122db198666797b5b11cd43d4f1dd inherit pro_static_attribs_class_a_c_u___a_p_i_1_1_a_c_u___node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="6___a_c_u___i_n_o_8h_source.html#l00026">26</a> of file <a class="el" href="6___a_c_u___i_n_o_8h_source.html">6_ACU_INO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="6___a_c_u___i_n_o_8h_source.html#l00089">89</a> of file <a class="el" href="6___a_c_u___i_n_o_8h_source.html">6_ACU_INO.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae3b0ae717215567ec2fa53a6dd7100c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3b0ae717215567ec2fa53a6dd7100c1">&#9670;&nbsp;</a></span>Setup()</h2>
@@ -177,9 +574,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setVersionPackTrigger
 <p>Abstract Initialization Function. </p>
 <p>Called by the top level main function of an api node's running application </p>
 
-<p>Reimplemented from <a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#ad55054dd28e583247e7b927852af895e">ARUAPICore::ARU_API_Node</a>.</p>
+<p>Implements <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#aa9f135d4ad44201159cddbb1201f07f9">IMSPacketsAPICore::AbstractDataExecution</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="6___a_c_u___i_n_o_8cpp_source.html#l00008">8</a> of file <a class="el" href="6___a_c_u___i_n_o_8cpp_source.html">6_ACU_INO.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="6___a_c_u___i_n_o_8cpp_source.html#l00219">219</a> of file <a class="el" href="6___a_c_u___i_n_o_8cpp_source.html">6_ACU_INO.cpp</a>.</p>
 
 </div>
 </div>

@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -91,6 +92,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gabbb768c761ffd0aa575955aae22bfd2e"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#gabbb768c761ffd0aa575955aae22bfd2e">Index_PackID</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:gabbb768c761ffd0aa575955aae22bfd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index for Packet ID Token. <br /></td></tr>
+<tr class="separator:gabbb768c761ffd0aa575955aae22bfd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75bc30dd3158f2f7c276ab59195bafb9"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#ga75bc30dd3158f2f7c276ab59195bafb9">Index_PackLEN</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="memdesc:ga75bc30dd3158f2f7c276ab59195bafb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index for Packet Length Token. <br /></td></tr>
+<tr class="separator:ga75bc30dd3158f2f7c276ab59195bafb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeec40e2b433cc2844853d184006edff0"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>xstr</b>(s)&#160;&#160;&#160;#s</td></tr>
 <tr class="separator:gaeec40e2b433cc2844853d184006edff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,15 +145,48 @@ Macros</h2></td></tr>
 <tr class="memitem:ga914ae6bca4bd99eca31d4196610ca15b"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ASCII_tilda</b>&#160;&#160;&#160;126</td></tr>
 <tr class="separator:ga914ae6bca4bd99eca31d4196610ca15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab7336a082452f17ae1f795af8803ffe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#gab7336a082452f17ae1f795af8803ffe9">TEMPLATE_SPDSET_toVALUE</a>(fID,  SPDvar,  pID,  SPDval_eq_this)</td></tr>
-<tr class="memdesc:gab7336a082452f17ae1f795af8803ffe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code Template for Packet Accessor (SET) Functions with Initialization Value.  <a href="group___language_constructs.html#gab7336a082452f17ae1f795af8803ffe9">More...</a><br /></td></tr>
-<tr class="separator:gab7336a082452f17ae1f795af8803ffe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9dac6a50346331367f736467ffd09293"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#ga9dac6a50346331367f736467ffd09293">TEMPLATE_SPDSET</a>(fID,  SPDvar,  pID)</td></tr>
-<tr class="memdesc:ga9dac6a50346331367f736467ffd09293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code Template for Packet Accessor (SET) Functions.  <a href="group___language_constructs.html#ga9dac6a50346331367f736467ffd09293">More...</a><br /></td></tr>
-<tr class="separator:ga9dac6a50346331367f736467ffd09293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa87fea55c62f63f07acf9ac1b750feae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#gaa87fea55c62f63f07acf9ac1b750feae">TEMPLATE_SPDGET</a>(fID,  SPDvar,  pID)</td></tr>
-<tr class="memdesc:gaa87fea55c62f63f07acf9ac1b750feae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code Template for Packet Accessor (GET) Functions.  <a href="group___language_constructs.html#gaa87fea55c62f63f07acf9ac1b750feae">More...</a><br /></td></tr>
-<tr class="separator:gaa87fea55c62f63f07acf9ac1b750feae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a0f9cb65de9825d2a3532343038a957"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ASCII_lf</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ga7a0f9cb65de9825d2a3532343038a957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade90f55b92a62f1547417639363e2501"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ASCII_cr</b>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:gade90f55b92a62f1547417639363e2501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga492c4b6e22643ae68afa0b19cf7e9539"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ASCII_tab</b>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:ga492c4b6e22643ae68afa0b19cf7e9539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae76acecd77bea68ca32ad392cc2f729e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_STATICPACKETINFO_H</b>(packID,  numTokens)</td></tr>
+<tr class="separator:gae76acecd77bea68ca32ad392cc2f729e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3cb2c93fc4a3229d0e1c0c5c741a9d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_STATICPACKETINFO_CPP</b>(packID)</td></tr>
+<tr class="separator:gab3cb2c93fc4a3229d0e1c0c5c741a9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31a717e47ff572b7ad37a06240913b2d"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>pCLASS</b>(packIDmacro)&#160;&#160;&#160;Packet_##packIDmacro</td></tr>
+<tr class="separator:ga31a717e47ff572b7ad37a06240913b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5ccf05852a73bee30afd68df8757606"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>pSTRUCT</b>(packIDmacro)&#160;&#160;&#160;Struct_##packIDmacro</td></tr>
+<tr class="separator:gac5ccf05852a73bee30afd68df8757606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e06901b9ed419ed63a7dcf302932b0e"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>pENUM</b>(packIDmacro)&#160;&#160;&#160;TokenIndex_##packIDmacro</td></tr>
+<tr class="separator:ga1e06901b9ed419ed63a7dcf302932b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1403188da7484ed5098e97b2111b3ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDSET_H</b>(tokenName)</td></tr>
+<tr class="separator:gad1403188da7484ed5098e97b2111b3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac26c4f8d3b532a0d18e23036270236ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDSET_CPP</b>(PacketType,  tokenName,  SPDindex)</td></tr>
+<tr class="separator:gac26c4f8d3b532a0d18e23036270236ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e3a0e0e8e7f7bed4a9243e0fded8460"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDSETSTRING_H</b>(tokenName)</td></tr>
+<tr class="separator:ga1e3a0e0e8e7f7bed4a9243e0fded8460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga649b9ec25277ec74a7ba849fa58c803a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDSETSTRING_CPP</b>(PacketType,  tokenName,  SPDindex,  dTypeEnum,  formatString)</td></tr>
+<tr class="separator:ga649b9ec25277ec74a7ba849fa58c803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad98d467be975cd5028a9022f315e71f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDGET_H</b>(tokenName)</td></tr>
+<tr class="separator:gad98d467be975cd5028a9022f315e71f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94184a42d98c7cffd48b08d45d1564d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDGET_CPP</b>(PacketType,  tokenName,  SPDindex)</td></tr>
+<tr class="separator:ga94184a42d98c7cffd48b08d45d1564d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b5dfea10c2983dbc75e9c498fdfa67a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDGETSTRING_H</b>(tokenName)</td></tr>
+<tr class="separator:ga4b5dfea10c2983dbc75e9c498fdfa67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff6d434e57d92b3b59987c799ece51d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDGETSTRING_CPP</b>(PacketType,  tokenName,  SPDindex,  dTypeEnum)</td></tr>
+<tr class="separator:gaff6d434e57d92b3b59987c799ece51d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67f4dc75bd8ab6b64e47698e0277df74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDACCESSORS_H</b>(tokenName)</td></tr>
+<tr class="separator:ga67f4dc75bd8ab6b64e47698e0277df74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga322fea23f70d83659105dae255e339e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDACCESSORS_CPP</b>(PacketType,  tokenName,  SPDindex,  dTypeEnum,  formatString)</td></tr>
+<tr class="separator:ga322fea23f70d83659105dae255e339e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>

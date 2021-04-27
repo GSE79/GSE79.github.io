@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -87,6 +88,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gabbb768c761ffd0aa575955aae22bfd2e"><td class="memItemLeft" align="right" valign="top"><a id="gabbb768c761ffd0aa575955aae22bfd2e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#gabbb768c761ffd0aa575955aae22bfd2e">Index_PackID</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:gabbb768c761ffd0aa575955aae22bfd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index for Packet ID Token. <br /></td></tr>
+<tr class="separator:gabbb768c761ffd0aa575955aae22bfd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75bc30dd3158f2f7c276ab59195bafb9"><td class="memItemLeft" align="right" valign="top"><a id="ga75bc30dd3158f2f7c276ab59195bafb9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#ga75bc30dd3158f2f7c276ab59195bafb9">Index_PackLEN</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="memdesc:ga75bc30dd3158f2f7c276ab59195bafb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index for Packet Length Token. <br /></td></tr>
+<tr class="separator:ga75bc30dd3158f2f7c276ab59195bafb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeec40e2b433cc2844853d184006edff0"><td class="memItemLeft" align="right" valign="top"><a id="gaeec40e2b433cc2844853d184006edff0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>xstr</b>(s)&#160;&#160;&#160;#s</td></tr>
 <tr class="separator:gaeec40e2b433cc2844853d184006edff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,15 +141,48 @@ Macros</h2></td></tr>
 <tr class="memitem:ga914ae6bca4bd99eca31d4196610ca15b"><td class="memItemLeft" align="right" valign="top"><a id="ga914ae6bca4bd99eca31d4196610ca15b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ASCII_tilda</b>&#160;&#160;&#160;126</td></tr>
 <tr class="separator:ga914ae6bca4bd99eca31d4196610ca15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab7336a082452f17ae1f795af8803ffe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#gab7336a082452f17ae1f795af8803ffe9">TEMPLATE_SPDSET_toVALUE</a>(fID,  SPDvar,  pID,  SPDval_eq_this)</td></tr>
-<tr class="memdesc:gab7336a082452f17ae1f795af8803ffe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code Template for Packet Accessor (SET) Functions with Initialization Value.  <a href="group___language_constructs.html#gab7336a082452f17ae1f795af8803ffe9">More...</a><br /></td></tr>
-<tr class="separator:gab7336a082452f17ae1f795af8803ffe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9dac6a50346331367f736467ffd09293"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#ga9dac6a50346331367f736467ffd09293">TEMPLATE_SPDSET</a>(fID,  SPDvar,  pID)</td></tr>
-<tr class="memdesc:ga9dac6a50346331367f736467ffd09293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code Template for Packet Accessor (SET) Functions.  <a href="group___language_constructs.html#ga9dac6a50346331367f736467ffd09293">More...</a><br /></td></tr>
-<tr class="separator:ga9dac6a50346331367f736467ffd09293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa87fea55c62f63f07acf9ac1b750feae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___language_constructs.html#gaa87fea55c62f63f07acf9ac1b750feae">TEMPLATE_SPDGET</a>(fID,  SPDvar,  pID)</td></tr>
-<tr class="memdesc:gaa87fea55c62f63f07acf9ac1b750feae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code Template for Packet Accessor (GET) Functions.  <a href="group___language_constructs.html#gaa87fea55c62f63f07acf9ac1b750feae">More...</a><br /></td></tr>
-<tr class="separator:gaa87fea55c62f63f07acf9ac1b750feae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a0f9cb65de9825d2a3532343038a957"><td class="memItemLeft" align="right" valign="top"><a id="ga7a0f9cb65de9825d2a3532343038a957"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ASCII_lf</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ga7a0f9cb65de9825d2a3532343038a957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade90f55b92a62f1547417639363e2501"><td class="memItemLeft" align="right" valign="top"><a id="gade90f55b92a62f1547417639363e2501"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ASCII_cr</b>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:gade90f55b92a62f1547417639363e2501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga492c4b6e22643ae68afa0b19cf7e9539"><td class="memItemLeft" align="right" valign="top"><a id="ga492c4b6e22643ae68afa0b19cf7e9539"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ASCII_tab</b>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:ga492c4b6e22643ae68afa0b19cf7e9539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae76acecd77bea68ca32ad392cc2f729e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_STATICPACKETINFO_H</b>(packID,  numTokens)</td></tr>
+<tr class="separator:gae76acecd77bea68ca32ad392cc2f729e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3cb2c93fc4a3229d0e1c0c5c741a9d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_STATICPACKETINFO_CPP</b>(packID)</td></tr>
+<tr class="separator:gab3cb2c93fc4a3229d0e1c0c5c741a9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31a717e47ff572b7ad37a06240913b2d"><td class="memItemLeft" align="right" valign="top"><a id="ga31a717e47ff572b7ad37a06240913b2d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>pCLASS</b>(packIDmacro)&#160;&#160;&#160;Packet_##packIDmacro</td></tr>
+<tr class="separator:ga31a717e47ff572b7ad37a06240913b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5ccf05852a73bee30afd68df8757606"><td class="memItemLeft" align="right" valign="top"><a id="gac5ccf05852a73bee30afd68df8757606"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>pSTRUCT</b>(packIDmacro)&#160;&#160;&#160;Struct_##packIDmacro</td></tr>
+<tr class="separator:gac5ccf05852a73bee30afd68df8757606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e06901b9ed419ed63a7dcf302932b0e"><td class="memItemLeft" align="right" valign="top"><a id="ga1e06901b9ed419ed63a7dcf302932b0e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>pENUM</b>(packIDmacro)&#160;&#160;&#160;TokenIndex_##packIDmacro</td></tr>
+<tr class="separator:ga1e06901b9ed419ed63a7dcf302932b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1403188da7484ed5098e97b2111b3ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDSET_H</b>(tokenName)</td></tr>
+<tr class="separator:gad1403188da7484ed5098e97b2111b3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac26c4f8d3b532a0d18e23036270236ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDSET_CPP</b>(PacketType,  tokenName,  SPDindex)</td></tr>
+<tr class="separator:gac26c4f8d3b532a0d18e23036270236ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e3a0e0e8e7f7bed4a9243e0fded8460"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDSETSTRING_H</b>(tokenName)</td></tr>
+<tr class="separator:ga1e3a0e0e8e7f7bed4a9243e0fded8460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga649b9ec25277ec74a7ba849fa58c803a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDSETSTRING_CPP</b>(PacketType,  tokenName,  SPDindex,  dTypeEnum,  formatString)</td></tr>
+<tr class="separator:ga649b9ec25277ec74a7ba849fa58c803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad98d467be975cd5028a9022f315e71f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDGET_H</b>(tokenName)</td></tr>
+<tr class="separator:gad98d467be975cd5028a9022f315e71f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94184a42d98c7cffd48b08d45d1564d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDGET_CPP</b>(PacketType,  tokenName,  SPDindex)</td></tr>
+<tr class="separator:ga94184a42d98c7cffd48b08d45d1564d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b5dfea10c2983dbc75e9c498fdfa67a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDGETSTRING_H</b>(tokenName)</td></tr>
+<tr class="separator:ga4b5dfea10c2983dbc75e9c498fdfa67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff6d434e57d92b3b59987c799ece51d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDGETSTRING_CPP</b>(PacketType,  tokenName,  SPDindex,  dTypeEnum)</td></tr>
+<tr class="separator:gaff6d434e57d92b3b59987c799ece51d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67f4dc75bd8ab6b64e47698e0277df74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDACCESSORS_H</b>(tokenName)</td></tr>
+<tr class="separator:ga67f4dc75bd8ab6b64e47698e0277df74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga322fea23f70d83659105dae255e339e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPLATE_SPDACCESSORS_CPP</b>(PacketType,  tokenName,  SPDindex,  dTypeEnum,  formatString)</td></tr>
+<tr class="separator:ga322fea23f70d83659105dae255e339e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Fundamental Elements of Packet Communications. </p>
@@ -177,38 +219,49 @@ Macros</h2></td></tr>
 </ul>
 <p>are two means of personalizing the Packets Core to a specific application.</p>
 <p>Template macros are provided to simplify implementation and reduce error when defining overloaded accessor functions.</p><ul>
-<li><a class="el" href="group___language_constructs.html#gab7336a082452f17ae1f795af8803ffe9" title="Code Template for Packet Accessor (SET) Functions with Initialization Value.">TEMPLATE_SPDSET_toVALUE(fID, SPDvar,pID, SPDval_eq_this)</a></li>
-<li><a class="el" href="group___language_constructs.html#ga9dac6a50346331367f736467ffd09293" title="Code Template for Packet Accessor (SET) Functions.">TEMPLATE_SPDSET(fID, SPDvar,pID)</a></li>
-<li><a class="el" href="group___language_constructs.html#gaa87fea55c62f63f07acf9ac1b750feae" title="Code Template for Packet Accessor (GET) Functions.">TEMPLATE_SPDGET(fID, SPDvar, pID)</a></li>
+<li>TEMPLATE_SPDSET(tokenName, SPDvar,SPDindex)</li>
+<li>TEMPLATE_SPDGET(tokenName, SPDvar, SPDindex)</li>
 </ul>
 <p>Template macros are provided to simplify implementation and reduce error when defining overridden api endpoint functions.</p><ul>
-<li><a class="el" href="group___a_p_i_node_link.html#ga3d686728977d5d36d87f2245d76b2673" title="Code Template for Application Node API EndPoint (Rx) Functions.">TEMPLATE_RX_HANDLER(tempHDRPack,Packet_Type, TokenID, HandlerFunc)</a></li>
-<li><a class="el" href="group___a_p_i_node_link.html#ga7ce1078c8b77a4bb96693409c5c04f1c" title="Code Template for Application Node API EndPoint (Tx) Functions.">TEMPLATE_TX_PACKAGER(tVar, pType, pID, packFunc)</a> </li>
+<li>TEMPLATE_RX_HANDLER(tempHDRPack,Packet_Type, TokenID, HandlerFunc)</li>
+<li>TEMPLATE_TX_PACKAGER(tVar, pType, SPDindex, packFunc) </li>
 </ul>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gaa87fea55c62f63f07acf9ac1b750feae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa87fea55c62f63f07acf9ac1b750feae">&#9670;&nbsp;</a></span>TEMPLATE_SPDGET</h2>
+<a id="ga322fea23f70d83659105dae255e339e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga322fea23f70d83659105dae255e339e2">&#9670;&nbsp;</a></span>TEMPLATE_SPDACCESSORS_CPP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEMPLATE_SPDGET</td>
+          <td class="memname">#define TEMPLATE_SPDACCESSORS_CPP</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">fID, </td>
+          <td class="paramname">PacketType, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">SPDvar, </td>
+          <td class="paramname">tokenName, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">pID&#160;</td>
+          <td class="paramname">SPDindex, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dTypeEnum, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">formatString&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -217,41 +270,62 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">get</span>##fID(SPD1* SPDvar){getSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">get</span>##fID(SPD2* SPDvar){getSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">get</span>##fID(SPD4* SPDvar){getSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">get</span>##fID(SPD8* SPDvar){getSPDat(pID,SPDvar);}\</div>
+<b>Value:</b><div class="fragment"><div class="line">TEMPLATE_SPDSET_CPP(PacketType, tokenName, SPDindex)\</div>
+<div class="line">TEMPLATE_SPDGET_CPP(PacketType, tokenName, SPDindex)\</div>
+<div class="line">TEMPLATE_SPDSETSTRING_CPP(PacketType, tokenName, SPDindex, dTypeEnum, formatString)\</div>
+<div class="line">TEMPLATE_SPDGETSTRING_CPP(PacketType, tokenName, SPDindex, dTypeEnum)\</div>
 </div><!-- fragment -->
-<p>Code Template for Packet Accessor (GET) Functions. </p>
-<p>This template creates a set of accessor functions overloaded for each possible token type, currently: -SPD1 -SPD2 -SPD4 -SPD8 </p>
-
-<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00136">136</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00221">221</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
 
 </div>
 </div>
-<a id="ga9dac6a50346331367f736467ffd09293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9dac6a50346331367f736467ffd09293">&#9670;&nbsp;</a></span>TEMPLATE_SPDSET</h2>
+<a id="ga67f4dc75bd8ab6b64e47698e0277df74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67f4dc75bd8ab6b64e47698e0277df74">&#9670;&nbsp;</a></span>TEMPLATE_SPDACCESSORS_H</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEMPLATE_SPDSET</td>
+          <td class="memname">#define TEMPLATE_SPDACCESSORS_H</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">fID, </td>
+          <td class="paramname">tokenName</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">TEMPLATE_SPDSET_H(tokenName)\</div>
+<div class="line">TEMPLATE_SPDGET_H(tokenName)\</div>
+<div class="line">TEMPLATE_SPDSETSTRING_H(tokenName)\</div>
+<div class="line">TEMPLATE_SPDGETSTRING_H(tokenName)\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00214">214</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+
+</div>
+</div>
+<a id="ga94184a42d98c7cffd48b08d45d1564d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94184a42d98c7cffd48b08d45d1564d4">&#9670;&nbsp;</a></span>TEMPLATE_SPDGET_CPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_SPDGET_CPP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">PacketType, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">SPDvar, </td>
+          <td class="paramname">tokenName, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">pID&#160;</td>
+          <td class="paramname">SPDindex&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -260,47 +334,68 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">set</span>##fID(SPD1* SPDvar){setSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">set</span>##fID(SPD2* SPDvar){setSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">set</span>##fID(SPD4* SPDvar){setSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">set</span>##fID(SPD8* SPDvar){setSPDat(pID,SPDvar);}\</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> PacketType::get##tokenName(SPD1* my##tokenName){getSPDat(SPDindex,my##tokenName);}\</div>
+<div class="line">void PacketType::get##tokenName(SPD2* my##tokenName){getSPDat(SPDindex,my##tokenName);}\</div>
+<div class="line">void PacketType::get##tokenName(SPD4* my##tokenName){getSPDat(SPDindex,my##tokenName);}\</div>
+<div class="line">void PacketType::get##tokenName(SPD8* my##tokenName){getSPDat(SPDindex,my##tokenName);}\</div>
 </div><!-- fragment -->
-<p>Code Template for Packet Accessor (SET) Functions. </p>
-<p>This template creates a set of accessor functions overloaded for each possible token type, currently: -SPD1 -SPD2 -SPD4 -SPD8 </p>
-
-<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00119">119</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00194">194</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
 
 </div>
 </div>
-<a id="gab7336a082452f17ae1f795af8803ffe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab7336a082452f17ae1f795af8803ffe9">&#9670;&nbsp;</a></span>TEMPLATE_SPDSET_toVALUE</h2>
+<a id="gad98d467be975cd5028a9022f315e71f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad98d467be975cd5028a9022f315e71f2">&#9670;&nbsp;</a></span>TEMPLATE_SPDGET_H</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEMPLATE_SPDSET_toVALUE</td>
+          <td class="memname">#define TEMPLATE_SPDGET_H</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">fID, </td>
+          <td class="paramname">tokenName</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">get</span>##tokenName(SPD1* my##tokenName);\</div>
+<div class="line">void <span class="keyword">get</span>##tokenName(SPD2* my##tokenName);\</div>
+<div class="line">void <span class="keyword">get</span>##tokenName(SPD4* my##tokenName);\</div>
+<div class="line">void <span class="keyword">get</span>##tokenName(SPD8* my##tokenName);\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00188">188</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+
+</div>
+</div>
+<a id="gaff6d434e57d92b3b59987c799ece51d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff6d434e57d92b3b59987c799ece51d6">&#9670;&nbsp;</a></span>TEMPLATE_SPDGETSTRING_CPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_SPDGETSTRING_CPP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">PacketType, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">SPDvar, </td>
+          <td class="paramname">tokenName, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">pID, </td>
+          <td class="paramname">SPDindex, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">SPDval_eq_this&#160;</td>
+          <td class="paramname">dTypeEnum&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -309,15 +404,236 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">set</span>##fID(SPD1* SPDvar){SPDval_eq_this;setSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">set</span>##fID(SPD2* SPDvar){SPDval_eq_this;setSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">set</span>##fID(SPD4* SPDvar){SPDval_eq_this;setSPDat(pID,SPDvar);}\</div>
-<div class="line">void <span class="keyword">set</span>##fID(SPD8* SPDvar){SPDval_eq_this;setSPDat(pID,SPDvar);}\</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> PacketType::getfromString##tokenName(SPD1* my##tokenName){<span class="keywordflow">return</span> getSPDfromcharsAt(SPDindex,my##tokenName,dTypeEnum);}\</div>
+<div class="line">bool PacketType::getfromString##tokenName(SPD2* my##tokenName){<span class="keywordflow">return</span> getSPDfromcharsAt(SPDindex,my##tokenName,dTypeEnum);}\</div>
+<div class="line">bool PacketType::getfromString##tokenName(SPD4* my##tokenName){<span class="keywordflow">return</span> getSPDfromcharsAt(SPDindex,my##tokenName,dTypeEnum);}\</div>
+<div class="line">bool PacketType::getfromString##tokenName(SPD8* my##tokenName){<span class="keywordflow">return</span> getSPDfromcharsAt(SPDindex,my##tokenName,dTypeEnum);}\</div>
 </div><!-- fragment -->
-<p>Code Template for Packet Accessor (SET) Functions with Initialization Value. </p>
-<p>This template creates a set of accessor functions overloaded for each possible token type, currently: -SPD1 -SPD2 -SPD4 -SPD8 </p>
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00207">207</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00102">102</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+</div>
+</div>
+<a id="ga4b5dfea10c2983dbc75e9c498fdfa67a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b5dfea10c2983dbc75e9c498fdfa67a">&#9670;&nbsp;</a></span>TEMPLATE_SPDGETSTRING_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_SPDGETSTRING_H</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tokenName</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> getfromString##tokenName(SPD1* my##tokenName);\</div>
+<div class="line">bool getfromString##tokenName(SPD2* my##tokenName);\</div>
+<div class="line">bool getfromString##tokenName(SPD4* my##tokenName);\</div>
+<div class="line">bool getfromString##tokenName(SPD8* my##tokenName);\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00201">201</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+
+</div>
+</div>
+<a id="gac26c4f8d3b532a0d18e23036270236ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac26c4f8d3b532a0d18e23036270236ec">&#9670;&nbsp;</a></span>TEMPLATE_SPDSET_CPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_SPDSET_CPP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">PacketType, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tokenName, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">SPDindex&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> PacketType::set##tokenName(SPD1* my##tokenName){setSPDat(SPDindex,my##tokenName);}\</div>
+<div class="line">void PacketType::set##tokenName(SPD2* my##tokenName){setSPDat(SPDindex,my##tokenName);}\</div>
+<div class="line">void PacketType::set##tokenName(SPD4* my##tokenName){setSPDat(SPDindex,my##tokenName);}\</div>
+<div class="line">void PacketType::set##tokenName(SPD8* my##tokenName){setSPDat(SPDindex,my##tokenName);}\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00146">146</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+
+</div>
+</div>
+<a id="gad1403188da7484ed5098e97b2111b3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1403188da7484ed5098e97b2111b3ba">&#9670;&nbsp;</a></span>TEMPLATE_SPDSET_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_SPDSET_H</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tokenName</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">set</span>##tokenName(SPD1* my##tokenName);\</div>
+<div class="line">void <span class="keyword">set</span>##tokenName(SPD2* my##tokenName);\</div>
+<div class="line">void <span class="keyword">set</span>##tokenName(SPD4* my##tokenName);\</div>
+<div class="line">void <span class="keyword">set</span>##tokenName(SPD8* my##tokenName);\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00139">139</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+
+</div>
+</div>
+<a id="ga649b9ec25277ec74a7ba849fa58c803a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga649b9ec25277ec74a7ba849fa58c803a">&#9670;&nbsp;</a></span>TEMPLATE_SPDSETSTRING_CPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_SPDSETSTRING_CPP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">PacketType, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tokenName, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">SPDindex, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dTypeEnum, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">formatString&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> PacketType::set2String##tokenName(SPD1* my##tokenName){<span class="keywordflow">return</span> setCharsfromSPDat(SPDindex,my##tokenName,dTypeEnum,formatString);}\</div>
+<div class="line">bool PacketType::set2String##tokenName(SPD2* my##tokenName){<span class="keywordflow">return</span> setCharsfromSPDat(SPDindex,my##tokenName,dTypeEnum,formatString);}\</div>
+<div class="line">bool PacketType::set2String##tokenName(SPD4* my##tokenName){<span class="keywordflow">return</span> setCharsfromSPDat(SPDindex,my##tokenName,dTypeEnum,formatString);}\</div>
+<div class="line">bool PacketType::set2String##tokenName(SPD8* my##tokenName){<span class="keywordflow">return</span> setCharsfromSPDat(SPDindex,my##tokenName,dTypeEnum,formatString);}\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00171">171</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+
+</div>
+</div>
+<a id="ga1e3a0e0e8e7f7bed4a9243e0fded8460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e3a0e0e8e7f7bed4a9243e0fded8460">&#9670;&nbsp;</a></span>TEMPLATE_SPDSETSTRING_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_SPDSETSTRING_H</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tokenName</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> set2String##tokenName(SPD1* my##tokenName);\</div>
+<div class="line">bool set2String##tokenName(SPD2* my##tokenName);\</div>
+<div class="line">bool set2String##tokenName(SPD4* my##tokenName);\</div>
+<div class="line">bool set2String##tokenName(SPD8* my##tokenName);\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00164">164</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+
+</div>
+</div>
+<a id="gab3cb2c93fc4a3229d0e1c0c5c741a9d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab3cb2c93fc4a3229d0e1c0c5c741a9d1">&#9670;&nbsp;</a></span>TEMPLATE_STATICPACKETINFO_CPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_STATICPACKETINFO_CPP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">packID</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> Packet_##packID::IDString[] = #packID;\</div>
+<div class="line">int Packet_##packID::getNumSPDs(){<span class="keywordflow">return</span> TokenCount;}\</div>
+<div class="line">int Packet_##packID::getPacketID(){<span class="keywordflow">return</span> ID;}\</div>
+<div class="line">char* Packet_##packID::getPacketIDString(){<span class="keywordflow">return</span> (<span class="keywordtype">char</span>*)&amp;IDString[0];}\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00116">116</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
+
+</div>
+</div>
+<a id="gae76acecd77bea68ca32ad392cc2f729e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae76acecd77bea68ca32ad392cc2f729e">&#9670;&nbsp;</a></span>TEMPLATE_STATICPACKETINFO_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPLATE_STATICPACKETINFO_H</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">packID, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">numTokens&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> ID = packID;\</div>
+<div class="line">static <span class="keyword">const</span> <span class="keywordtype">char</span> IDString[];\</div>
+<div class="line">static <span class="keyword">const</span> <span class="keywordtype">int</span> TokenCount = numTokens;\</div>
+<div class="line">int getNumSPDs();\</div>
+<div class="line">int getPacketID();\</div>
+<div class="line">char* getPacketIDString();\</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="1___language_constructs_8h_source.html#l00107">107</a> of file <a class="el" href="1___language_constructs_8h_source.html">1_LanguageConstructs.h</a>.</p>
 
 </div>
 </div>

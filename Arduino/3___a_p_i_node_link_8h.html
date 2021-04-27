@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -51,8 +52,7 @@ $(document).ready(function(){initNavTree('3___a_p_i_node_link_8h.html',''); init
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">3_APINodeLink.h File Reference</div>  </div>
 </div><!--header-->
@@ -60,71 +60,21 @@ $(document).ready(function(){initNavTree('3___a_p_i_node_link_8h.html',''); init
 
 <p>Extension of the Packets Core utilizing Header Packets.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="2___packet_port_link_8h_source.html">2_PacketPortLink.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;3_Packet_VERSION.h&quot;</code><br />
 </div>
 <p><a href="3___a_p_i_node_link_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_h_d_r___packet.html">IMSPacketsAPICore::HDR_Packet</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html" title="A structured interface to a token buffer.">Packet</a> with Header Information.  <a href="class_i_m_s_packets_a_p_i_core_1_1_h_d_r___packet.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet___version.html">IMSPacketsAPICore::Packet_Version</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Version <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html" title="A structured interface to a token buffer.">Packet</a> for Application Nodes.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet___version.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">API Node Binary Interface for HDR_Packets.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html">IMSPacketsAPICore::PacketInterface_ASCII&lt; TokenType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html">IMSPacketsAPICore::PacketInterface_ASCII</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">API Node ASCII Interface for HDR_Packets.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html">IMSPacketsAPICore::API_NODE</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">API Node for HDR_Packets.  <a href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga85240c6ceca22b9c712e9a49b2bcf3d6"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_i_node_link.html#ga85240c6ceca22b9c712e9a49b2bcf3d6">HDRPACK</a>&#160;&#160;&#160;(0)</td></tr>
-<tr class="memdesc:ga85240c6ceca22b9c712e9a49b2bcf3d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token ID value for default HDR Packet. <br /></td></tr>
-<tr class="separator:ga85240c6ceca22b9c712e9a49b2bcf3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90e4bcd9ff87fa4c815d50732eecd22b"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexHDR_PackID</b>&#160;&#160;&#160;(0)</td></tr>
-<tr class="separator:ga90e4bcd9ff87fa4c815d50732eecd22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ee8b47aabbc311b360cd42d967aeac8"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexHDR_PackLEN</b>&#160;&#160;&#160;(1)</td></tr>
-<tr class="separator:ga1ee8b47aabbc311b360cd42d967aeac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab29760b8eb4dc2f1aa044091d56e1938"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexHDR_PackTYPE</b>&#160;&#160;&#160;(2)</td></tr>
-<tr class="separator:gab29760b8eb4dc2f1aa044091d56e1938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4b24449e6076b25f07dfff5d505c932c"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexHDR_PackOPTION</b>&#160;&#160;&#160;(3)</td></tr>
-<tr class="separator:ga4b24449e6076b25f07dfff5d505c932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7813d6a878b3ed934faeb719a20dd8e5"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_i_node_link.html#ga7813d6a878b3ed934faeb719a20dd8e5">VERSION_Offset</a>&#160;&#160;&#160;IndexHDR_PackOPTION</td></tr>
-<tr class="memdesc:ga7813d6a878b3ed934faeb719a20dd8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index Offset for Derived Packet Payload Data Tokens. <br /></td></tr>
-<tr class="separator:ga7813d6a878b3ed934faeb719a20dd8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_i_node_link.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>&#160;&#160;&#160;(<a class="el" href="group___a_p_i_node_link.html#ga85240c6ceca22b9c712e9a49b2bcf3d6">HDRPACK</a>+1)</td></tr>
-<tr class="memdesc:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token ID value for VERSION Packet.  <a href="group___a_p_i_node_link.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">More...</a><br /></td></tr>
-<tr class="separator:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga492d1d4e841d1c87f0c88c9f6ff3028d"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVERSION_MajorVersion</b>&#160;&#160;&#160;(<a class="el" href="group___a_p_i_node_link.html#ga7813d6a878b3ed934faeb719a20dd8e5">VERSION_Offset</a>+1)</td></tr>
-<tr class="separator:ga492d1d4e841d1c87f0c88c9f6ff3028d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad64bad63f4d7cf18e7e62f853b4cc90d"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVERSION_MinorVersion</b>&#160;&#160;&#160;(<a class="el" href="group___a_p_i_node_link.html#ga7813d6a878b3ed934faeb719a20dd8e5">VERSION_Offset</a>+2)</td></tr>
-<tr class="separator:gad64bad63f4d7cf18e7e62f853b4cc90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5c00e30a37be1ea4194c0db27963c79"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVERSION_BuildNumber</b>&#160;&#160;&#160;(<a class="el" href="group___a_p_i_node_link.html#ga7813d6a878b3ed934faeb719a20dd8e5">VERSION_Offset</a>+3)</td></tr>
-<tr class="separator:gab5c00e30a37be1ea4194c0db27963c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd50c095c210b3668f731352329fede9"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVERSION_DevFlag</b>&#160;&#160;&#160;(<a class="el" href="group___a_p_i_node_link.html#ga7813d6a878b3ed934faeb719a20dd8e5">VERSION_Offset</a>+4)</td></tr>
-<tr class="separator:gadd50c095c210b3668f731352329fede9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d686728977d5d36d87f2245d76b2673"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_i_node_link.html#ga3d686728977d5d36d87f2245d76b2673">TEMPLATE_RX_HANDLER</a>(tempHDRPack,  Packet_Type,  TokenID,  HandlerFunc)</td></tr>
-<tr class="memdesc:ga3d686728977d5d36d87f2245d76b2673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code Template for Application Node API EndPoint (Rx) Functions.  <a href="group___a_p_i_node_link.html#ga3d686728977d5d36d87f2245d76b2673">More...</a><br /></td></tr>
-<tr class="separator:ga3d686728977d5d36d87f2245d76b2673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ce1078c8b77a4bb96693409c5c04f1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_p_i_node_link.html#ga7ce1078c8b77a4bb96693409c5c04f1c">TEMPLATE_TX_PACKAGER</a>(tVar,  pType,  pID,  packFunc)</td></tr>
-<tr class="memdesc:ga7ce1078c8b77a4bb96693409c5c04f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code Template for Application Node API EndPoint (Tx) Functions.  <a href="group___a_p_i_node_link.html#ga7ce1078c8b77a4bb96693409c5c04f1c">More...</a><br /></td></tr>
-<tr class="separator:ga7ce1078c8b77a4bb96693409c5c04f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extension of the Packets Core utilizing Header Packets. </p>

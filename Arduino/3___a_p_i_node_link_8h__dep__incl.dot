@@ -1,0 +1,29 @@
+digraph "libraries/ARU_Common/src/IMS_Packets_Core/3_APINodeLink.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="libraries/ARU_Common\l/src/IMS_Packets_Core\l/3_APINodeLink.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Extension of the Packets Core utilizing Header Packets."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="libraries/ARU_Common\l/src/ArduinoCommon.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_arduino_common_8h_source.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="libraries/ARU_Common\l/src/ArduinoCommon.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_arduino_common_8cpp_source.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ACU/6_ACU_INO.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$6___a_c_u___i_n_o_8h.html",tooltip="Arduino FW for ACU PCB of ARU."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ACU/ACU.ino",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_a_c_u_8ino.html",tooltip="ARU Node Personalization for the ACU PCB Node."];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ACU/6_ACU_INO.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$6___a_c_u___i_n_o_8cpp.html",tooltip="Arduino PCB implementation of ACU_Class."];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="MCU/6_MCU_INO.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$6___m_c_u___i_n_o_8h.html",tooltip="Arduino FW for MCU PCB of ARU."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="MCU/6_MCU_INO.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$6___m_c_u___i_n_o_8cpp.html",tooltip="Arduino PCB implementation of MCU_Class."];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="MCU/MCU.ino",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_m_c_u_8ino.html",tooltip="ARU Node Personalization for the MCU PCB Node."];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PDU/6_PDU_INO.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$6___p_d_u___i_n_o_8h.html",tooltip="Arduino FW for PDU PCB of ARU."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PDU/PDU.ino",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_p_d_u_8ino.html",tooltip="ARU Node Personalization for the PDU PCB Node."];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PDU/6_PDU_INO.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$6___p_d_u___i_n_o_8cpp.html",tooltip="Arduino PCB implementation of PDU_Class."];
+}

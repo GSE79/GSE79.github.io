@@ -1,0 +1,8 @@
+digraph "PDU_Console" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_3aa1712d7fd58069342f83040ab7136d [shape=box, label="PDU_Console", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_3aa1712d7fd58069342f83040ab7136d.html"];
+  dir_2d5e2643cc58a39bcc3f29d213cf9686 [shape=box label="PDU" URL="dir_2d5e2643cc58a39bcc3f29d213cf9686.html"];
+  dir_3aa1712d7fd58069342f83040ab7136d->dir_2d5e2643cc58a39bcc3f29d213cf9686 [headlabel="1", labeldistance=1.5 headhref="dir_000009_000008.html"];
+}

@@ -1,0 +1,13 @@
+digraph "libraries/ARU_Common" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_bc0718b08fb2015b8e59c47b2805f60c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="libraries" fontname="Helvetica", fontsize="10", URL="dir_bc0718b08fb2015b8e59c47b2805f60c.html"]
+  subgraph clusterdir_15974ba2cd0d52a94c6e039939dc35b1 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_15974ba2cd0d52a94c6e039939dc35b1.html"];
+    dir_15974ba2cd0d52a94c6e039939dc35b1 [shape=plaintext label="ARU_Common"];
+    dir_27541a8a502ac21ff4195755f52dd6f8 [shape=box label="src" color="red" fillcolor="white" style="filled" URL="dir_27541a8a502ac21ff4195755f52dd6f8.html"];
+  }
+  }
+}

@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -51,8 +52,7 @@ $(document).ready(function(){initNavTree('4___a_r_u___a_p_i___core_8h.html','');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">4_ARU_API_Core.h File Reference</div>  </div>
 </div><!--header-->
@@ -60,52 +60,16 @@ $(document).ready(function(){initNavTree('4___a_r_u___a_p_i___core_8h.html','');
 
 <p>Application Base of Envistacom's Antenna Reference Unit (ARU) Firmware (FW)  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="3___a_p_i_node_link_8h_source.html">IMS_Packets_Core\3_APINodeLink.h</a>&quot;</code><br />
-<code>#include &quot;ARU_Terminal.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;4_Packet_PDU.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="_a_r_u___versions_8h_source.html">ARU_Versions.h</a>&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
 </div>
 <p><a href="4___a_r_u___a_p_i___core_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html">ARUAPICore::Packet_DAT</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Digital Attenuator Packet.  <a href="class_a_r_u_a_p_i_core_1_1_packet___d_a_t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html">ARUAPICore::Packet_VAEQ</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Equalizer Voltage Packet.  <a href="class_a_r_u_a_p_i_core_1_1_packet___v_a_e_q.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_r_u_a_p_i_core_1_1_modem_struct.html">ARUAPICore::ModemStruct</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html">ARUAPICore::ARU_API_Node</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gaf11067c9b4babd694af06756ae7a5a0c"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_u___a_p_i___core.html#gaf11067c9b4babd694af06756ae7a5a0c">DAT_Offset</a>&#160;&#160;&#160;IndexHDR_PackOPTION</td></tr>
-<tr class="memdesc:gaf11067c9b4babd694af06756ae7a5a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index Offset for DAT Packet. <br /></td></tr>
-<tr class="separator:gaf11067c9b4babd694af06756ae7a5a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a536e0e3915309f57e752e905779479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_u___a_p_i___core.html#ga4a536e0e3915309f57e752e905779479">DAT</a>&#160;&#160;&#160;(<a class="el" href="group___a_p_i_node_link.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>+1)</td></tr>
-<tr class="memdesc:ga4a536e0e3915309f57e752e905779479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token ID value for DAT Packet.  <a href="group___a_r_u___a_p_i___core.html#ga4a536e0e3915309f57e752e905779479">More...</a><br /></td></tr>
-<tr class="separator:ga4a536e0e3915309f57e752e905779479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6227a8614d171f0c18bd9ef5dba30d1"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexDAT_AntennaNumber</b>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#gaf11067c9b4babd694af06756ae7a5a0c">DAT_Offset</a>+1)</td></tr>
-<tr class="separator:gac6227a8614d171f0c18bd9ef5dba30d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c1f55c95eb501f2009283c831e631c4"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexDAT_AttennuatorValue</b>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#gaf11067c9b4babd694af06756ae7a5a0c">DAT_Offset</a>+2)</td></tr>
-<tr class="separator:ga3c1f55c95eb501f2009283c831e631c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga35186528271b5e67b463cf76a7d5e37e"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_u___a_p_i___core.html#ga35186528271b5e67b463cf76a7d5e37e">VAEQ_Offset</a>&#160;&#160;&#160;<a class="el" href="group___a_r_u___a_p_i___core.html#gaf11067c9b4babd694af06756ae7a5a0c">DAT_Offset</a></td></tr>
-<tr class="memdesc:ga35186528271b5e67b463cf76a7d5e37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token Index Offset for VAEQ Packet. <br /></td></tr>
-<tr class="separator:ga35186528271b5e67b463cf76a7d5e37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3b1296747347fe10ce6c792b11ebeec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_r_u___a_p_i___core.html#gad3b1296747347fe10ce6c792b11ebeec">VAEQ</a>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#ga4a536e0e3915309f57e752e905779479">DAT</a>+1)</td></tr>
-<tr class="memdesc:gad3b1296747347fe10ce6c792b11ebeec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Token ID value for VAEQ Packet.  <a href="group___a_r_u___a_p_i___core.html#gad3b1296747347fe10ce6c792b11ebeec">More...</a><br /></td></tr>
-<tr class="separator:gad3b1296747347fe10ce6c792b11ebeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27d935167764cc015dc013b358ab91ed"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVAEQ_AntennaNumber</b>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#ga35186528271b5e67b463cf76a7d5e37e">VAEQ_Offset</a>+1)</td></tr>
-<tr class="separator:ga27d935167764cc015dc013b358ab91ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89933bef58967ea11ab97af4a3effeff"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IndexVAEQ_EqualizerValue</b>&#160;&#160;&#160;(<a class="el" href="group___a_r_u___a_p_i___core.html#ga35186528271b5e67b463cf76a7d5e37e">VAEQ_Offset</a>+2)</td></tr>
-<tr class="separator:ga89933bef58967ea11ab97af4a3effeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Application Base of Envistacom's Antenna Reference Unit (ARU) Firmware (FW) </p>

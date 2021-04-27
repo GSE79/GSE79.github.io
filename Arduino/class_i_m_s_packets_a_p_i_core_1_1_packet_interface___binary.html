@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -52,8 +53,8 @@ $(document).ready(function(){initNavTree('class_i_m_s_packets_a_p_i_core_1_1_pac
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -77,46 +78,61 @@ Inheritance diagram for IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8f67bcf870b3be5fe80b9ab4f72da875"><td class="memItemLeft" align="right" valign="top"><a id="a8f67bcf870b3be5fe80b9ab4f72da875"></a>
-<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPacketPtr</b> ()</td></tr>
-<tr class="separator:a8f67bcf870b3be5fe80b9ab4f72da875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a237d50184feea9934f0416185f272483"><td class="memItemLeft" align="right" valign="top"><a id="a237d50184feea9934f0416185f272483"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getTokenSize</b> ()</td></tr>
-<tr class="separator:a237d50184feea9934f0416185f272483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b0da50ce957831eee4cc2644dd235c4"><td class="memItemLeft" align="right" valign="top"><a id="a0b0da50ce957831eee4cc2644dd235c4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface_Binary</b> (std::iostream *ifaceStreamPtrIn=nullptr)</td></tr>
-<tr class="separator:a0b0da50ce957831eee4cc2644dd235c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981f1552850331d9502b9464162e7af4"><td class="memItemLeft" align="right" valign="top"><a id="a981f1552850331d9502b9464162e7af4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface_Binary</b> (std::istream *ifaceInStreamPtrIn)</td></tr>
-<tr class="separator:a981f1552850331d9502b9464162e7af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7669fc97f8d9cbd4e0dd41c49d48617"><td class="memItemLeft" align="right" valign="top"><a id="ac7669fc97f8d9cbd4e0dd41c49d48617"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface_Binary</b> (std::ostream *ifaceOutStreamPtrIn)</td></tr>
-<tr class="separator:ac7669fc97f8d9cbd4e0dd41c49d48617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html">IMSPacketsAPICore::PacketInterface</a></td></tr>
-<tr class="memitem:ae397d935d790fd4c4922ad26b2e56014 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#ae397d935d790fd4c4922ad26b2e56014">WriteTo</a> ()</td></tr>
-<tr class="memdesc:ae397d935d790fd4c4922ad26b2e56014 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Serialize Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#ae397d935d790fd4c4922ad26b2e56014">More...</a><br /></td></tr>
-<tr class="separator:ae397d935d790fd4c4922ad26b2e56014 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50c83e5997ce2726f178da2e3d4daad6 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a50c83e5997ce2726f178da2e3d4daad6">ReadFrom</a> ()</td></tr>
-<tr class="memdesc:a50c83e5997ce2726f178da2e3d4daad6 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract De-Serialize Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a50c83e5997ce2726f178da2e3d4daad6">More...</a><br /></td></tr>
-<tr class="separator:a50c83e5997ce2726f178da2e3d4daad6 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:add6cddf9276458e525edbed3103f59f3"><td class="memItemLeft" align="right" valign="top"><a id="add6cddf9276458e525edbed3103f59f3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteToStream</b> ()</td></tr>
-<tr class="separator:add6cddf9276458e525edbed3103f59f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6042dc0ef1efe7bbffc9fec0c662b5e5"><td class="memItemLeft" align="right" valign="top"><a id="a6042dc0ef1efe7bbffc9fec0c662b5e5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFromStream</b> ()</td></tr>
-<tr class="separator:a6042dc0ef1efe7bbffc9fec0c662b5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae771ccf2883c39682fffa9b9ccf1302"><td class="memItemLeft" align="right" valign="top"><a id="aae771ccf2883c39682fffa9b9ccf1302"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetdeSerialize</b> ()</td></tr>
-<tr class="separator:aae771ccf2883c39682fffa9b9ccf1302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38a1fff4916293425ed879d8f625d1bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a38a1fff4916293425ed879d8f625d1bd">DeSerializePacket</a> ()</td></tr>
 <tr class="memdesc:a38a1fff4916293425ed879d8f625d1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cyclic Non-Blocking Conditional Assembly.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a38a1fff4916293425ed879d8f625d1bd">More...</a><br /></td></tr>
 <tr class="separator:a38a1fff4916293425ed879d8f625d1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5413ec95895a5e521edb843ffa76758a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a5413ec95895a5e521edb843ffa76758a">SerializePacket</a> ()</td></tr>
 <tr class="memdesc:a5413ec95895a5e521edb843ffa76758a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single Shot Non-Blocking Conditional Assembly.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a5413ec95895a5e521edb843ffa76758a">More...</a><br /></td></tr>
 <tr class="separator:a5413ec95895a5e521edb843ffa76758a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b06cc2f1992fe5ef2e2f7e1acc3766"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html">Packet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#aa4b06cc2f1992fe5ef2e2f7e1acc3766">getPacketPtr</a> ()</td></tr>
+<tr class="memdesc:aa4b06cc2f1992fe5ef2e2f7e1acc3766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface Definition of Abstract <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html" title="A structured interface to a token buffer.">Packet</a> Accessor.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#aa4b06cc2f1992fe5ef2e2f7e1acc3766">More...</a><br /></td></tr>
+<tr class="separator:aa4b06cc2f1992fe5ef2e2f7e1acc3766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8d7ab44a69f219196105d73da0e95a"><td class="memItemLeft" align="right" valign="top"><a id="a7a8d7ab44a69f219196105d73da0e95a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getTokenSize</b> ()</td></tr>
+<tr class="separator:a7a8d7ab44a69f219196105d73da0e95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de3c3a920bdbf11cc96617732020423"><td class="memItemLeft" align="right" valign="top"><a id="a0de3c3a920bdbf11cc96617732020423"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface_Binary</b> (std::iostream *ifaceStreamPtrIn=nullptr)</td></tr>
+<tr class="separator:a0de3c3a920bdbf11cc96617732020423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db28a95634e4b532522b06bf0350560"><td class="memItemLeft" align="right" valign="top"><a id="a9db28a95634e4b532522b06bf0350560"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface_Binary</b> (std::istream *ifaceInStreamPtrIn)</td></tr>
+<tr class="separator:a9db28a95634e4b532522b06bf0350560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8b37d641cdef8d61f1f2cc34fc77cb"><td class="memItemLeft" align="right" valign="top"><a id="aee8b37d641cdef8d61f1f2cc34fc77cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface_Binary</b> (std::ostream *ifaceOutStreamPtrIn)</td></tr>
+<tr class="separator:aee8b37d641cdef8d61f1f2cc34fc77cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html">IMSPacketsAPICore::PacketInterface</a></td></tr>
+<tr class="memitem:a36bb9d7eb54c836393566fd815100871 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a36bb9d7eb54c836393566fd815100871"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getPacketOption</b> ()=0</td></tr>
+<tr class="separator:a36bb9d7eb54c836393566fd815100871 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4640247a9d98b54651eff51300d3a5b4 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a4640247a9d98b54651eff51300d3a5b4"></a>
+virtual enum PacketTypes&#160;</td><td class="memItemRight" valign="bottom"><b>getPacketType</b> ()=0</td></tr>
+<tr class="separator:a4640247a9d98b54651eff51300d3a5b4 inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d4c0f55b53fb7dcdc0ba3f1137b33f inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a12d4c0f55b53fb7dcdc0ba3f1137b33f">WriteTo</a> ()</td></tr>
+<tr class="memdesc:a12d4c0f55b53fb7dcdc0ba3f1137b33f inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Serialize Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a12d4c0f55b53fb7dcdc0ba3f1137b33f">More...</a><br /></td></tr>
+<tr class="separator:a12d4c0f55b53fb7dcdc0ba3f1137b33f inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dee04e18290444d30a145f42a76505f inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a1dee04e18290444d30a145f42a76505f">ReadFrom</a> ()</td></tr>
+<tr class="memdesc:a1dee04e18290444d30a145f42a76505f inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract De-Serialize Function.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a1dee04e18290444d30a145f42a76505f">More...</a><br /></td></tr>
+<tr class="separator:a1dee04e18290444d30a145f42a76505f inherit pub_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a09022cc3e873b4992ed7fdf18d2c1874"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a09022cc3e873b4992ed7fdf18d2c1874">DeSerializePacket_Binary</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">PacketInterface_Binary</a>&lt; TokenType &gt; *PcktInterface)</td></tr>
+<tr class="memdesc:a09022cc3e873b4992ed7fdf18d2c1874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cyclic Non-Blocking Conditional Assembly.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a09022cc3e873b4992ed7fdf18d2c1874">More...</a><br /></td></tr>
+<tr class="separator:a09022cc3e873b4992ed7fdf18d2c1874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c6ff757fc88996eacd3b85aade52d8c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a7c6ff757fc88996eacd3b85aade52d8c">SerializePacket_Binary</a> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">PacketInterface_Binary</a>&lt; TokenType &gt; *PcktInterface)</td></tr>
+<tr class="memdesc:a7c6ff757fc88996eacd3b85aade52d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single Shot Non-Blocking Conditional Assembly.  <a href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a7c6ff757fc88996eacd3b85aade52d8c">More...</a><br /></td></tr>
+<tr class="separator:a7c6ff757fc88996eacd3b85aade52d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a853bbad5e12631869b60fa75b2994cc1"><td class="memItemLeft" align="right" valign="top"><a id="a853bbad5e12631869b60fa75b2994cc1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteToStream</b> ()</td></tr>
+<tr class="separator:a853bbad5e12631869b60fa75b2994cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6441e3e41a032d039a476610f1c74f"><td class="memItemLeft" align="right" valign="top"><a id="aee6441e3e41a032d039a476610f1c74f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFromStream</b> ()</td></tr>
+<tr class="separator:aee6441e3e41a032d039a476610f1c74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084526c242f15a9779a8392e9158b24f"><td class="memItemLeft" align="right" valign="top"><a id="a084526c242f15a9779a8392e9158b24f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetdeSerialize</b> ()</td></tr>
+<tr class="separator:a084526c242f15a9779a8392e9158b24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html">IMSPacketsAPICore::PacketInterface</a></td></tr>
 <tr class="memitem:a20b1cb7b7e874a6a14e911a5a8bd21a5 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a20b1cb7b7e874a6a14e911a5a8bd21a5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomWriteTo</b> ()</td></tr>
@@ -124,54 +140,45 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomWriteTo
 <tr class="memitem:a714ecb8cdceda4c1b5df0fe7bd9f7e5e inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a714ecb8cdceda4c1b5df0fe7bd9f7e5e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomReadFrom</b> ()</td></tr>
 <tr class="separator:a714ecb8cdceda4c1b5df0fe7bd9f7e5e inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6feb72de18a3e3b1c3b898abd1c75170 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a6feb72de18a3e3b1c3b898abd1c75170"></a>
+<tr class="memitem:aed8c314de64ad641f5064c2ad115a1e0 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="aed8c314de64ad641f5064c2ad115a1e0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface</b> (std::iostream *ifaceStreamPtrIn)</td></tr>
-<tr class="separator:a6feb72de18a3e3b1c3b898abd1c75170 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab27fcb56296aa86536119cf6c63ce914 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="ab27fcb56296aa86536119cf6c63ce914"></a>
+<tr class="separator:aed8c314de64ad641f5064c2ad115a1e0 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf1b37ba65cb1d082a2eed17fa52663 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a7bf1b37ba65cb1d082a2eed17fa52663"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface</b> (std::istream *ifaceInStreamPtrIn)</td></tr>
-<tr class="separator:ab27fcb56296aa86536119cf6c63ce914 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a707fac649aa68d12a7df8e4914227ac8 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a707fac649aa68d12a7df8e4914227ac8"></a>
+<tr class="separator:a7bf1b37ba65cb1d082a2eed17fa52663 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5372e4a4dce82e75aa5094ee46ff3a inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a4d5372e4a4dce82e75aa5094ee46ff3a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PacketInterface</b> (std::ostream *ifaceOutStreamPtrIn)</td></tr>
-<tr class="separator:a707fac649aa68d12a7df8e4914227ac8 inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:abd3284d378440f62469529082d250d95"><td class="memItemLeft" align="right" valign="top"><a id="abd3284d378440f62469529082d250d95"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>DeSerializePacket_Binary</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">PacketInterface_Binary</a>&lt; TokenType &gt; *PcktInterface)</td></tr>
-<tr class="separator:abd3284d378440f62469529082d250d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd9c1fac5104840d97f73a4edcbd1b9"><td class="memItemLeft" align="right" valign="top"><a id="a5bd9c1fac5104840d97f73a4edcbd1b9"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SerializePacket_Binary</b> (<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">PacketInterface_Binary</a>&lt; TokenType &gt; *PcktInterface)</td></tr>
-<tr class="separator:a5bd9c1fac5104840d97f73a4edcbd1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4d5372e4a4dce82e75aa5094ee46ff3a inherit pro_methods_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a57510b18d01713ce5d745ee39bff4a03"><td class="memItemLeft" align="right" valign="top"><a id="a57510b18d01713ce5d745ee39bff4a03"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ByteIndexLast</b> = 0</td></tr>
 <tr class="separator:a57510b18d01713ce5d745ee39bff4a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e38db6e398fe6c8c1dedd21ce4b5d1a"><td class="memItemLeft" align="right" valign="top"><a id="a1e38db6e398fe6c8c1dedd21ce4b5d1a"></a>
-<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_h_d_r___packet.html">HDR_Packet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BufferPacket</b></td></tr>
-<tr class="separator:a1e38db6e398fe6c8c1dedd21ce4b5d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f9ffa06dc36e98f53adf86944cf5a5"><td class="memItemLeft" align="right" valign="top"><a id="a93f9ffa06dc36e98f53adf86944cf5a5"></a>
+Packet_HDRPACK&#160;</td><td class="memItemRight" valign="bottom"><b>BufferPacket</b></td></tr>
+<tr class="separator:a93f9ffa06dc36e98f53adf86944cf5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93e5952f27b05ba76c8de2601659dcfd"><td class="memItemLeft" align="right" valign="top"><a id="a93e5952f27b05ba76c8de2601659dcfd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ByteIndex</b> = 0</td></tr>
 <tr class="separator:a93e5952f27b05ba76c8de2601659dcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd8605b752e1186d066c7befc11602e"><td class="memItemLeft" align="right" valign="top"><a id="a8bd8605b752e1186d066c7befc11602e"></a>
 <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_s_p_d_interface_buffer.html">SPDInterfaceBuffer</a>&lt; TokenType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>TokenBuffer</b></td></tr>
 <tr class="separator:a8bd8605b752e1186d066c7befc11602e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078ed0611072bb6db9381dc0e8458bc4"><td class="memItemLeft" align="right" valign="top"><a id="a078ed0611072bb6db9381dc0e8458bc4"></a>
+TokenType&#160;</td><td class="memItemRight" valign="bottom"><b>deSerializedTokenLength</b></td></tr>
+<tr class="separator:a078ed0611072bb6db9381dc0e8458bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaebcb87d9263e8da0c57c8933acaf11"><td class="memItemLeft" align="right" valign="top"><a id="abaebcb87d9263e8da0c57c8933acaf11"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>deSerializedPacketSize</b> = 0</td></tr>
 <tr class="separator:abaebcb87d9263e8da0c57c8933acaf11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5baec242fc6e1a9010780bb8f93d2d41"><td class="memItemLeft" align="right" valign="top"><a id="a5baec242fc6e1a9010780bb8f93d2d41"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>deSerializedTokenIndex</b> = 0</td></tr>
 <tr class="separator:a5baec242fc6e1a9010780bb8f93d2d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a078ed0611072bb6db9381dc0e8458bc4"><td class="memItemLeft" align="right" valign="top"><a id="a078ed0611072bb6db9381dc0e8458bc4"></a>
-TokenType&#160;</td><td class="memItemRight" valign="bottom"><b>deSerializedTokenLength</b></td></tr>
-<tr class="separator:a078ed0611072bb6db9381dc0e8458bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791a1300850403d04cd53d8cd4c39cce"><td class="memItemLeft" align="right" valign="top"><a id="a791a1300850403d04cd53d8cd4c39cce"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>deSerializeReset</b> = false</td></tr>
 <tr class="separator:a791a1300850403d04cd53d8cd4c39cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_i_m_s_packets_a_p_i_core_1_1_packet_interface')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html">IMSPacketsAPICore::PacketInterface</a></td></tr>
 <tr class="memitem:a3a4df0c64d61073708e4cb94aec179e8 inherit pro_attribs_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="a3a4df0c64d61073708e4cb94aec179e8"></a>
-std::iostream *&#160;</td><td class="memItemRight" valign="bottom"><b>ifaceStreamPtr</b></td></tr>
+std::iostream *&#160;</td><td class="memItemRight" valign="bottom"><b>ifaceStreamPtr</b> = nullptr</td></tr>
 <tr class="separator:a3a4df0c64d61073708e4cb94aec179e8 inherit pro_attribs_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd438e94baf4172c38cb8e546b44d2b4 inherit pro_attribs_class_i_m_s_packets_a_p_i_core_1_1_packet_interface"><td class="memItemLeft" align="right" valign="top"><a id="afd438e94baf4172c38cb8e546b44d2b4"></a>
 std::istream *&#160;</td><td class="memItemRight" valign="bottom"><b>ifaceInStreamPtr</b> = nullptr</td></tr>
@@ -192,7 +199,7 @@ class IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType &gt;</h3>
 
 <p>API Node Binary Interface for HDR_Packets. </p>
 
-<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8h_source.html#l00200">200</a> of file <a class="el" href="3___a_p_i_node_link_8h_source.html">3_APINodeLink.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8h_source.html#l00030">30</a> of file <a class="el" href="3___a_p_i_node_link_8h_source.html">3_APINodeLink.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a38a1fff4916293425ed879d8f625d1bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38a1fff4916293425ed879d8f625d1bd">&#9670;&nbsp;</a></span>DeSerializePacket()</h2>
@@ -206,20 +213,18 @@ template&lt;class TokenType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">IMSPacketsAPICore::PacketInterface_Binary</a>&lt; TokenType &gt;::DeSerializePacket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">IMSPacketsAPICore::PacketInterface_Binary</a>&lt; TokenType &gt;::DeSerializePacket</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Cyclic Non-Blocking Conditional Assembly. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a09022cc3e873b4992ed7fdf18d2c1874" title="Cyclic Non-Blocking Conditional Assembly.">DeSerializePacket_Binary</a></dd></dl>
 <p>Bytes are intended to enter the system one by one, or at least, token by token. As bytes are read into the packet buffer, this function analyzes the bytes to determine</p><ul>
 <li>the full size of the packet from its length token at index 1, and</li>
 <li>when either an error in Deserialization has occurred, or</li>
@@ -229,7 +234,75 @@ template&lt;class TokenType &gt; </div>
 
 <p>Implements <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html">IMSPacketsAPICore::PacketInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8h_source.html#l00307">307</a> of file <a class="el" href="3___a_p_i_node_link_8h_source.html">3_APINodeLink.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8cpp_source.html#l00104">104</a> of file <a class="el" href="3___a_p_i_node_link_8cpp_source.html">3_APINodeLink.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a09022cc3e873b4992ed7fdf18d2c1874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09022cc3e873b4992ed7fdf18d2c1874">&#9670;&nbsp;</a></span>DeSerializePacket_Binary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TokenType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">IMSPacketsAPICore::PacketInterface_Binary</a>&lt; TokenType &gt;::DeSerializePacket_Binary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">PacketInterface_Binary</a>&lt; TokenType &gt; *&#160;</td>
+          <td class="paramname"><em>PcktInterface</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cyclic Non-Blocking Conditional Assembly. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a38a1fff4916293425ed879d8f625d1bd" title="Cyclic Non-Blocking Conditional Assembly.">DeSerializePacket</a></dd></dl>
+<p>Static workhorse function to facilitate testing of customization framework with single validated function, the one used by default. </p>
+
+<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8cpp_source.html#l00047">47</a> of file <a class="el" href="3___a_p_i_node_link_8cpp_source.html">3_APINodeLink.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa4b06cc2f1992fe5ef2e2f7e1acc3766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b06cc2f1992fe5ef2e2f7e1acc3766">&#9670;&nbsp;</a></span>getPacketPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TokenType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">IMSPacketsAPICore::PacketInterface_Binary</a>&lt; TokenType &gt;::getPacketPtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interface Definition of Abstract <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html" title="A structured interface to a token buffer.">Packet</a> Accessor. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet.html" title="A structured interface to a token buffer.">Packet</a> Buffer of the Interface Instance </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html" title="An Abstraction of the serial interface connecting two api nodes.">PacketInterface</a>:<a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#aa4b06cc2f1992fe5ef2e2f7e1acc3766" title="Interface Definition of Abstract Packet Accessor.">getPacketPtr</a> </dd>
+<dd>
+BufferPacket </dd></dl>
+
+<p>Implements <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a1c7a550a1d6b0163f0ad09a5750bf482">IMSPacketsAPICore::PacketInterface</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8cpp_source.html#l00116">116</a> of file <a class="el" href="3___a_p_i_node_link_8cpp_source.html">3_APINodeLink.cpp</a>.</p>
 
 </div>
 </div>
@@ -245,15 +318,12 @@ template&lt;class TokenType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">IMSPacketsAPICore::PacketInterface_Binary</a>&lt; TokenType &gt;::SerializePacket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">IMSPacketsAPICore::PacketInterface_Binary</a>&lt; TokenType &gt;::SerializePacket</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -264,12 +334,47 @@ template&lt;class TokenType &gt; </div>
 
 <p>Implements <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html">IMSPacketsAPICore::PacketInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8h_source.html#l00356">356</a> of file <a class="el" href="3___a_p_i_node_link_8h_source.html">3_APINodeLink.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8cpp_source.html#l00110">110</a> of file <a class="el" href="3___a_p_i_node_link_8cpp_source.html">3_APINodeLink.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="a7c6ff757fc88996eacd3b85aade52d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6ff757fc88996eacd3b85aade52d8c">&#9670;&nbsp;</a></span>SerializePacket_Binary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TokenType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">IMSPacketsAPICore::PacketInterface_Binary</a>&lt; TokenType &gt;::SerializePacket_Binary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html">PacketInterface_Binary</a>&lt; TokenType &gt; *&#160;</td>
+          <td class="paramname"><em>PcktInterface</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Single Shot Non-Blocking Conditional Assembly. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a5413ec95895a5e521edb843ffa76758a" title="Single Shot Non-Blocking Conditional Assembly.">SerializePacket</a></dd></dl>
+<p>Static workhorse function to facilitate testing of customization framework with single validated function, the one used by default. </p>
+
+<p class="definition">Definition at line <a class="el" href="3___a_p_i_node_link_8cpp_source.html#l00092">92</a> of file <a class="el" href="3___a_p_i_node_link_8cpp_source.html">3_APINodeLink.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>libraries/ARU_Common/src/IMS_Packets_Core/<a class="el" href="3___a_p_i_node_link_8h_source.html">3_APINodeLink.h</a></li>
+<li>libraries/ARU_Common/src/IMS_Packets_Core/<a class="el" href="3___a_p_i_node_link_8cpp_source.html">3_APINodeLink.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

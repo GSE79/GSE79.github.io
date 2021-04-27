@@ -1,0 +1,20 @@
+digraph "IMSPacketsAPICore::PacketInterface"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="IMSPacketsAPICore::\lPacketInterface",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="An Abstraction of the serial interface connecting two api nodes."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="IMSPacketsAPICore::\lPacketInterface_ASCII",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html",tooltip="API Node ASCII Interface for HDR_Packets."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ArduinoFile_In_Interface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_arduino_file___in___interface.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ArduinoFile_Out_Interface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_arduino_file___out___interface.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ArduinoStream_In_Interface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_arduino_stream___in___interface.html",tooltip=" "];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ArduinoStream_Out_Interface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_arduino_stream___out___interface.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="IMSPacketsAPICore::\lPacketInterface_Binary\l\< TokenType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html",tooltip="API Node Binary Interface for HDR_Packets."];
+}

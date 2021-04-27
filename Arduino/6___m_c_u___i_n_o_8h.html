@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -52,6 +53,7 @@ $(document).ready(function(){initNavTree('6___m_c_u___i_n_o_8h.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">6_MCU_INO.h File Reference</div>  </div>
@@ -62,18 +64,369 @@ $(document).ready(function(){initNavTree('6___m_c_u___i_n_o_8h.html',''); initRe
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;ArduinoCommon.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="5___m_c_u___class_8h_source.html">5_MCU_Class.h</a>&quot;</code><br />
+<code>#include &lt;Adafruit_MCP23017.h&gt;</code><br />
 </div>
 <p><a href="6___m_c_u___i_n_o_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_u_self_test.html">MCUSelfTest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_c_u___i_n_o.html">MCU_INO</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:acd1dbe8f3a0aaafa957a487eeec12f5d"><td class="memItemLeft" align="right" valign="top"><a id="acd1dbe8f3a0aaafa957a487eeec12f5d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ACUSerial</b>&#160;&#160;&#160;Serial1</td></tr>
+<tr class="separator:acd1dbe8f3a0aaafa957a487eeec12f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c75356b3c7e46dbce08432eddaf4146"><td class="memItemLeft" align="right" valign="top"><a id="a1c75356b3c7e46dbce08432eddaf4146"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CMD_WRITE_AND_UPDATE_DAC</b>&#160;&#160;&#160;0b0011</td></tr>
+<tr class="separator:a1c75356b3c7e46dbce08432eddaf4146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45deaa328c5472b51dc359fd0f169bd"><td class="memItemLeft" align="right" valign="top"><a id="ad45deaa328c5472b51dc359fd0f169bd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADDR_DAC_A</b>&#160;&#160;&#160;0b0001</td></tr>
+<tr class="separator:ad45deaa328c5472b51dc359fd0f169bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe671bbafa2520d54f5a37198537fc81"><td class="memItemLeft" align="right" valign="top"><a id="abe671bbafa2520d54f5a37198537fc81"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADDR_DAC_B</b>&#160;&#160;&#160;0b1000</td></tr>
+<tr class="separator:abe671bbafa2520d54f5a37198537fc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3659305ef710718f7e8c5ae11d566be3"><td class="memItemLeft" align="right" valign="top"><a id="a3659305ef710718f7e8c5ae11d566be3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPI_Clock</b>&#160;&#160;&#160;1000000</td></tr>
+<tr class="separator:a3659305ef710718f7e8c5ae11d566be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8809de6b130bc5a1aea6e3ca313c6b"><td class="memItemLeft" align="right" valign="top"><a id="afc8809de6b130bc5a1aea6e3ca313c6b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>u35Addr</b>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:afc8809de6b130bc5a1aea6e3ca313c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef6fd4cf15761f5fc3b764d86d32d8e"><td class="memItemLeft" align="right" valign="top"><a id="aaef6fd4cf15761f5fc3b764d86d32d8e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>u33Addr</b>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:aaef6fd4cf15761f5fc3b764d86d32d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec6deb17a626a9cd947e3980a97af2b"><td class="memItemLeft" align="right" valign="top"><a id="acec6deb17a626a9cd947e3980a97af2b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>u34Addr</b>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:acec6deb17a626a9cd947e3980a97af2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9add2034aa6c18fd278b58f3f7f333b7"><td class="memItemLeft" align="right" valign="top"><a id="a9add2034aa6c18fd278b58f3f7f333b7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT1_C16</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(11, high_low)</td></tr>
+<tr class="separator:a9add2034aa6c18fd278b58f3f7f333b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e399b00c2e5af6562e8b7d3914d4e0"><td class="memItemLeft" align="right" valign="top"><a id="ad4e399b00c2e5af6562e8b7d3914d4e0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT1_C8</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(10, high_low)</td></tr>
+<tr class="separator:ad4e399b00c2e5af6562e8b7d3914d4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24143159c3a648e4557c58ec6827afc3"><td class="memItemLeft" align="right" valign="top"><a id="a24143159c3a648e4557c58ec6827afc3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT1_C4</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(9, high_low)</td></tr>
+<tr class="separator:a24143159c3a648e4557c58ec6827afc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1b0b974f67b0d1708a97a970d5ee79"><td class="memItemLeft" align="right" valign="top"><a id="aaf1b0b974f67b0d1708a97a970d5ee79"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT1_C2</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(8, high_low)</td></tr>
+<tr class="separator:aaf1b0b974f67b0d1708a97a970d5ee79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53d2d28f28886e40fe8d5b16b62e2a7"><td class="memItemLeft" align="right" valign="top"><a id="aa53d2d28f28886e40fe8d5b16b62e2a7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT1_C1</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(7, high_low)</td></tr>
+<tr class="separator:aa53d2d28f28886e40fe8d5b16b62e2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4400ff9e2a8f7575f094143c700e63b6"><td class="memItemLeft" align="right" valign="top"><a id="a4400ff9e2a8f7575f094143c700e63b6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT1_C0_25</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(12, high_low)</td></tr>
+<tr class="separator:a4400ff9e2a8f7575f094143c700e63b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd816f09f4c0d1ef44560d84d5d7926"><td class="memItemLeft" align="right" valign="top"><a id="a5bd816f09f4c0d1ef44560d84d5d7926"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT1_C0_50</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(6, high_low)</td></tr>
+<tr class="separator:a5bd816f09f4c0d1ef44560d84d5d7926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d14b0db7511c501dd954c179b4e59c4"><td class="memItemLeft" align="right" valign="top"><a id="a6d14b0db7511c501dd954c179b4e59c4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT2_C16</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(5, high_low)</td></tr>
+<tr class="separator:a6d14b0db7511c501dd954c179b4e59c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2210f0ae38fcfca1e71554c0dd1f657f"><td class="memItemLeft" align="right" valign="top"><a id="a2210f0ae38fcfca1e71554c0dd1f657f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT2_C8</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(4, high_low)</td></tr>
+<tr class="separator:a2210f0ae38fcfca1e71554c0dd1f657f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c81aab2d934074e7007994781f15be"><td class="memItemLeft" align="right" valign="top"><a id="a87c81aab2d934074e7007994781f15be"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT2_C4</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(3, high_low)</td></tr>
+<tr class="separator:a87c81aab2d934074e7007994781f15be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4854e28399ac8831551b8c950b327212"><td class="memItemLeft" align="right" valign="top"><a id="a4854e28399ac8831551b8c950b327212"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT2_C2</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(2, high_low)</td></tr>
+<tr class="separator:a4854e28399ac8831551b8c950b327212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57360d7d0e35affc50ee50f734a3eb91"><td class="memItemLeft" align="right" valign="top"><a id="a57360d7d0e35affc50ee50f734a3eb91"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT2_C1</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(1, high_low)</td></tr>
+<tr class="separator:a57360d7d0e35affc50ee50f734a3eb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee96511251c36f6acc34e83f6a09b6c"><td class="memItemLeft" align="right" valign="top"><a id="a4ee96511251c36f6acc34e83f6a09b6c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT2_C0_25</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(13, high_low)</td></tr>
+<tr class="separator:a4ee96511251c36f6acc34e83f6a09b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af4eb7a7e221d46b356e5f5c4ed60b9"><td class="memItemLeft" align="right" valign="top"><a id="a8af4eb7a7e221d46b356e5f5c4ed60b9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAT2_C0_50</b>(high_low)&#160;&#160;&#160;u34.digitalWrite(0, high_low)</td></tr>
+<tr class="separator:a8af4eb7a7e221d46b356e5f5c4ed60b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4d914b8d4d3b97a9842b35671ad121"><td class="memItemLeft" align="right" valign="top"><a id="a1c4d914b8d4d3b97a9842b35671ad121"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAC_LDAC</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(10, high_low)</td></tr>
+<tr class="separator:a1c4d914b8d4d3b97a9842b35671ad121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a0cecaac26caf28da299bfea7cb1ef"><td class="memItemLeft" align="right" valign="top"><a id="ad9a0cecaac26caf28da299bfea7cb1ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAC_SYNC</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(11, high_low)</td></tr>
+<tr class="separator:ad9a0cecaac26caf28da299bfea7cb1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab050437d6702621b88ff76fe9b1c6eb4"><td class="memItemLeft" align="right" valign="top"><a id="ab050437d6702621b88ff76fe9b1c6eb4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_DAC_RST</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(9, high_low)</td></tr>
+<tr class="separator:ab050437d6702621b88ff76fe9b1c6eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace140f7b9534c55b8164bbc8b8edcf8"><td class="memItemLeft" align="right" valign="top"><a id="aace140f7b9534c55b8164bbc8b8edcf8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_TEMP_CS</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(6, high_low)</td></tr>
+<tr class="separator:aace140f7b9534c55b8164bbc8b8edcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071caa4d84ae25569ab5713ba66d82ef"><td class="memItemLeft" align="right" valign="top"><a id="a071caa4d84ae25569ab5713ba66d82ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_TX_ADC_CONV1</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(8, high_low)</td></tr>
+<tr class="separator:a071caa4d84ae25569ab5713ba66d82ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8093ff9a43bd993a4291fcbf698565c1"><td class="memItemLeft" align="right" valign="top"><a id="a8093ff9a43bd993a4291fcbf698565c1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_OUT_SEL1</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(3, high_low)</td></tr>
+<tr class="separator:a8093ff9a43bd993a4291fcbf698565c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09846cba559ce16358c707556b119397"><td class="memItemLeft" align="right" valign="top"><a id="a09846cba559ce16358c707556b119397"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_OUT_SEL2</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(4, high_low)</td></tr>
+<tr class="separator:a09846cba559ce16358c707556b119397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dafb6a88c107033bca4c58cd7f3b151"><td class="memItemLeft" align="right" valign="top"><a id="a6dafb6a88c107033bca4c58cd7f3b151"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_OUT_SEL3</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(5, high_low)</td></tr>
+<tr class="separator:a6dafb6a88c107033bca4c58cd7f3b151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d61a5f42dc9f9c441cee7dc9bdf497"><td class="memItemLeft" align="right" valign="top"><a id="a26d61a5f42dc9f9c441cee7dc9bdf497"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_PS_EN</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(7, high_low)</td></tr>
+<tr class="separator:a26d61a5f42dc9f9c441cee7dc9bdf497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1207ccf2fcacec052f28260e1d206d61"><td class="memItemLeft" align="right" valign="top"><a id="a1207ccf2fcacec052f28260e1d206d61"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_PLL_SW1</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(12, high_low)</td></tr>
+<tr class="separator:a1207ccf2fcacec052f28260e1d206d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45038912d2183f39baf2e23720a358c"><td class="memItemLeft" align="right" valign="top"><a id="ab45038912d2183f39baf2e23720a358c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_PLL_SW2</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(13, high_low)</td></tr>
+<tr class="separator:ab45038912d2183f39baf2e23720a358c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc48f871775802769b80329b512dc6d1"><td class="memItemLeft" align="right" valign="top"><a id="abc48f871775802769b80329b512dc6d1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_PLL_SW3</b>(high_low)&#160;&#160;&#160;u33.digitalWrite(14, high_low)</td></tr>
+<tr class="separator:abc48f871775802769b80329b512dc6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae063c21de13d7580faf69aabd979027b"><td class="memItemLeft" align="right" valign="top"><a id="ae063c21de13d7580faf69aabd979027b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_IN_A_SW1</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(0, high_low)</td></tr>
+<tr class="separator:ae063c21de13d7580faf69aabd979027b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9eeec3276ea54d3b58c639ff1f9d232"><td class="memItemLeft" align="right" valign="top"><a id="af9eeec3276ea54d3b58c639ff1f9d232"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_IN_A_SW2</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(1, high_low)</td></tr>
+<tr class="separator:af9eeec3276ea54d3b58c639ff1f9d232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e45bd6af14811bb16528baebcbd127"><td class="memItemLeft" align="right" valign="top"><a id="ab4e45bd6af14811bb16528baebcbd127"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_IN_B_SW1</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(2, high_low)</td></tr>
+<tr class="separator:ab4e45bd6af14811bb16528baebcbd127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58f45e0fe4f1ade496113ebc1df67db"><td class="memItemLeft" align="right" valign="top"><a id="ac58f45e0fe4f1ade496113ebc1df67db"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_IN_B_SW2</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(3, high_low)</td></tr>
+<tr class="separator:ac58f45e0fe4f1ade496113ebc1df67db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3639d4756b32d96e4babba0168605fe8"><td class="memItemLeft" align="right" valign="top"><a id="a3639d4756b32d96e4babba0168605fe8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_IN_C_SW1</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(4, high_low)</td></tr>
+<tr class="separator:a3639d4756b32d96e4babba0168605fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c0ac5a18707efa8d20567b997d5128"><td class="memItemLeft" align="right" valign="top"><a id="a35c0ac5a18707efa8d20567b997d5128"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_IN_C_SW2</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(5, high_low)</td></tr>
+<tr class="separator:a35c0ac5a18707efa8d20567b997d5128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511c6ab5092f9f13d39661ef6cddb5fb"><td class="memItemLeft" align="right" valign="top"><a id="a511c6ab5092f9f13d39661ef6cddb5fb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_IN_D_SW1</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(6, high_low)</td></tr>
+<tr class="separator:a511c6ab5092f9f13d39661ef6cddb5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0e6dbe332f276dd266eb8b7ae68e93"><td class="memItemLeft" align="right" valign="top"><a id="aad0e6dbe332f276dd266eb8b7ae68e93"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_IN_D_SW2</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(7, high_low)</td></tr>
+<tr class="separator:aad0e6dbe332f276dd266eb8b7ae68e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015d861a6cd6317e3165851f958045e6"><td class="memItemLeft" align="right" valign="top"><a id="a015d861a6cd6317e3165851f958045e6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_10MHZ_SEL1</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(10, high_low)</td></tr>
+<tr class="separator:a015d861a6cd6317e3165851f958045e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c9d900041e3a4dfca9a994ad2f3315"><td class="memItemLeft" align="right" valign="top"><a id="ab8c9d900041e3a4dfca9a994ad2f3315"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_10MHZ_SEL2</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(9, high_low)</td></tr>
+<tr class="separator:ab8c9d900041e3a4dfca9a994ad2f3315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e49cacabad190acef701a3e524ebc8"><td class="memItemLeft" align="right" valign="top"><a id="aa1e49cacabad190acef701a3e524ebc8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_CPL_SEL1</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(12, high_low)</td></tr>
+<tr class="separator:aa1e49cacabad190acef701a3e524ebc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ea60a660bbc7d86235ecbd367cbb72"><td class="memItemLeft" align="right" valign="top"><a id="a79ea60a660bbc7d86235ecbd367cbb72"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_TX_CPL_SEL2</b>(high_low)&#160;&#160;&#160;u35.digitalWrite(13, high_low)</td></tr>
+<tr class="separator:a79ea60a660bbc7d86235ecbd367cbb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affda421d1aa97a83db802de6e083177a"><td class="memItemLeft" align="right" valign="top"><a id="affda421d1aa97a83db802de6e083177a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>u65Addr</b>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:affda421d1aa97a83db802de6e083177a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac201bba0c5a8514b294754440d6365e0"><td class="memItemLeft" align="right" valign="top"><a id="ac201bba0c5a8514b294754440d6365e0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>u66Addr</b>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ac201bba0c5a8514b294754440d6365e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec33fe83de33f86149e81516ef57dca"><td class="memItemLeft" align="right" valign="top"><a id="a8ec33fe83de33f86149e81516ef57dca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>u77Addr</b>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:a8ec33fe83de33f86149e81516ef57dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0823ef30978685001af1603d81e979"><td class="memItemLeft" align="right" valign="top"><a id="a6c0823ef30978685001af1603d81e979"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT1_C16</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(6, high_low)</td></tr>
+<tr class="separator:a6c0823ef30978685001af1603d81e979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578e4be5bec97e5450343bd4928cd9b4"><td class="memItemLeft" align="right" valign="top"><a id="a578e4be5bec97e5450343bd4928cd9b4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT1_C8</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(5, high_low)</td></tr>
+<tr class="separator:a578e4be5bec97e5450343bd4928cd9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa830ebbfffa8f3f7b867256eb96185a7"><td class="memItemLeft" align="right" valign="top"><a id="aa830ebbfffa8f3f7b867256eb96185a7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT1_C4</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(4, high_low)</td></tr>
+<tr class="separator:aa830ebbfffa8f3f7b867256eb96185a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3ef62de0969d973b2e7fd0caf9af42"><td class="memItemLeft" align="right" valign="top"><a id="afb3ef62de0969d973b2e7fd0caf9af42"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT1_C2</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(3, high_low)</td></tr>
+<tr class="separator:afb3ef62de0969d973b2e7fd0caf9af42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae55567124d2c0635968446286ec10f37"><td class="memItemLeft" align="right" valign="top"><a id="ae55567124d2c0635968446286ec10f37"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT1_C1</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(2, high_low)</td></tr>
+<tr class="separator:ae55567124d2c0635968446286ec10f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603b40ac2dfe9dcfc0119737986ea30f"><td class="memItemLeft" align="right" valign="top"><a id="a603b40ac2dfe9dcfc0119737986ea30f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT1_C0_25</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(0, high_low)</td></tr>
+<tr class="separator:a603b40ac2dfe9dcfc0119737986ea30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87b116fdeb0c79b63d394b4d8c9a3dc"><td class="memItemLeft" align="right" valign="top"><a id="af87b116fdeb0c79b63d394b4d8c9a3dc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT1_C0_50</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(1, high_low)</td></tr>
+<tr class="separator:af87b116fdeb0c79b63d394b4d8c9a3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c556f871252f1f2c774cca6c3ec3e34"><td class="memItemLeft" align="right" valign="top"><a id="a3c556f871252f1f2c774cca6c3ec3e34"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT2_C16</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(7, high_low)</td></tr>
+<tr class="separator:a3c556f871252f1f2c774cca6c3ec3e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fbe35b24183badb806a31c47898bdba"><td class="memItemLeft" align="right" valign="top"><a id="a9fbe35b24183badb806a31c47898bdba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT2_C8</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(6, high_low)</td></tr>
+<tr class="separator:a9fbe35b24183badb806a31c47898bdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372dd6accbb3a6e2c8ed0cdfaef152f9"><td class="memItemLeft" align="right" valign="top"><a id="a372dd6accbb3a6e2c8ed0cdfaef152f9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT2_C4</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(5, high_low)</td></tr>
+<tr class="separator:a372dd6accbb3a6e2c8ed0cdfaef152f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e2c2be72237d433bf286068e0b3c1a"><td class="memItemLeft" align="right" valign="top"><a id="a41e2c2be72237d433bf286068e0b3c1a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT2_C2</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(4, high_low)</td></tr>
+<tr class="separator:a41e2c2be72237d433bf286068e0b3c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd5d999fb5f3350004b64a7d191aeb9"><td class="memItemLeft" align="right" valign="top"><a id="a2dd5d999fb5f3350004b64a7d191aeb9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT2_C1</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(3, high_low)</td></tr>
+<tr class="separator:a2dd5d999fb5f3350004b64a7d191aeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7423889d324a2511299dcae68a9a75ca"><td class="memItemLeft" align="right" valign="top"><a id="a7423889d324a2511299dcae68a9a75ca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT2_C0_25</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(1, high_low)</td></tr>
+<tr class="separator:a7423889d324a2511299dcae68a9a75ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5b3b87d027f8698f577b9d1caf6ea5"><td class="memItemLeft" align="right" valign="top"><a id="a4a5b3b87d027f8698f577b9d1caf6ea5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAT2_C0_50</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(2, high_low)</td></tr>
+<tr class="separator:a4a5b3b87d027f8698f577b9d1caf6ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af162f37baa72c8e1d07d61d33e404cd6"><td class="memItemLeft" align="right" valign="top"><a id="af162f37baa72c8e1d07d61d33e404cd6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAC_LDAC</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(14, high_low)</td></tr>
+<tr class="separator:af162f37baa72c8e1d07d61d33e404cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b925460f0000b821cec31f16643759"><td class="memItemLeft" align="right" valign="top"><a id="a20b925460f0000b821cec31f16643759"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAC_SYNC</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(15, high_low)</td></tr>
+<tr class="separator:a20b925460f0000b821cec31f16643759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373bf0abf40cbbdb2bb1503d95a53aa8"><td class="memItemLeft" align="right" valign="top"><a id="a373bf0abf40cbbdb2bb1503d95a53aa8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_DAC_RST</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(8, high_low)</td></tr>
+<tr class="separator:a373bf0abf40cbbdb2bb1503d95a53aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532d7eaf5ef3f124a2c0197b3441d106"><td class="memItemLeft" align="right" valign="top"><a id="a532d7eaf5ef3f124a2c0197b3441d106"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_TEMP_CS</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(0, high_low)</td></tr>
+<tr class="separator:a532d7eaf5ef3f124a2c0197b3441d106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3c1492cdd0ce8aa02eb843a3117df8"><td class="memItemLeft" align="right" valign="top"><a id="aae3c1492cdd0ce8aa02eb843a3117df8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_ADC_CONV1</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(11, high_low)</td></tr>
+<tr class="separator:aae3c1492cdd0ce8aa02eb843a3117df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993709284c4d43c17bc6267da90c9a40"><td class="memItemLeft" align="right" valign="top"><a id="a993709284c4d43c17bc6267da90c9a40"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_ADC_CONV2</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(10, high_low)</td></tr>
+<tr class="separator:a993709284c4d43c17bc6267da90c9a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af371f211b2e57b189afc0134b0df97f1"><td class="memItemLeft" align="right" valign="top"><a id="af371f211b2e57b189afc0134b0df97f1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_ADC_CONV3</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(9, high_low)</td></tr>
+<tr class="separator:af371f211b2e57b189afc0134b0df97f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a593dda58deebaeb5dc332cd26c747"><td class="memItemLeft" align="right" valign="top"><a id="a60a593dda58deebaeb5dc332cd26c747"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_CPL_SEL1</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(12, high_low)</td></tr>
+<tr class="separator:a60a593dda58deebaeb5dc332cd26c747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24056a673398788de515666585630e9"><td class="memItemLeft" align="right" valign="top"><a id="af24056a673398788de515666585630e9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_CPL_SEL2</b>(high_low)&#160;&#160;&#160;u65.digitalWrite(13, high_low)</td></tr>
+<tr class="separator:af24056a673398788de515666585630e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1dc99378b4eafe8009c08105ea3dc6"><td class="memItemLeft" align="right" valign="top"><a id="a1b1dc99378b4eafe8009c08105ea3dc6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_OUT_SEL1</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(9, high_low)</td></tr>
+<tr class="separator:a1b1dc99378b4eafe8009c08105ea3dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8779a68d7fe0b97f70daf5d665a6bab9"><td class="memItemLeft" align="right" valign="top"><a id="a8779a68d7fe0b97f70daf5d665a6bab9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_OUT_SEL2</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(8, high_low)</td></tr>
+<tr class="separator:a8779a68d7fe0b97f70daf5d665a6bab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0640f0a9b0230e4286e30e282912e2"><td class="memItemLeft" align="right" valign="top"><a id="abe0640f0a9b0230e4286e30e282912e2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_OUT_SEL3</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(7, high_low)</td></tr>
+<tr class="separator:abe0640f0a9b0230e4286e30e282912e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89564695216d108e8f9666f4e5e2abe9"><td class="memItemLeft" align="right" valign="top"><a id="a89564695216d108e8f9666f4e5e2abe9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_IN_SEL1</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(12, high_low)</td></tr>
+<tr class="separator:a89564695216d108e8f9666f4e5e2abe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567362693144961c8c65717cc09c5ef9"><td class="memItemLeft" align="right" valign="top"><a id="a567362693144961c8c65717cc09c5ef9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_IN_SEL2</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(13, high_low)</td></tr>
+<tr class="separator:a567362693144961c8c65717cc09c5ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b946989d33c36cb62d8c25e10a806d"><td class="memItemLeft" align="right" valign="top"><a id="ad2b946989d33c36cb62d8c25e10a806d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_IN_SEL3</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(14, high_low)</td></tr>
+<tr class="separator:ad2b946989d33c36cb62d8c25e10a806d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1f994d4a673aa1e5405776ced87d27"><td class="memItemLeft" align="right" valign="top"><a id="a3a1f994d4a673aa1e5405776ced87d27"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_PS_EN</b>(high_low)&#160;&#160;&#160;u66.digitalWrite(15, high_low)</td></tr>
+<tr class="separator:a3a1f994d4a673aa1e5405776ced87d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f84c4067fe4d16e1a9079fb044d1dc"><td class="memItemLeft" align="right" valign="top"><a id="ab0f84c4067fe4d16e1a9079fb044d1dc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_SW13</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(0, high_low)</td></tr>
+<tr class="separator:ab0f84c4067fe4d16e1a9079fb044d1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9291f277794f8c848ec54a3078c971a1"><td class="memItemLeft" align="right" valign="top"><a id="a9291f277794f8c848ec54a3078c971a1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_SW14</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(1, high_low)</td></tr>
+<tr class="separator:a9291f277794f8c848ec54a3078c971a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3cfd475fb78c355b1a460e78492a3e1"><td class="memItemLeft" align="right" valign="top"><a id="ad3cfd475fb78c355b1a460e78492a3e1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_SW15</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(2, high_low)</td></tr>
+<tr class="separator:ad3cfd475fb78c355b1a460e78492a3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7ee7b83687b50e4b9eeb8465305613"><td class="memItemLeft" align="right" valign="top"><a id="a0a7ee7b83687b50e4b9eeb8465305613"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_SW16</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(3, high_low)</td></tr>
+<tr class="separator:a0a7ee7b83687b50e4b9eeb8465305613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62c308f2bd42f5087a6f90e39ed43e1"><td class="memItemLeft" align="right" valign="top"><a id="ad62c308f2bd42f5087a6f90e39ed43e1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPINT_RX_SW18_SEL1</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(4, high_low)</td></tr>
+<tr class="separator:ad62c308f2bd42f5087a6f90e39ed43e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28485037bd9ac4afcaff33989fb3fb89"><td class="memItemLeft" align="right" valign="top"><a id="a28485037bd9ac4afcaff33989fb3fb89"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPINT_RX_SW18_SEL2</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(5, high_low)</td></tr>
+<tr class="separator:a28485037bd9ac4afcaff33989fb3fb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b630e006aa63d37397cf7c7217d1e6"><td class="memItemLeft" align="right" valign="top"><a id="ab1b630e006aa63d37397cf7c7217d1e6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPINT_RX_SW19_SEL1</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(6, high_low)</td></tr>
+<tr class="separator:ab1b630e006aa63d37397cf7c7217d1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0630700d126c4d4e084352305d75b2a0"><td class="memItemLeft" align="right" valign="top"><a id="a0630700d126c4d4e084352305d75b2a0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPINT_RX_SW19_SEL2</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(7, high_low)</td></tr>
+<tr class="separator:a0630700d126c4d4e084352305d75b2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61944050a31b78e773ace85fb6e3026"><td class="memItemLeft" align="right" valign="top"><a id="af61944050a31b78e773ace85fb6e3026"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPINT_RX_SW20_SEL1</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(8, high_low)</td></tr>
+<tr class="separator:af61944050a31b78e773ace85fb6e3026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c899f98bda70c433e9f4ed73551cac"><td class="memItemLeft" align="right" valign="top"><a id="ab8c899f98bda70c433e9f4ed73551cac"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPINT_RX_SW20_SEL2</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(9, high_low)</td></tr>
+<tr class="separator:ab8c899f98bda70c433e9f4ed73551cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2efe44732a9cf7372ebfb1e0f7fb2de"><td class="memItemLeft" align="right" valign="top"><a id="af2efe44732a9cf7372ebfb1e0f7fb2de"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPINT_RX_SW21_SEL1</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(10, high_low)</td></tr>
+<tr class="separator:af2efe44732a9cf7372ebfb1e0f7fb2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad871607593f96e65680b8049396cea16"><td class="memItemLeft" align="right" valign="top"><a id="ad871607593f96e65680b8049396cea16"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPINT_RX_SW21_SEL2</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(11, high_low)</td></tr>
+<tr class="separator:ad871607593f96e65680b8049396cea16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada04318d8bd2722583be4a90dc10578d"><td class="memItemLeft" align="right" valign="top"><a id="ada04318d8bd2722583be4a90dc10578d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_10MHZ_SEL1</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(12, high_low)</td></tr>
+<tr class="separator:ada04318d8bd2722583be4a90dc10578d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ed39cc9952c5fe84ffd0523fa6afb9"><td class="memItemLeft" align="right" valign="top"><a id="ab3ed39cc9952c5fe84ffd0523fa6afb9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SETPIN_RX_10MHZ_SEL2</b>(high_low)&#160;&#160;&#160;u77.digitalWrite(13, high_low)</td></tr>
+<tr class="separator:ab3ed39cc9952c5fe84ffd0523fa6afb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5463c7cf864a51fd1f649f06bc2836bb"><td class="memItemLeft" align="right" valign="top"><a id="a5463c7cf864a51fd1f649f06bc2836bb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SW_CTL1_PIN</b>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a5463c7cf864a51fd1f649f06bc2836bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de640b6c7d52d86141a0a2639174c98"><td class="memItemLeft" align="right" valign="top"><a id="a3de640b6c7d52d86141a0a2639174c98"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RELAY_28V_ENABLE_PIN</b>&#160;&#160;&#160;36</td></tr>
+<tr class="separator:a3de640b6c7d52d86141a0a2639174c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f5719f123805e37f08ded6a475f71e"><td class="memItemLeft" align="right" valign="top"><a id="a06f5719f123805e37f08ded6a475f71e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ATTEN_SERNIN_PIN</b>&#160;&#160;&#160;34</td></tr>
+<tr class="separator:a06f5719f123805e37f08ded6a475f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7b51d5857fe53469ec8bc5254dec7f"><td class="memItemLeft" align="right" valign="top"><a id="a2f7b51d5857fe53469ec8bc5254dec7f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ATTEN_CLK_PIN</b>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a2f7b51d5857fe53469ec8bc5254dec7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4ef39265379ee2d0245c42d511f572"><td class="memItemLeft" align="right" valign="top"><a id="a9f4ef39265379ee2d0245c42d511f572"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ATTEN_LE_PIN</b>&#160;&#160;&#160;35</td></tr>
+<tr class="separator:a9f4ef39265379ee2d0245c42d511f572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68294a3725bf366360c9bc3fb732f1d3"><td class="memItemLeft" align="right" valign="top"><a id="a68294a3725bf366360c9bc3fb732f1d3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SG_ENB_PIN</b>&#160;&#160;&#160;23</td></tr>
+<tr class="separator:a68294a3725bf366360c9bc3fb732f1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4ee977a11fd7935ecb44e06daf6c5e"><td class="memItemLeft" align="right" valign="top"><a id="a5f4ee977a11fd7935ecb44e06daf6c5e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADF4106_LE_PIN</b>&#160;&#160;&#160;27</td></tr>
+<tr class="separator:a5f4ee977a11fd7935ecb44e06daf6c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9095566118e651fbd9ecf52ff9cc97e"><td class="memItemLeft" align="right" valign="top"><a id="ac9095566118e651fbd9ecf52ff9cc97e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADF4106_LD_PIN</b>&#160;&#160;&#160;25</td></tr>
+<tr class="separator:ac9095566118e651fbd9ecf52ff9cc97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4c3b89143f65a1a526c892d39b20a3"><td class="memItemLeft" align="right" valign="top"><a id="ada4c3b89143f65a1a526c892d39b20a3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADF4106_CE_PIN</b>&#160;&#160;&#160;33</td></tr>
+<tr class="separator:ada4c3b89143f65a1a526c892d39b20a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113656b4e3c5b074c9bdf0923e526db9"><td class="memItemLeft" align="right" valign="top"><a id="a113656b4e3c5b074c9bdf0923e526db9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADF4106_CLK_PIN</b>&#160;&#160;&#160;31</td></tr>
+<tr class="separator:a113656b4e3c5b074c9bdf0923e526db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f0f6d1957c964381df03dfe1f31d26"><td class="memItemLeft" align="right" valign="top"><a id="a29f0f6d1957c964381df03dfe1f31d26"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADF4106_DATA_PIN</b>&#160;&#160;&#160;29</td></tr>
+<tr class="separator:a29f0f6d1957c964381df03dfe1f31d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640e80a414bbc1cdb1ac1b8f8e052d0c"><td class="memItemLeft" align="right" valign="top"><a id="a640e80a414bbc1cdb1ac1b8f8e052d0c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_SDO_PIN</b>&#160;&#160;&#160;28</td></tr>
+<tr class="separator:a640e80a414bbc1cdb1ac1b8f8e052d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34de63014126b118c9231409b5b7dd2"><td class="memItemLeft" align="right" valign="top"><a id="af34de63014126b118c9231409b5b7dd2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_SCK_PIN</b>&#160;&#160;&#160;26</td></tr>
+<tr class="separator:af34de63014126b118c9231409b5b7dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4128f9e46b05ce0c75ba93c2bc2132"><td class="memItemLeft" align="right" valign="top"><a id="a3b4128f9e46b05ce0c75ba93c2bc2132"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_CONV_PIN</b>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:a3b4128f9e46b05ce0c75ba93c2bc2132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41d773f821abeb86099a5c513ffe2bb"><td class="memItemLeft" align="right" valign="top"><a id="ac41d773f821abeb86099a5c513ffe2bb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LOW_FREQ_SWITCH</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ac41d773f821abeb86099a5c513ffe2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284b1ab2533e8f6142b4815958438a0e"><td class="memItemLeft" align="right" valign="top"><a id="a284b1ab2533e8f6142b4815958438a0e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HIGH_FREQ_SWITCH</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a284b1ab2533e8f6142b4815958438a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cfe5ead5c308935013b7b3fa6cac96d"><td class="memItemLeft" align="right" valign="top"><a id="a8cfe5ead5c308935013b7b3fa6cac96d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MASK_XOR</b>&#160;&#160;&#160;0x03;</td></tr>
+<tr class="separator:a8cfe5ead5c308935013b7b3fa6cac96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d55ebfa2f2f1bd14867ad6a6cc9bfb"><td class="memItemLeft" align="right" valign="top"><a id="a95d55ebfa2f2f1bd14867ad6a6cc9bfb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>RESOLUTION</b>&#160;&#160;&#160;0.03125</td></tr>
+<tr class="separator:a95d55ebfa2f2f1bd14867ad6a6cc9bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddb794ec80fffeabb925522fe04260d"><td class="memItemLeft" align="right" valign="top"><a id="aeddb794ec80fffeabb925522fe04260d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONTINUOUS_CONV</b>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:aeddb794ec80fffeabb925522fe04260d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626ac558c1aa9acdf9f55927ce5d7c17"><td class="memItemLeft" align="right" valign="top"><a id="a626ac558c1aa9acdf9f55927ce5d7c17"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GOOD_STATUS</b>&#160;&#160;&#160;PIXEL_GREEN</td></tr>
+<tr class="separator:a626ac558c1aa9acdf9f55927ce5d7c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf16e7e7f0a9fc7d069ead295af40355"><td class="memItemLeft" align="right" valign="top"><a id="abf16e7e7f0a9fc7d069ead295af40355"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>STARTUP_FAIL</b>&#160;&#160;&#160;PIXEL_RED</td></tr>
+<tr class="separator:abf16e7e7f0a9fc7d069ead295af40355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6844f086902fdfc6f981438ce92dad25"><td class="memItemLeft" align="right" valign="top"><a id="a6844f086902fdfc6f981438ce92dad25"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TX_RX_FAIL</b>&#160;&#160;&#160;PIXEL_ORANGE</td></tr>
+<tr class="separator:a6844f086902fdfc6f981438ce92dad25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a6ad7fa3561a3187f10353daf3bec8e6b"><td class="memItemLeft" align="right" valign="top"><a id="a6ad7fa3561a3187f10353daf3bec8e6b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>must_select_mcu_board</b> = not_building_for_mcu_board_select_mcu_board</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>must_select_mcu_board</b> = not_building_for_mcu_board_select_MCU_board</td></tr>
 <tr class="separator:a6ad7fa3561a3187f10353daf3bec8e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

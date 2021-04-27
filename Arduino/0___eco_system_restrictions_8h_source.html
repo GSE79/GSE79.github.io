@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -58,33 +59,37 @@ $(document).ready(function(){initNavTree('0___eco_system_restrictions_8h_source.
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef __ECOSYSTEMRESTRICTIONS__</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define __ECOSYSTEMRESTRICTIONS__</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group___ecosystem_restrictions.html#gac8aa733fc7251319c3b744dda95234df">   63</a></span>&#160;<span class="preprocessor">#define PACKETBUFFER_TOKENCOUNT (32)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="0___eco_system_versions_8h.html">0_EcoSystemVersions.h</a>&quot;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___ecosystem_restrictions.html#gac8aa733fc7251319c3b744dda95234df">   64</a></span>&#160;<span class="preprocessor">#define PACKETBUFFER_TOKENCOUNT (32)</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>     <span class="comment">// istream, ostream, and iostream (packet interface objects)</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//#include &lt;cstdint&gt;    // uint8_t, int8_t, uint16_t, ... etc.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#pragma region String Packets Require char* and binary-string conversion</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//#include &lt;cstdio&gt;     // snprintf()</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//#include &lt;cstdlib&gt;    // atoi() and atof()</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="group___ecosystem_restrictions.html#gaa659be8d6fe22460f3c6889d21311aca">   82</a></span>&#160;<span class="preprocessor">#define STRINGBUFFER_TOKENRATIO (10)</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___ecosystem_restrictions.html#gaa904587c2bdd910b958d6424b23b2272">   92</a></span>&#160;<span class="preprocessor">#define STRINGBUFFER_IDTOKENRATIO (32)</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group___ecosystem_restrictions.html#gabbbbe69dc2d5a4f1f282c78b48ae8856">  106</a></span>&#160;<span class="preprocessor">#define STRINGBUFFER_CHARCOUNT ((PACKETBUFFER_TOKENCOUNT-1)*STRINGBUFFER_TOKENRATIO+STRINGBUFFER_IDTOKENRATIO)</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#define PORTOUTPACK_BUFFERLENGTH (10)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>     <span class="comment">// istream, ostream, and iostream (packet interface objects)</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//#include &lt;cstdint&gt;    // uint8_t, int8_t, uint16_t, ... etc.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#pragma region String Packets Require char* and binary-string conversion</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//#include &lt;cstdio&gt;     // snprintf()</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//#include &lt;cstdlib&gt;    // atoi() and atof()</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group___ecosystem_restrictions.html#gaa659be8d6fe22460f3c6889d21311aca">   84</a></span>&#160;<span class="preprocessor">#define STRINGBUFFER_TOKENRATIO (10)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group___ecosystem_restrictions.html#gaa904587c2bdd910b958d6424b23b2272">   94</a></span>&#160;<span class="preprocessor">#define STRINGBUFFER_IDTOKENRATIO (32)</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group___ecosystem_restrictions.html#gabbbbe69dc2d5a4f1f282c78b48ae8856">  108</a></span>&#160;<span class="preprocessor">#define STRINGBUFFER_CHARCOUNT ((PACKETBUFFER_TOKENCOUNT-1)*STRINGBUFFER_TOKENRATIO+STRINGBUFFER_IDTOKENRATIO)</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // !__ECOSYSTEMRESTRICTIONS__</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif // !__ECOSYSTEMRESTRICTIONS__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="a0___eco_system_versions_8h_html"><div class="ttname"><a href="0___eco_system_versions_8h.html">0_EcoSystemVersions.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

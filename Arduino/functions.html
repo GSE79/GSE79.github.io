@@ -23,8 +23,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EVC ARU FW and Tools
+   &#160;<span id="projectnumber">v1.1.3-dev</span>
    </div>
-   <div id="projectbrief">Portable Firmware Source, Arduino PCB Implementations, Tools for Production, and Tools for Service</div>
+   <div id="projectbrief">Portable Firmware Source and Arduino PCB Implementations</div>
   </td>
  </tr>
  </tbody>
@@ -50,40 +51,96 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </script>
 <div id="doc-content">
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div><ul>
+<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+
+<h3><a id="index_d"></a>- d -</h3><ul>
 <li>DeSerializePacket()
-: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a38a1fff4916293425ed879d8f625d1bd">IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType &gt;</a>
+: <a class="el" href="class_arduino_file___in___interface.html#a60b881e599767cec056e1f723ea1f23e">ArduinoFile_In_Interface</a>
+, <a class="el" href="class_arduino_stream___in___interface.html#a971b2ea187dae189926a44e6beca9e50">ArduinoStream_In_Interface</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#ab1452ed0a71cfadbcdcf61c0fc06e6f6">IMSPacketsAPICore::PacketInterface_ASCII</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a38a1fff4916293425ed879d8f625d1bd">IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType &gt;</a>
 </li>
+<li>DeSerializePacket_ASCII()
+: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#a8b534d30cf809703a1bb1d189a45c52e">IMSPacketsAPICore::PacketInterface_ASCII</a>
+</li>
+<li>DeSerializePacket_Binary()
+: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a09022cc3e873b4992ed7fdf18d2c1874">IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>getPacketPtr()
+: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a1c7a550a1d6b0163f0ad09a5750bf482">IMSPacketsAPICore::PacketInterface</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#abed8114f0dce10ad4af6c3b0e45be745">IMSPacketsAPICore::PacketInterface_ASCII</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#aa4b06cc2f1992fe5ef2e2f7e1acc3766">IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_h"></a>- h -</h3><ul>
 <li>HandleRxPacket()
-: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a4a9b5ec278e2956773a36ca91ac919c7">IMSPacketsAPICore::AbstractDataExecution</a>
-, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a2553695b585dae44400d96d4aaaa77de">IMSPacketsAPICore::API_NODE</a>
+: <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html#ac2a7b37bf5bae43be343588f88588bd7">ACU_API::ACU_Node</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a3af77ab14e4dfa2fa50f8bc9ad7c0057">IMSPacketsAPICore::AbstractDataExecution</a>
+, <a class="el" href="class_m_c_u___a_p_i_1_1_m_c_u___node.html#af35c709186cdc370412684e66b94348b">MCU_API::MCU_Node</a>
+, <a class="el" href="class_p_d_u___a_p_i_1_1_p_d_u___node.html#ab145b62ba3d28a721faf43b0e567e21b">PDU_API::PDU_Node</a>
 </li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
 <li>Loop()
 : <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a65eaa114545b8120ca6e84de32eec429">IMSPacketsAPICore::AbstractDataExecution</a>
-, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a6c16377a468a8a6c2b5fbbee59d9f360">IMSPacketsAPICore::API_NODE</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#ac8112352dd8d6e52dc4090d2669cf88d">IMSPacketsAPICore::API_NODE</a>
 </li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
 <li>PrepareTxPacket()
-: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#a831e864e8047410ee24cb4ffd54136c9">IMSPacketsAPICore::AbstractDataExecution</a>
-, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_a_p_i___n_o_d_e.html#a89b689a574f42687b60f1266ac5cabf4">IMSPacketsAPICore::API_NODE</a>
+: <a class="el" href="class_a_c_u___a_p_i_1_1_a_c_u___node.html#ac14141ceb7a3c504d0a73a36c8bb247c">ACU_API::ACU_Node</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#aaa255b7c645012e61e42f9c4d880278d">IMSPacketsAPICore::AbstractDataExecution</a>
+, <a class="el" href="class_m_c_u___a_p_i_1_1_m_c_u___node.html#a3eca5e887014b4393c1bc5948acf258f">MCU_API::MCU_Node</a>
+, <a class="el" href="class_p_d_u___a_p_i_1_1_p_d_u___node.html#a9a0932b06a9653f5bc30d73eb3c27b1c">PDU_API::PDU_Node</a>
 </li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
 <li>ReadFrom()
-: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a50c83e5997ce2726f178da2e3d4daad6">IMSPacketsAPICore::PacketInterface</a>
+: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a1dee04e18290444d30a145f42a76505f">IMSPacketsAPICore::PacketInterface</a>
 </li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
 <li>SerializePacket()
 : <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a5413ec95895a5e521edb843ffa76758a">IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType &gt;</a>
 </li>
+<li>SerializePacket_ASCII()
+: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___a_s_c_i_i.html#a428799716b53401245a56a64ee24da0a">IMSPacketsAPICore::PacketInterface_ASCII</a>
+</li>
+<li>SerializePacket_Binary()
+: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface___binary.html#a7c6ff757fc88996eacd3b85aade52d8c">IMSPacketsAPICore::PacketInterface_Binary&lt; TokenType &gt;</a>
+</li>
 <li>ServicePort()
-: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html#add46b285323c6de11000f20480c4afca">IMSPacketsAPICore::PolymorphicPacketPort</a>
+: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_port___file_system.html#a63cfc36670bef1356982ce9eb36aa2f9">IMSPacketsAPICore::PacketPort_FileSystem</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_port___s_r___responder.html#a6a48e4c3fbe4b7057e5bfb42b33ecb52">IMSPacketsAPICore::PacketPort_SR_Responder</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_port___s_r___sender.html#af24fc193d9aa67d9cce5f29cc4a70b25">IMSPacketsAPICore::PacketPort_SR_Sender</a>
+, <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_polymorphic_packet_port.html#a3ca252b29db3595a1c62adb00535dc36">IMSPacketsAPICore::PolymorphicPacketPort</a>
 </li>
 <li>Setup()
 : <a class="el" href="class_a_c_u___i_n_o.html#ae3b0ae717215567ec2fa53a6dd7100c1">ACU_INO</a>
-, <a class="el" href="class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html#ad55054dd28e583247e7b927852af895e">ARUAPICore::ARU_API_Node</a>
 , <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html#aa9f135d4ad44201159cddbb1201f07f9">IMSPacketsAPICore::AbstractDataExecution</a>
 , <a class="el" href="class_m_c_u___i_n_o.html#aa1794106f28273e978d7e472af3af93d">MCU_INO</a>
 , <a class="el" href="class_p_d_u___i_n_o.html#aa243eb0ed65b2d1207a8642ffda02652">PDU_INO</a>
 </li>
+</ul>
+
+
+<h3><a id="index_w"></a>- w -</h3><ul>
 <li>WriteTo()
-: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#ae397d935d790fd4c4922ad26b2e56014">IMSPacketsAPICore::PacketInterface</a>
+: <a class="el" href="class_i_m_s_packets_a_p_i_core_1_1_packet_interface.html#a12d4c0f55b53fb7dcdc0ba3f1137b33f">IMSPacketsAPICore::PacketInterface</a>
 </li>
 </ul>
 </div><!-- contents -->

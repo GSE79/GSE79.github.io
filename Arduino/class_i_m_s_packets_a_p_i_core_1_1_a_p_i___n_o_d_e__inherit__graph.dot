@@ -1,0 +1,23 @@
+digraph "IMSPacketsAPICore::API_NODE"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="IMSPacketsAPICore::\lAPI_NODE",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="API Node for HDR_Packets."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="IMSPacketsAPICore::\lAbstractDataExecution",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_m_s_packets_a_p_i_core_1_1_abstract_data_execution.html",tooltip="An Abstraction of the Distributed Data and Execution System."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ARUAPICore::ARU_API_Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_a_r_u_a_p_i_core_1_1_a_r_u___a_p_i___node.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MCU_API::MCU_Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_c_u___a_p_i_1_1_m_c_u___node.html",tooltip="Abstract Base of the MCU PCB within the ARU."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MCU_Class_Tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_c_u___class___tests.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MCU_INO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_m_c_u___i_n_o.html",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="PDU_API::PDU_Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_u___a_p_i_1_1_p_d_u___node.html",tooltip="Abstract Base of the PDU PCB within the ARU."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="PDU_Class_Tests",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_u___class___tests.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="PDU_INO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_p_d_u___i_n_o.html",tooltip=" "];
+}
