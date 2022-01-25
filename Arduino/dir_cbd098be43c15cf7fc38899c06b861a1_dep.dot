@@ -1,8 +1,0 @@
-digraph "MCU_Console" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  dir_cbd098be43c15cf7fc38899c06b861a1 [shape=box, label="MCU_Console", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_cbd098be43c15cf7fc38899c06b861a1.html"];
-  dir_9838586c8e1b8c41d059e79659516442 [shape=box label="MCU" URL="dir_9838586c8e1b8c41d059e79659516442.html"];
-  dir_cbd098be43c15cf7fc38899c06b861a1->dir_9838586c8e1b8c41d059e79659516442 [headlabel="1", labeldistance=1.5 headhref="dir_000007_000006.html"];
-}
