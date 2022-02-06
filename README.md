@@ -19,6 +19,14 @@ for [Comtech CSI](https://comtechsystems.com/)
   - SNMP, Apache, SSH, etc
   - Serial, TCP, UDP, IIC, and SPI devices
   - Built from [ccOS](https://github.com/InMechaSol/ccOS#ccos-extends-ccnoos)
+- User Interfaces
+  - Feature Rich Web User Interface in HTML, CSS, and Javascript
+  - Console Menu Interface served via Local LCD/Keypad and SSH
+- Operator Interfaces
+  - .NET Calibration Tools for External Devices
+  - .NET Token Based Authentication Tool for Production Configuration
+- Development Operations
+  - Enterprise Solution based on [InMechaSol's EcoSystem Approach](https://github.com/InMechaSol/IMS#an-enterprise-solution)  
   
 ### Antenna Reference Unit for [Dual Terminal System](https://www.envistacom.com/wp-content/uploads/Phoenix-Case-Study.pdf)
 for [Envistacom](https://www.envistacom.com/)
@@ -29,6 +37,13 @@ for [Envistacom](https://www.envistacom.com/)
   - SNMP, SSH
   - Serial, IIC, and SPI devices
   - Built from [IMS_Packets_Core](https://inmechasol.com/IMS_Packets_Core/index.html)
+- User Interfaces
+  - Console Menu Interface served via Local LCD/Keypad
+  - [CodeMettle GUI](https://www.codemettle.com/) via SNMP v3
+- Operator Interfaces
+  - Developer Debug Interfaces served via Direct USB connection to internal PCBs
+- Development Operations
+  - Custom cross-platform system utilizing nested git submodules, arduino libraries, and WIN32 test environment  
 
 ## Tools and Helpful Things
 
