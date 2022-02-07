@@ -1,6 +1,6 @@
 # Engineer and Entrepreneur
 ## Strategy, Products, and Technology for Compute Ecosystems
-- Developer of Enabling Technologies, Derivative Products, and Enterprise Development Operations Solutions
+- Developer of Enabling Technologies, Derivative Products, and Enterprise Ecosystem Solutions
 - A Nerd exploring the intersection of Mathematics, Physics, and Computer Science
 - Cross-Platform Computing Expert with an EcoSystem Approach to Enterprise Compute Solutions
 - A Mechatronic Systems Engineer implementing Platform Specific Control Systems from Reusable Modular Componets
