@@ -35,7 +35,7 @@ for [Comtech CSI](https://comtechsystems.com/)
 for [Envistacom](https://www.envistacom.com/)
 - Distributed System for Control of RF Communication Performance
   - Mixed system of Atmel processors on custom PCBs
-  - Single NVIDIA Compute Module with Linux supporting SSH and SNMP
+  - Single NVIDIA Compute Module with Linux
     - Proxied access to all internal PCBs (Atmel processors)
   - SNMP and SSH
   - Serial, IIC, and SPI devices
