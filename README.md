@@ -45,8 +45,30 @@ for [Envistacom](https://www.envistacom.com/)
   - [CodeMettle GUI](https://www.codemettle.com/) via SNMP v3
 - Operator Interfaces
   - Developer Debug Interfaces served via Direct USB connection to internal PCBs
+  - WIN32 Simulation Framework
 - Development Operations
   - Custom cross-platform system utilizing nested git submodules, arduino libraries, and WIN32 test environment  
+
+### Antenna Motion Controller for [O3B Operation](https://o3bmpower.ses.com/)
+for [AvL Technologies](https://www.avltech.com/)
+- Full Linux Embedded Platform with
+  - SNMP, Apache, and SSH
+  - Serial, TCP, UDP, IIC, and SPI devices
+  - Built to Run on [AAQ Hardware](https://www.avltech.com/technology/6)
+- User Interfaces
+  - Feature Rich Web User Interface in HTML, CSS, and Javascript
+- Operator Interfaces
+  - SSH Debug Console
+- Development Operations
+  - Simple Git Repositories and GCC build tools  
+
+### Ground Station Motion Control Sub-System
+for [ViaSat](https://www.viasat.com/products/satellite-antennas/)
+- A [Bosch Rexroth](https://www.boschrexroth.com/en/us/) implementation
+  - Multi-Axis, Dual-Drive, Torque Biased, Antenna Motion Control System 
+  - Real-Time UDP Command API driven by Linux Antenna Controller System
+  - Motion Performance and Control Tuning to Scale with Antenna Sizes  
+
 
 ## Tools and Helpful Things
 
