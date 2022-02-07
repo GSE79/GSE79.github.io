@@ -1,7 +1,7 @@
 # Engineer and Entrepreneur
 - [Gary Eades is GSE79](https://gse79.net)
 - [Founder and Chairman of InMechaSol](https://www.inmechasol.org)
-- [Founder and CTO of Tractable Technologies](https://tractabletechnologies.com)
+- [Founder and CTO of Tractable Technologies](http://tractabletechnologies.com)
 ## Strategy, Products, and Technology for Compute Ecosystems
 - Developer of Enabling Technologies, Derivative Products, and Enterprise Ecosystem Solutions
 - A Nerd exploring the intersection of Mathematics, Physics, and Computer Science
