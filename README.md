@@ -16,7 +16,7 @@
 ### SatCom Antenna Control System for [GX Operation](https://www.inmarsat.com/en/solutions-services/global-xpress.html)
 for [Comtech CSI](https://comtechsystems.com/)
 - Full Linux Embedded Platform with
-  - SNMP, Apache, SSH, etc
+  - SNMP, Apache, and SSH
   - Serial, TCP, UDP, IIC, and SPI devices
   - Built from [ccOS](https://github.com/InMechaSol/ccOS#ccos-extends-ccnoos)
 - User Interfaces
@@ -34,7 +34,7 @@ for [Envistacom](https://www.envistacom.com/)
   - Mixed system of Atmel processors on custom PCBs
   - Single NVIDIA Compute Module with Linux supporting SSH and SNMP
     - Proxied access to all internal PCBs (Atmel processors)
-  - SNMP, SSH
+  - SNMP and SSH
   - Serial, IIC, and SPI devices
   - Built from [IMS_Packets_Core](https://inmechasol.com/IMS_Packets_Core/index.html)
 - User Interfaces
@@ -72,7 +72,7 @@ for [Envistacom](https://www.envistacom.com/)
 - [w3schools](https://www.w3schools.com/)
 - [tutorialspoint](https://www.tutorialspoint.com/index.htm)
 
-### Free Tools of Trade
+### Free Tools of the Trade
 - [Inkscape Graphic Design](https://inkscape.org/)
 - [Graphical Git for Windows](https://tortoisegit.org/)
 - [Visual Studio Code](https://code.visualstudio.com/)
