@@ -19,6 +19,9 @@
 - [Medical Devices](/MedDevExperience.md)
 - [Production Machines](/ProdMachExperience.md)
 - [Material Handling Robotics](/MaterialHandlingExperience.md)
+- [Embedded Controls](/EmbeddedControlExperience.md)
+- [Industrial Controls](/IndustrialControlExperience.md)
+- [Mixed Embedded/Industrial Controls](/MixedExperience.md)
 
 
 
