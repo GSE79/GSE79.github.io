@@ -6,7 +6,7 @@
 - Developer of Enabling Technologies, Derivative Products, and Enterprise Ecosystem Solutions
 - A Nerd exploring the intersection of Mathematics, Physics, and Computer Science
 - Cross-Platform Computing Expert with an EcoSystem Approach to Enterprise Compute Solutions
-- A Mechatronic Systems Engineer implementing Real-Time Controllers from Reusable Modular Componets
+- A Mechatronic Systems Engineer implementing Real-Time Controllers from Reusable Modular Components
 
 ### Enabling Technologies
 - [IMS Universe](https://github.com/inmechasol/ims#an-enterprise-solution)
