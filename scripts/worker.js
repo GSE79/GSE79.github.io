@@ -1,6 +1,10 @@
+
+let msgCounter = 0;
+
 self.addEventListener('message', function(e){
     // we got a message / array buffer from the main thread
-    ;
+    msgCounter++;
+    
   }, false);
 
 var intervalCounter = 0;
@@ -15,7 +19,10 @@ function myTimer() {
     ;
   }
   // ten times per second
-  
+  let ab = new ArrayBuffer(8);
+  let msg = new  String(ab);
+    msg = msgCounter.toString(8);
+    this.postMessage(ab, [ab]);
   intervalCounter++;
 }
 
