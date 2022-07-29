@@ -29,7 +29,7 @@ function myTimer() {
     LT.innerHTML = d.toLocaleTimeString();   
      
   } 
-    
+  let ab2 = new ArrayBuffer(1);
   worker.postMessage(ab2, [ab2]);
   IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
   
@@ -43,8 +43,8 @@ if (typeof(Worker) !== "undefined") {
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
       msgCounter++;      
-      let ab2 = new ArrayBuffer(1);
-      let m2 = new Uint8Array(ab2);
+      let ab3 = new ArrayBuffer(8);
+      let m2 = new Uint8Array(ab3);
       msg = new TextDecoder(encoding).decode(m2);
     },false);
     var ab = new ArrayBuffer(1);
