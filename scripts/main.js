@@ -42,7 +42,8 @@ if (typeof(Worker) !== "undefined") {
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
       msgCounter++;      
-      msg = new String(ab2);
+      var msg2 = new String(ab2);
+      msg = msg2;
     },false);
     var ab = new ArrayBuffer(1);
     worker.postMessage(ab, [ab]);
