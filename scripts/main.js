@@ -43,8 +43,8 @@ if (typeof(Worker) !== "undefined") {
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
       msgCounter++;      
-      var msg2 = new String(ab2);
-      msg = msg2;
+      var m2 = new Uint8Array(ab2);
+      msg = new TextDecoder(encoding).decode(m2);
     },false);
     var ab = new ArrayBuffer(1);
     worker.postMessage(ab, [ab]);
