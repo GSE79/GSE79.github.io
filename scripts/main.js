@@ -30,7 +30,7 @@ function myTimer() {
   } 
   var ab2 = new ArrayBuffer(1);  
   worker.postMessage(ab2, [ab2]);
-  IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + msg;
+  IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
   
   intervalCounter++;
 }
