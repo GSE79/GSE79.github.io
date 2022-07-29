@@ -5,7 +5,7 @@ var IC = document.getElementById("intervals");
 var intervalCounter = 0;
 var msgCounter = 0;
 var msg = "";
-var ab2 = new ArrayBuffer(1);
+
 
 let myVar = setInterval(myTimer ,100);
 clearInterval(myVar);
@@ -43,7 +43,8 @@ if (typeof(Worker) !== "undefined") {
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
       msgCounter++;      
-      var m2 = new Uint8Array(ab2);
+      let ab2 = new ArrayBuffer(1);
+      let m2 = new Uint8Array(ab2);
       msg = new TextDecoder(encoding).decode(m2);
     },false);
     var ab = new ArrayBuffer(1);
