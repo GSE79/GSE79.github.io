@@ -5,6 +5,7 @@ var IC = document.getElementById("intervals");
 var intervalCounter = 0;
 var msgCounter = 0;
 var msg = "";
+var ab2 = new ArrayBuffer(1);
 
 let myVar = setInterval(myTimer ,100);
 clearInterval(myVar);
@@ -28,7 +29,7 @@ function myTimer() {
     LT.innerHTML = d.toLocaleTimeString();   
      
   } 
-  var ab2 = new ArrayBuffer(1);  
+    
   worker.postMessage(ab2, [ab2]);
   IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
   
