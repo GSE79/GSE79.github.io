@@ -3,7 +3,7 @@
 
 
 if (typeof(Worker) !== "undefined") {
-    var worker = new Worker('/scripts/worker.js');
+    var worker = new Worker('scripts/worker.js');
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
     },false);
