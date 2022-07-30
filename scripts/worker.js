@@ -5,6 +5,8 @@ let running = false;
 var intervalCounter = 0;
 let myVar = setInterval(myTimer ,100);
 clearInterval(myVar);
+var enc = new TextEncoder();
+var dec = new TextDecoder();
 
 ////////////////////////////////////////////////////////////
 // Define message handler callback
@@ -33,7 +35,7 @@ function myTimer() {
       ;
     }
     // ten times per second
-    let ab = new ArrayBuffer(new TextEncoder().encode(msgCounter.toString()));
+    let ab = new ArrayBuffer(enc.encode(msgCounter.toString()));
       this.postMessage(ab, [ab]);
     intervalCounter++;
   }
