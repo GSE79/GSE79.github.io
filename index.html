@@ -9,11 +9,9 @@
   <body>    
     <img src="images/TT_Logo_Other.svg" alt="The Tractable Technologies logo.">
     <p>Below are 3 buttons to control execution of this page:</p>
-    <ul>
-      <li><button onclick="stopTimer()">Stop</button> to stop main timer and send stop msg to web worker</li>
-      <li><button onclick="startTimer()">Start</button> to start main timer and send start msg to web worker</li>
-      <li><button onclick="resetTimer()">Reset</button> to reset all counters to 0 and send reset msg to web worker, but only if not running</li>
-    </ul>
+      <p><button onclick="stopTimer()">Stop</button> to stop main timer and send stop msg to web worker</p>
+      <p><button onclick="startTimer()">Start</button> to start main timer and send start msg to web worker</p>
+      <p><button onclick="resetTimer()">Reset</button> to reset all counters to 0 and send reset msg to web worker, but only if not running</p>
     <p>Below are outputs from the ~1Hz loop</p>    
     <p id="localtime">?????????????????????????</p>
     <p>Below are outputs from the ~10Hz loop:</p>
