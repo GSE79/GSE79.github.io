@@ -40,6 +40,7 @@ function myTimer() {
 //////////////////////////////
 // Main Thread Launch of WebWorker, assign msgListner
 if (typeof(Worker) !== "undefined") {
+
     var worker = new Worker('scripts/worker.js');
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
@@ -56,6 +57,12 @@ if (typeof(Worker) !== "undefined") {
     } else {
         // Transferables are supported.
     }
+
+    // check for TextEncoder/Decoder support
+    if (!("TextEncoder" in window)) {
+      alert("Sorry, this browser does not support TextEncoder...");
+    }
+
   } else {
     alert('Web Workers are not supported in your browser!');
 }
