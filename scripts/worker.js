@@ -36,8 +36,9 @@ function myTimer() {
     }
     // ten times per second
     let stringab = msgCounter.toString();
-    let ab = new ArrayBuffer(enc.encode(stringab));
-      this.postMessage(ab, [ab]);
+    let uint8ab = enc.encode(stringab);
+    //let ab = new ArrayBuffer();
+      this.postMessage(uint8ab.buffer, [uint8ab.buffer]);
     intervalCounter++;
   }
   

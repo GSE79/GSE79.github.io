@@ -44,8 +44,8 @@ function myTimer() {
       LT.innerHTML = d.toLocaleTimeString();   
        
     } 
-    let ab2 = new ArrayBuffer(1);
-    worker.postMessage(ab2, [ab2]);
+    let ab2 = new Uint8Array(1);
+    worker.postMessage(ab2.buffer, [ab2.buffer]);
     IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
     
     intervalCounter++;
@@ -62,7 +62,7 @@ if (typeof(Worker) !== "undefined") {
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
       msgCounter++; 
-      let dat = new ArrayBuffer(e.data);
+      let dat = new Uint8Array(e.data);
       msg = dec.decode(dat);
     },false);
 
