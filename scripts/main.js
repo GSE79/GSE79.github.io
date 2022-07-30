@@ -37,14 +37,6 @@ function myTimer() {
 }
 
 
-
-
-
-
-
-
-
-
 //////////////////////////////
 // Main Thread Launch of WebWorker, assign msgListner
 if (typeof(Worker) !== "undefined") {
@@ -52,8 +44,7 @@ if (typeof(Worker) !== "undefined") {
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
       msgCounter++; 
-      let m2 = new Uint8Array(e.data);
-      msg = new TextDecoder().decode(m2);
+      msg = new TextDecoder().decode(e.data);
     },false);
 
 
