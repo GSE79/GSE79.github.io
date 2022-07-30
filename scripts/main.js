@@ -10,6 +10,9 @@ var running = false;
 let myVar = setInterval(myTimer ,100);
 clearInterval(myVar);
 
+var enc = new TextEncoder();
+var dec = new TextDecoder();
+
 ////////////////////////////////////////////////
 // Defiine Functions and Objects
 
@@ -59,7 +62,8 @@ if (typeof(Worker) !== "undefined") {
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
       msgCounter++; 
-      msg = new TextDecoder().decode(e.data);
+      let dat = new ArrayBuffer(e.data);
+      msg = dec.decode(dat);
     },false);
 
 
