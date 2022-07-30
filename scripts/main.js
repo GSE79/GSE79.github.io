@@ -48,7 +48,8 @@ function resetTimer() {
     msgCounter = 0;
     intervalCounter = 0;
     msg = "0";
-    IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
+    IC.innerHTML = "?????????????????????????";
+    LT.innerHTML = "?????????????????????????";
   }
   
 }
@@ -64,7 +65,10 @@ function myTimer() {
     let ab2 = new Uint8Array(1);
     ab2[0] = 1; // already running
     worker.postMessage(ab2.buffer, [ab2.buffer]);
-    IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
+    if(msgCounter==0)
+    IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - (" + (msgCounter-intervalCounter).toString()+ ") - 0";
+    else
+    IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - (" + (msgCounter-intervalCounter).toString()+ ") - " + msg;
     
     intervalCounter++;
   }

@@ -8,12 +8,17 @@
   </head>
   <body>    
     <img src="images/TT_Logo_Other.svg" alt="The Tractable Technologies logo.">
-
-    <button onclick="stopTimer()">Stop</button>
-    <button onclick="startTimer()">Start</button>
-    <button onclick="resetTimer()">Reset</button>
-    <p id="localtime">Local Time</p>
-    <p id="intervals">Interval Count</p>
+    <p>Below are 3 buttons to control execution of this page:</p>
+    <ul>
+      <li><button onclick="stopTimer()">Stop</button> to stop main timer and send stop msg to web worker</li>
+      <li><button onclick="startTimer()">Start</button> to start main timer and send start msg to web worker</li>
+      <li><button onclick="resetTimer()">Reset</button> to reset all counters to 0 and send reset msg to web worker, but only if not running</li>
+    </ul>
+    <p>Below are outputs from the ~1Hz loop</p>    
+    <p id="localtime">?????????????????????????</p>
+    <p>Below are outputs from the ~10Hz loop:</p>
+    <p>Main Intervals - Main Msgs Rxd - (Delta Main Ints./Msgs) - Worker Msgs Rxd</p>
+    <p id="intervals">?????????????????????????</p>
   </body>
   <script src="scripts/main.js"></script>
 </html>
