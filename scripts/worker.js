@@ -21,7 +21,7 @@ function myTimer() {
   // ten times per second
   let ab = new ArrayBuffer(8);
   let msg = new  String(ab);
-    msg = msgCounter.toString(8);
+    msg = msgCounter.toString();
     this.postMessage(ab, [ab]);
   intervalCounter++;
 }

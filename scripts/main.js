@@ -36,17 +36,28 @@ function myTimer() {
   intervalCounter++;
 }
 
+
+
+
+
+
+
+
+
+
 //////////////////////////////
 // Main Thread Launch of WebWorker, assign msgListner
 if (typeof(Worker) !== "undefined") {
     var worker = new Worker('scripts/worker.js');
     worker.addEventListener('message',function(e){
       // we got a message / array buffer from the worker thread
-      msgCounter++;      
-      let ab3 = new ArrayBuffer(8);
-      let m2 = new Uint8Array(ab3);
+      msgCounter++; 
+      let m2 = new Uint8Array(e.data);
       msg = new TextDecoder().decode(m2);
     },false);
+
+
+    // run once at startup to check transferables support
     var ab = new ArrayBuffer(1);
     worker.postMessage(ab, [ab]);
     if (ab.byteLength) {
