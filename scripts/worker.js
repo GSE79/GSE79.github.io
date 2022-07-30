@@ -12,8 +12,12 @@ self.addEventListener('message', function(e){
     // we got a message / array buffer from the main thread
     msgCounter++;
     if(running!=true){
-      myVar = setInterval(myTimer ,100);
-      running=true;
+      if(msgCounter>1)
+      {
+        myVar = setInterval(myTimer ,100);
+        running=true;
+      }
+      
     }
   }, false);
 
@@ -21,14 +25,18 @@ self.addEventListener('message', function(e){
 ///////////////////////////////////////////////////////////
 // Define worker thread timer object and callback
 function myTimer() {
-  const d = new Date();
-  if(intervalCounter%10==0){
-    // once per second    
-    ;
+  if(running)
+  {
+    const d = new Date();
+    if(intervalCounter%10==0){
+      // once per second    
+      ;
+    }
+    // ten times per second
+    let ab = new ArrayBuffer(new TextEncoder().encode(msgCounter.toString()));
+      this.postMessage(ab, [ab]);
+    intervalCounter++;
   }
-  // ten times per second
-  let ab = new ArrayBuffer(new TextEncoder().encode(msgCounter.toString()));
-    this.postMessage(ab, [ab]);
-  intervalCounter++;
+  
 }
 

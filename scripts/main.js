@@ -5,7 +5,7 @@ var IC = document.getElementById("intervals");
 var intervalCounter = 0;
 var msgCounter = 0;
 var msg = "";
-
+var running = false;
 
 let myVar = setInterval(myTimer ,100);
 clearInterval(myVar);
@@ -16,24 +16,38 @@ clearInterval(myVar);
 ////////////////////////////////
 // Main Thread Timer Object and  Callbacks
 function startTimer() {
-  myVar = setInterval(myTimer ,100);
+  if(!running)
+  {
+    myVar = setInterval(myTimer ,100);
+    running = true;
+  }
+  
 }
   
 function stopTimer() {
-  clearInterval(myVar);
+  if(running)
+  {
+    clearInterval(myVar);
+    running = false;
+  }
+  
 }
 
 function myTimer() {
-  const d = new Date();
-  if(intervalCounter%10==0){
-    LT.innerHTML = d.toLocaleTimeString();   
-     
-  } 
-  let ab2 = new ArrayBuffer(1);
-  worker.postMessage(ab2, [ab2]);
-  IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
+  if(running)
+  {
+    const d = new Date();
+    if(intervalCounter%10==0){
+      LT.innerHTML = d.toLocaleTimeString();   
+       
+    } 
+    let ab2 = new ArrayBuffer(1);
+    worker.postMessage(ab2, [ab2]);
+    IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
+    
+    intervalCounter++;
+  }
   
-  intervalCounter++;
 }
 
 
