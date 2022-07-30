@@ -47,6 +47,8 @@ function resetTimer() {
     worker.postMessage(ab2.buffer, [ab2.buffer]);
     msgCounter = 0;
     intervalCounter = 0;
+    msg = "0";
+    IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
   }
   
 }
