@@ -11,10 +11,9 @@ clearInterval(myVar);
 self.addEventListener('message', function(e){
     // we got a message / array buffer from the main thread
     msgCounter++;
-    if(running==true){
-      clearInterval(myVar);
-    }else{
+    if(running!=true){
       myVar = setInterval(myTimer ,100);
+      running=true;
     }
   }, false);
 
