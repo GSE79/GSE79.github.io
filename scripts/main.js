@@ -32,6 +32,21 @@ function stopTimer() {
   {
     clearInterval(myVar);
     running = false;
+    let ab2 = new Uint8Array(1);
+    ab2[0] = 0;
+    worker.postMessage(ab2.buffer, [ab2.buffer]);
+  }
+  
+}
+
+function resetTimer() {
+  if(!running)
+  {
+    let ab2 = new Uint8Array(1);
+    ab2[0] = 255;
+    worker.postMessage(ab2.buffer, [ab2.buffer]);
+    msgCounter = 0;
+    intervalCounter = 0;
   }
   
 }
@@ -45,6 +60,7 @@ function myTimer() {
        
     } 
     let ab2 = new Uint8Array(1);
+    ab2[0] = 1; // already running
     worker.postMessage(ab2.buffer, [ab2.buffer]);
     IC.innerHTML = intervalCounter.toString() + " - " + msgCounter.toString() + " - " + (msgCounter-intervalCounter).toString()+ " - " + msg;
     

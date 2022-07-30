@@ -13,13 +13,30 @@ var dec = new TextDecoder();
 self.addEventListener('message', function(e){
     // we got a message / array buffer from the main thread
     msgCounter++;
-    if(running!=true){
-      if(msgCounter>1)
-      {
-        myVar = setInterval(myTimer ,100);
-        running=true;
-      }
-      
+
+    let intCmds = new Uint8Array(e.data);
+
+    switch(intCmds[0])
+    {
+      case 1: 
+        if(running!=true){
+            myVar = setInterval(myTimer ,100);
+            running=true;          
+        }
+      break;
+      case 255: 
+        if(running!=true){
+          msgCounter = 0;   
+          intervalCounter = 0;      
+        }
+      break;
+      default: 
+        if(running)
+        {
+          clearInterval(myVar);
+          running = false;
+        }
+      break;
     }
   }, false);
 
