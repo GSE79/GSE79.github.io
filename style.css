@@ -8,20 +8,20 @@
 .grid-container {
     display: grid;
     overflow: hidden;
-    grid-template-columns: 20vw 80vw;
-    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-columns: 19vw 79vw;
+    grid-template-rows: 19vh 69vh 10vh;
     grid-template-areas:
         'header header'
         'left main'
         'footer footer';
-    background-color: #a3a3f7;
+    background-color: #000000;
     
 }
 /* Grid Container - header
 */
 .header {
     grid-area: header;
-    background-color: #0000F0;
+    background-color: #33333f;
     text-align: center;
     color: #ffffff;
     height: 100%;
@@ -30,9 +30,8 @@
 /* Grid Container - left
 */
 .left {
-    display: none;
     grid-area: left;
-    background-color: #0000F0;
+    background-color: #1c1c2c;
     height: 100%;
     overflow: hidden;
 }
@@ -43,7 +42,6 @@
 /* Grid Container - main
 */
 .main {
-    display: none;
     grid-area: main;
     height: 100%;
     overflow: hidden;
@@ -53,9 +51,8 @@
 /* Grid Container - right
 */
 .right {
-    display: none;
     grid-area: right;
-    background-color: #0000F0;
+    background-color: #292931;
     height: 100%;
     overflow: hidden;
 }
@@ -67,7 +64,7 @@
 */
 .footer {
     grid-area: footer;
-    background-color: #0000F0;
+    background-color: #4a4a5c;
     text-align: center;
     color: #ffffff;
     height: 100%;
