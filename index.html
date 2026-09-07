@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
-    <title>TractTech</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">    
+    <title>TTDS_MDS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">    
   </head>
-  <body>    
-    <img src="images/TT_Logo_Other.svg" alt="The Tractable Technologies logo.">
-    <p>Below are 3 buttons to control execution of this page:</p>
-      <p><button onclick="stopTimer()">Stop</button> to stop main timer and send stop msg to web worker</p>
-      <p><button onclick="startTimer()">Start</button> to start main timer and send start msg to web worker</p>
-      <p><button onclick="resetTimer()">Reset</button> to reset all counters to 0 and send reset msg to web worker, but only if not running</p>
-    <p>Below are outputs from the ~1Hz loop</p>    
-    <p id="localtime">?????????????????????????</p>
-    <p>Below are outputs from the ~10Hz loop:</p>
-    <p>Main Intervals - Main Msgs Rxd - (Delta Main Ints./Msgs) - Worker Msgs Rxd</p>
-    <p id="intervals">?????????????????????????</p>
+
+  <body>   
+    <div class="grid-container">
+      
+      <div id="ttExeSys_header" class="header">            
+      
+      </div>
+      
+      <div id="ttExeSys_treeview" class="left">            
+      
+      </div>
+
+      <div id="ttExeSys_mainview" class="right">            
+      
+      </div>
+
+      <div id="ttExeSys_footer" class="footer">            
+      
+      </div>
+
+    </div>
   </body>
-  <script src="scripts/main.js"></script>
+
+  <script src="main.js"></script>
+
 </html>
