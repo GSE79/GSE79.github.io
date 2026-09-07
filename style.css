@@ -8,7 +8,7 @@
 .grid-container {
     display: grid;
     overflow: hidden;
-    grid-template-columns: 19vw 79vw;
+    grid-template-columns: 20vw 80vw;
     grid-template-rows: 19vh 69vh 10vh;
     grid-template-areas:
         'header header'
