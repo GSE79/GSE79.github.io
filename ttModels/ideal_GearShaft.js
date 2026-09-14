@@ -23,14 +23,14 @@ class ideal_GearShaft extends Model {
         // Set Model Type
         this.modelType = "ideal_GearShaft";
         // Add properties to Values array
-        properties.push(new class_value(inertia,Units.Inertia));
+        this.properties.push(new class_value(inertia,Units.Inertia));
         // Add states to Values array
-        states.push(new class_value(inputTorque,Units.Torque));
-        states.push(new class_value(disturbanceTorque,Units.Torque));
-        states.push(new class_value(netTorque,Units.Torque));
-        states.push(new class_value(acceleration,Units.AngleAccel));
-        states.push(new class_value(velocity,Units.AngleVel));
-        states.push(new class_value(position,Units.Angle));
+        this.states.push(new class_value(inputTorque,Units.Torque));
+        this.states.push(new class_value(disturbanceTorque,Units.Torque));
+        this.states.push(new class_value(netTorque,Units.Torque));
+        this.states.push(new class_value(acceleration,Units.AngleAccel));
+        this.states.push(new class_value(velocity,Units.AngleVel));
+        this.states.push(new class_value(position,Units.Angle));
     }
     // Init / Re-Init of Ideal Gear Shaft Model
     Init_ReInit(...args){
