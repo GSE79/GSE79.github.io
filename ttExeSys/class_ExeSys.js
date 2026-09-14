@@ -67,7 +67,7 @@ class modelExecutionSystem {
 
         // once per gui timer period
         // increment counter
-        intervalCounter++;
+        this.#intervalCounter++;
     }
 
 

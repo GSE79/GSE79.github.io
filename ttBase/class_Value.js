@@ -6,7 +6,7 @@
 // This is the "value" class definition.  Values have units to give physical meaning.
 // Values have serialization and logging features.
 // Values have graphical input and output features.
-class Value {
+class class_Value {
 
     constructor(InitialValue = 0.0, UnitsReference = null){
         this.value = InitialValue;
