@@ -8,10 +8,10 @@
 class modelExecutionSystem {
 
     // Private Class Fields
-    #activeModel = null;            // Link to the active model for execution
-    #guitimerPeriodMS = 100;        // Time Period of GUI backend execution (ms)
-    #guitimerHTMLModulo = 10;       // Modulo Value, Every Modulo cycles, html updates
-    #intervalCounter = 0;           // Execution Cycle Counter
+    #activeModel;            // Link to the active model for execution
+    #guitimerPeriodMS;        // Time Period of GUI backend execution (ms)
+    #guitimerHTMLModulo;       // Modulo Value, Every Modulo cycles, html updates
+    #intervalCounter;           // Execution Cycle Counter
 
     // InterThread Comm Variables
     command = 'test';
@@ -22,6 +22,8 @@ class modelExecutionSystem {
     constructor(guitimerPeriodMSIn, guitimerHTMLModuloIn) {
         this.#guitimerPeriodMS = guitimerPeriodMSIn;
         this.#guitimerHTMLModulo = guitimerHTMLModuloIn;
+        this.#activeModel = null;
+        this.#intervalCounter = 0;
     }
 
     /////////////////////////////////////////////////////////////////
