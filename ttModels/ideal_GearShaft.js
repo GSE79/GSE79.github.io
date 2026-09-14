@@ -21,7 +21,7 @@ class ideal_GearShaft extends Model {
         // Sets unique instance name
         super(instanceName);
         // Set Model Type
-        modelType = "ideal_GearShaft";
+        this.modelType = "ideal_GearShaft";
         // Add properties to Values array
         properties.push(new class_value(inertia,Units.Inertia));
         // Add states to Values array
