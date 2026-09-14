@@ -55,7 +55,7 @@ class modelExecutionSystem {
         // execute every nth cycle
         // update relevant HTML
         // prepare next worker message
-        if (intervalCounter % this.#guitimerHTMLModulo == 0) {
+        if (this.#intervalCounter % this.#guitimerHTMLModulo == 0) {
             ModelExeSys.updateHTML();
         }
 
