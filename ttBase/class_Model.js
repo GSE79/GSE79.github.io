@@ -31,14 +31,14 @@ class Model {
         this.exeSysLink = exeSysLinkIn;
         
         // Create Property Values Array
-        this.properties = [new class_Value(this.modelType, null),
-                            new class_Value(this.instanceName, null),
-                            new class_Value(this.deltaTime, Units.Time)
+        this.properties = [new Valueclass(this.modelType, null),
+                            new Valueclass(this.instanceName, null),
+                            new Valueclass(this.deltaTime, Units.Time)
         ];
         // Create State Values Array
-        this.states = [new class_Value(this.initCycles, null),
-                        new class_Value(this.loopCycles, null),
-                        new class_Value(this.loopsDuration, Units.Time)
+        this.states = [new Valueclass(this.initCycles, null),
+                        new Valueclass(this.loopCycles, null),
+                        new Valueclass(this.loopsDuration, Units.Time)
         ];
 
         Model.modelInstanceArray.push(this);
