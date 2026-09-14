@@ -1,0 +1,68 @@
+///////////////////////////////////////////////////////////////////////////////
+// file: class_Model.js 
+// author: Gary Eades (GSE79)
+// repo: https://github.com/GSE79/GSE79.github.io
+// 
+// This is the "model" class definition.  Models combine two collections of
+// values with two methods called for execution, init() and loop().
+// Properties are a collection of values that describe a model.  Properties
+// can be saved and restored.  States are a collection of values also.
+class Model {
+    // Static Model Properties
+    static modelInstanceArray = [];
+    // Base Model Properties
+    modelType = "baseModelType";
+    instanceName = "";
+    deltaTime = 0.001; // s Time Loop Period
+    exeSysLink = null;
+    // Base Model States
+    initCycles = 0;
+    loopCycles = 0;
+    loopsDuration = 0.0; // s Time cummulative total of all loop periods
+    // Base Model Constructor
+    constructor(instanceName, exeSysLinkIn) {
+        // Dis-allow instantiation of base class: Model
+        if (new.target === Model) {
+            throw new Error("Cannot instantiate abstract class Model directly.");
+        }        
+        // Set Unique Instance Name
+        instanceName = instanceName;
+        // Link Instance with Execution System Instance
+        this.exeSysLink = exeSysLinkIn;
+        
+        // Create Property Values Array
+        this.properties = [new class_Value(this.modelType, null),
+                            new class_Value(this.instanceName, null),
+                            new class_Value(this.deltaTime, Units.Time)
+        ];
+        // Create State Values Array
+        this.states = [new class_Value(this.initCycles, null),
+                        new class_Value(this.loopCycles, null),
+                        new class_Value(this.loopsDuration, Units.Time)
+        ];
+
+        Model.modelInstanceArray.push(this);
+    }
+    // Init / Re-Init Method
+    Init_ReInit() {
+        throw new Error("Abstract method 'Init_ReInit' must be implemented.");
+    }
+    // Time Loop Method
+    Time_Loop() {
+        throw new Error("Abstract method 'Loop' must be implemented.");
+    }
+    // The Timed Loop called by ExeSys
+    ExecuteTimeSlice() {
+        Time_Loop();
+        this.loopCycles++;
+        this.loopsDuration += this.deltaTime;
+    }
+    // The InitReInit called by ExeSys
+    ExecuteInitReInit() {
+        Init_ReInit();
+        this.initCycles++;
+    }
+
+
+
+}
