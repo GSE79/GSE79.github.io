@@ -8,10 +8,10 @@
 class modelExecutionSystem {
 
     // Private Class Fields
-    #activeModel;            // Link to the active model for execution
-    #guitimerPeriodMS;        // Time Period of GUI backend execution (ms)
-    #guitimerHTMLModulo;       // Modulo Value, Every Modulo cycles, html updates
-    #intervalCounter;           // Execution Cycle Counter
+    activeModel;            // Link to the active model for execution
+    guitimerPeriodMS;        // Time Period of GUI backend execution (ms)
+    guitimerHTMLModulo;       // Modulo Value, Every Modulo cycles, html updates
+    intervalCounter;           // Execution Cycle Counter
 
     // InterThread Comm Variables
     command = 'test';
@@ -20,19 +20,19 @@ class modelExecutionSystem {
 
     // Constructor for the Execution System Class
     constructor(guitimerPeriodMSIn, guitimerHTMLModuloIn) {
-        this.#guitimerPeriodMS = guitimerPeriodMSIn;
-        this.#guitimerHTMLModulo = guitimerHTMLModuloIn;
-        this.#activeModel = null;
-        this.#intervalCounter = 0;
+        this.guitimerPeriodMS = guitimerPeriodMSIn;
+        this.guitimerHTMLModulo = guitimerHTMLModuloIn;
+        this.activeModel = null;
+        this.intervalCounter = 0;
     }
 
     /////////////////////////////////////////////////////////////////
     // Private method to update html elements
-    #updateHTML() {
+    updateHTML() {
         // ExeSys HTML
 
         // Models HTML
-        if(this.#activeModel != null)
+        if(this.activeModel != null)
         {
 
         }
@@ -49,7 +49,7 @@ class modelExecutionSystem {
 
         // once per gui timer period
         // execute the models
-        if(this.#activeModel != null)
+        if(this.activeModel != null)
         {
 
         }
@@ -57,7 +57,7 @@ class modelExecutionSystem {
         // execute every nth cycle
         // update relevant HTML
         // prepare next worker message
-        if (this.#intervalCounter % this.#guitimerHTMLModulo == 0) {
+        if (this.intervalCounter % this.guitimerHTMLModulo == 0) {
             ModelExeSys.updateHTML();
         }
 
@@ -69,7 +69,7 @@ class modelExecutionSystem {
 
         // once per gui timer period
         // increment counter
-        this.#intervalCounter++;
+        this.intervalCounter++;
     }
 
 
