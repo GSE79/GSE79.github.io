@@ -57,7 +57,7 @@ class modelExecutionSystem {
         let htmlString = `<h3>Select a Model Instance</h3>
         <dl>`;
         Model.modelInstanceArray.forEach((modelInstance) => {
-            htmlString = htmlString + "\n<dt onclick='Model.modelSelectionArray["+modelscount.toString(10)+"]()'>" + modelInstance.instanceName + "</dt>";
+            htmlString = htmlString + "\n<dt style=':hover {color: blue}' onclick='Model.modelSelectionArray["+modelscount.toString(10)+"]()'>" + modelInstance.instanceName + "</dt>";
             htmlString = htmlString + "\n<dd>" + modelInstance.modelDescription + "</dd>"; 
         });
         htmlString = htmlString + "\n</dl>"; 
