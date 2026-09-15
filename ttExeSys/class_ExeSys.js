@@ -39,10 +39,10 @@ class modelExecutionSystem {
     /////////////////////////////////////////////////////////////////
     // helper methods to paint html elements
     paintHeader() {
-        this.headerLink.innerHTML(`<h1>Simple Model Explorer</h1>
+        let htmlString = `<h1>Simple Model Explorer</h1>
             <h2>from TT Digital Systems</h2>
-            <h3 id="activeModel">active model: no model selected</h3>`);
-
+            <h3 id="activeModel">active model: no model selected</h3>`;
+        this.headerLink.innerHTML = htmlString;
         this.headerActiveModel = document.getElementById("activeModel");
         this.headerPainted = true;
         this.activeModelNameUpdate = true; 
@@ -56,7 +56,7 @@ class modelExecutionSystem {
         });
         htmlString = htmlString + "\n</dl>"; 
 
-        this.treeViewLink.innerHTML(htmlString);
+        this.treeViewLink.innerHTML = htmlString;
     }
     paintActiveModelTreeView(){
 
