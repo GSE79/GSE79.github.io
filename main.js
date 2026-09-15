@@ -15,8 +15,8 @@ if (typeof(Worker) !== "undefined") {
 
     // Create the Execution System, link to gui timer period
     var ModelExeSys = new modelExecutionSystem(guitimerPeriodMS, guitimerHTMLModulo);
-    const uResetActiveModel = ModelExeSys.resetActiveModel;
-    const bResetActiveModel = uResetActiveModel.bind(ModelExeSys);
+    var uResetActiveModel = ModelExeSys.resetActiveModel;
+    var bResetActiveModel = uResetActiveModel.bind(ModelExeSys);
     bResetActiveModel();
 
     // Create the Model(s), link the execution system instance

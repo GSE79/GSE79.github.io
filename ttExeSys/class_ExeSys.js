@@ -103,7 +103,7 @@ class modelExecutionSystem {
         {
             if(this.activeModel != null)
             {
-                this.headerActiveModel.innerHTML = this.activeModel.modelType + ": "+this.activeModel.instanceName+" (click to de-select)";
+                this.headerActiveModel.innerHTML = this.activeModel.modelType + ": '"+this.activeModel.instanceName+"' (click to de-select)";
             }
             else
             {
