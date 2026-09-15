@@ -10,6 +10,7 @@
 class Model {
     // Static Model Properties
     static modelInstanceArray = [];
+    static modelSelectionArray = [];
     // Base Model Properties
     modelType = "baseModelType";
     modelDescription = "";    
@@ -43,6 +44,7 @@ class Model {
         ];
 
         Model.modelInstanceArray.push(this);
+        Model.modelSelectionArray.push(function(){this.exeSysLink.setActiveModel(this)});
     }
     // Init / Re-Init Method
     Init_ReInit() {

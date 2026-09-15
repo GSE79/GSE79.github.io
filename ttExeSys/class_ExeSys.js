@@ -35,6 +35,10 @@ class modelExecutionSystem {
         this.treeViewLink = document.getElementById("ttExeSys_treeview");   // link to exesys treeview div
         this.treeViewPainted = false;                                       // trigger to (re)paint treeview div
     }
+    setActiveModel(modelLink){
+        this.activeModel = modelLink;
+        this.activeModelNameUpdate = true; 
+    }
 
     /////////////////////////////////////////////////////////////////
     // helper methods to paint html elements
@@ -48,15 +52,17 @@ class modelExecutionSystem {
         this.activeModelNameUpdate = true; 
     }
     paintModelsListTreeView(){
+        let modelscount = 0;
         let htmlString = `<h3>Select a Model Instance</h3>
         <dl>`;
         Model.modelInstanceArray.forEach((modelInstance) => {
-            htmlString = htmlString + "\n<dt>" + modelInstance.instanceName + "</dt>";
-            htmlString = htmlString + "\n<dd>- " + modelInstance.modelDescription + "</dd>"; 
+            htmlString = htmlString + "\n<dt id='model" + modelscount.toString(10) + "'>" + modelInstance.instanceName + "</dt>";
+            htmlString = htmlString + "\n<dd>" + modelInstance.modelDescription + "</dd>"; 
         });
         htmlString = htmlString + "\n</dl>"; 
-
         this.treeViewLink.innerHTML = htmlString;
+
+
     }
     paintActiveModelTreeView(){
 
