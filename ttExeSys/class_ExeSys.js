@@ -67,6 +67,7 @@ class modelExecutionSystem {
     }
     paintActiveModelTreeView(){
         let htmlString = "<h3>"+this.activeModel.instanceName+"</h3>";
+        this.treeViewLink.innerHTML = htmlString;
     }
     paintTreeView(){
         if(this.activeModel != null)
