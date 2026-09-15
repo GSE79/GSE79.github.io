@@ -143,14 +143,14 @@ class modelExecutionSystem {
         // update relevant HTML
         // prepare next worker message
         if (this.intervalCounter % this.guitimerHTMLModulo == 0) {
-            updateHTML();
+            this.updateHTML();
             this.updateCounter++;
         }
 
         // once per gui timer period
         // if a message should be sent this cycle
         if (workermessagearray.length > 0) {
-            worker.postMessage(workermessagearray);  // send the message to the worker
+            this.worker.postMessage(workermessagearray);  // send the message to the worker
             this.messageOutCounter++;
         }
 
