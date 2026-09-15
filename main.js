@@ -23,10 +23,10 @@ if (typeof(Worker) !== "undefined") {
     var worker = new Worker('worker.js');
 
     // Assign Message Listener
-    worker.addEventListener('message', ModelExeSys.workerMsgParse, false);
+    worker.addEventListener('message', ModelExeSys.workerMsgParse.bind(ModelExeSys), false);
 
     // Start GUI Timer
-    let guiTimer = setInterval(ModelExeSys.GUITimer, guitimerPeriodMS);
+    let guiTimer = setInterval(ModelExeSys.GUITimer.bind(ModelExeSys), guitimerPeriodMS);
 
 } else {
     alert('Web Workers are not supported in your browser!');
