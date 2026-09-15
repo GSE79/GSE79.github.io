@@ -8,13 +8,13 @@
 class modelExecutionSystem {
 
     // Class Fields (consider making private...)
-    activeModel;            // Link to the active model for execution
-    guitimerPeriodMS;       // Time Period of GUI backend execution (ms)
-    guitimerHTMLModulo;     // Modulo Value, Every Modulo cycles, html updates
-    intervalCounter;        // Execution Cycle Counter
-    updateCounter;          // HTML Update Cycle Counter
-    messageOutCounter;      // Worker Request Message Counter
-    messageInCounter;       // Worker Response Message Counter
+    //activeModel;            // Link to the active model for execution
+    //guitimerPeriodMS;       // Time Period of GUI backend execution (ms)
+    //guitimerHTMLModulo;     // Modulo Value, Every Modulo cycles, html updates
+    //intervalCounter;        // Execution Cycle Counter
+    //updateCounter;          // HTML Update Cycle Counter
+    //messageOutCounter;      // Worker Request Message Counter
+    //messageInCounter;       // Worker Response Message Counter
 
     // Constructor for the Execution System Class
     constructor(guitimerPeriodMSIn, guitimerHTMLModuloIn) {
