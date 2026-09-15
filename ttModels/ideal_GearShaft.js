@@ -22,6 +22,7 @@ class ideal_GearShaft extends Model {
         super(instanceName);
         // Set Model Type
         this.modelType = "ideal_GearShaft";
+        this.modelDescription = "The ideal gear shaft has no friction and is infinitely stiff.  Total inertia is lumped; mismatch of input/output inertias is not considered.  Dynamics are driven by a Net Torque applied as the sum of Input Torque and Distrubance Torque";
         // Add properties to Values array
         this.properties.push(new Valueclass(this.inertia,Units.Inertia));
         // Add states to Values array

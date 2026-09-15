@@ -12,6 +12,7 @@ class Model {
     static modelInstanceArray = [];
     // Base Model Properties
     modelType = "baseModelType";
+    modelDescription = "";    
     instanceName = "";
     deltaTime = 0.001; // s Time Loop Period
     exeSysLink = null;

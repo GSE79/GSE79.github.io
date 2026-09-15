@@ -7,16 +7,14 @@
 // models and provides API access to each model.
 class modelExecutionSystem {
 
-    // Private Class Fields
+    // Class Fields (consider making private...)
     activeModel;            // Link to the active model for execution
-    guitimerPeriodMS;        // Time Period of GUI backend execution (ms)
-    guitimerHTMLModulo;       // Modulo Value, Every Modulo cycles, html updates
-    intervalCounter;           // Execution Cycle Counter
-
-    // InterThread Comm Variables
-    command = 'test';
-    value = 'textValue';
-    msgCounter = 0;
+    guitimerPeriodMS;       // Time Period of GUI backend execution (ms)
+    guitimerHTMLModulo;     // Modulo Value, Every Modulo cycles, html updates
+    intervalCounter;        // Execution Cycle Counter
+    updateCounter;          // HTML Update Cycle Counter
+    messageOutCounter;      // Worker Request Message Counter
+    messageInCounter;       // Worker Response Message Counter
 
     // Constructor for the Execution System Class
     constructor(guitimerPeriodMSIn, guitimerHTMLModuloIn) {
@@ -24,12 +22,99 @@ class modelExecutionSystem {
         this.guitimerHTMLModulo = guitimerHTMLModuloIn;
         this.activeModel = null;
         this.intervalCounter = 0;
+        this.updateCounter = 0;
+        this.messageOutCounter = 0;
+        this.messageInCounter = 0;
+        // More Class Fields, not declared above...
+        this.headerLink = document.getElementById("ttExeSys_header");       // link to the exesys header div
+        this.headerPainted = false;                                         // trigger to (re)paint header
+        this.headerActiveModel = null;                                      // link to indication of Active Model
+        this.activeModelNameUpdate = false;                                 // trigger to update Active Model indication
+        this.footerLink = document.getElementById("ttExeSys_footer");       // link to exesys footer div
+        this.footerPainted = false;                                         // trigger to (re)paint footer
+        this.treeViewLink = document.getElementById("ttExeSys_treeview");   // link to exesys treeview div
+        this.treeViewPainted = false;                                       // trigger to (re)paint treeview div
     }
 
     /////////////////////////////////////////////////////////////////
-    // Private method to update html elements
+    // helper methods to paint html elements
+    paintHeader() {
+        this.headerLink.innerHTML(`<h1>Simple Model Explorer</h1>
+            <h2>from TT Digital Systems</h2>
+            <h3 id="activeModel">active model: no model selected</h3>`);
+
+        this.headerActiveModel = document.getElementById("activeModel");
+        this.headerPainted = true;
+        this.activeModelNameUpdate = true; 
+    }
+    paintModelsListTreeView(){
+        let htmlString = `<h3>Select a Model Instance</h3>
+        <dl>`;
+        Model.modelInstanceArray.forEach((modelInstance) => {
+            htmlString = htmlString + "\n<dt>" + modelInstance.instanceName + "</dt>";
+            htmlString = htmlString + "\n<dd>- " + modelInstance.modelDescription + "</dd>"; 
+        });
+        htmlString = htmlString + "\n</dl>"; 
+
+        this.treeViewLink.innerHTML(htmlString);
+    }
+    paintActiveModelTreeView(){
+
+    }
+    paintTreeView(){
+        if(this.activeModel != null)
+        {
+            paintModelsListTreeView();
+        }
+        else
+        {
+            paintModelsListTreeView();
+        }
+        this.treeViewPainted = true;
+    }
+    paintFooter(){
+
+        this.footerPainted = true;
+    }
+    /////////////////////////////////////////////////////////////////
+    // methods to update html elements
+    // - (re)paint only iff triggered
+    updateHeader() {
+        if(!this.headerPainted)
+        {
+            paintHeader();
+            this.activeModelNameUpdate = true;
+        }
+        if(this.activeModelNameUpdate)
+        {
+            if(this.activeModel != null)
+            {
+                this.headerActiveModel.innerHTML = this.activeModel.instanceName;
+            }
+            else
+            {
+                this.headerActiveModel.innerHTML = "No Model Selected";
+            }
+            this.activeModelNameUpdate = false;
+        }
+    }
+    updateTreeView() {
+        if(!this.treeViewPainted)
+        {
+            paintTreeView();
+            
+        }
+    }
+    updateFooter() {
+        if(!this.footerPainted)
+        {
+            paintFooter();
+            
+        }
+    }
     updateHTML() {
-        // ExeSys HTML
+        updateHeader();
+        updateTreeView();        
 
         // Models HTML
         if(this.activeModel != null)
@@ -59,12 +144,14 @@ class modelExecutionSystem {
         // prepare next worker message
         if (this.intervalCounter % this.guitimerHTMLModulo == 0) {
             ModelExeSys.updateHTML();
+            this.updateCounter++;
         }
 
         // once per gui timer period
         // if a message should be sent this cycle
         if (workermessagearray.length > 0) {
             worker.postMessage(workermessagearray);  // send the message to the worker
+            this.messageOutCounter++;
         }
 
         // once per gui timer period
@@ -76,14 +163,13 @@ class modelExecutionSystem {
     /////////////////////////////////////////////////////////////////
     // WORKER MESSAGE CALLBACK - On each rx'd msg
     workerMsgParse(workermessage) {
-        // we got a message,  from the worker thread
-        msgCounter++;
 
         const receivedString = workermessage.data;
 
         if(receivedString.length > 0)
         {
 
+            this.messageInCounter++;
         }
     }
 
