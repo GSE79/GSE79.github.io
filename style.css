@@ -62,3 +62,10 @@
     height: 100%;
     width: 10%;
 }
+
+.clickablelistitem{
+    color: white;
+}
+.clickablelistitem:hover{
+    color: blue;
+}
