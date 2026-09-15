@@ -43,11 +43,15 @@ class Model {
                         new Valueclass(this.loopsDuration, Units.Time)
         ];
          
-        Model.modelInstanceArray.push(this);
-        let staticInstanceIndex = Model.modelInstanceArray.length-1;
-        Model.modelSelectionArray.push(function() {
-            Model.modelInstanceArray[staticInstanceIndex].exeSysLink.setActiveModel(Model.modelInstanceArray[staticInstanceIndex]).bind(Model.modelInstanceArray[staticInstanceIndex].exeSysLink);
-            console.log("modelfunction()");
+        Model.modelInstanceArray.push(this);                                    // add instance reference to static array
+        let staticInstanceIndex = Model.modelInstanceArray.length-1;            // latch current array size for indexing
+        Model.modelSelectionArray.push(function() {                             // add function
+            const modelref = Model.modelInstanceArray[staticInstanceIndex];     // get model reference from static array
+            const exesysref = modelref.exeSysLink;                              // get exesys reference from model
+            const ufunc = exesysref.setActiveModel;                             // get unbound function
+            const bfunc = ufunc.bind(exesysref);                                // bind to model's exesyslink
+            bfunc(modelref);                                                    // call bound function
+            console.log("modelfunction()");               
         });
     }
     // Init / Re-Init Method
