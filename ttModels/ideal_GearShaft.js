@@ -17,9 +17,9 @@ class ideal_GearShaft extends Model {
     velocity = 0.0; // rad/s
     position = 0.0; // rad
     // Public Model Constructor
-    constructor(instanceName){
+    constructor(instanceName, exeSysLinkIn){
         // Sets unique instance name
-        super(instanceName);
+        super(instanceName, exeSysLinkIn);
         // Set Model Type
         this.modelType = "ideal_GearShaft";
         this.modelDescription = "The ideal gear shaft has no friction and is infinitely stiff.  Total inertia is lumped; mismatch of input/output inertias is not considered.  Dynamics are driven by a Net Torque applied as the sum of Input Torque and Distrubance Torque";
