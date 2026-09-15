@@ -75,12 +75,30 @@ class modelExecutionSystem {
         htmlString += "\n<ul class='tree'>";
         htmlString += "\n<li>Execution System";
         htmlString += "\n<ul>";
+        htmlString += "\n<li>Properties";
+        htmlString += "\n<ul>";
 
+        htmlString += "\n</ul>";
+        htmlString += "\n</li>";
+        htmlString += "\n<li>States";
+        htmlString += "\n<ul>";
+
+        htmlString += "\n</ul>";
+        htmlString += "\n</li>";
         htmlString += "\n</ul>";
         htmlString += "\n</li>";
         htmlString += "\n<li>"+this.activeModel.modelType;
         htmlString += "\n<ul>";
+        htmlString += "\n<li>Properties";
+        htmlString += "\n<ul>";
 
+        htmlString += "\n</ul>";
+        htmlString += "\n</li>";
+        htmlString += "\n<li>States";
+        htmlString += "\n<ul>";
+
+        htmlString += "\n</ul>";
+        htmlString += "\n</li>";
         htmlString += "\n</ul>";
         htmlString += "\n</li>";
         htmlString += "\n</ul>";
