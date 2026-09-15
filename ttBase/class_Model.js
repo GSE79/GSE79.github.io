@@ -27,7 +27,7 @@ class Model {
             throw new Error("Cannot instantiate abstract class Model directly.");
         }        
         // Set Unique Instance Name
-        instanceName = instanceName;
+        this.instanceName = instanceName;
         // Link Instance with Execution System Instance
         this.exeSysLink = exeSysLinkIn;
         
@@ -54,13 +54,13 @@ class Model {
     }
     // The Timed Loop called by ExeSys
     ExecuteTimeSlice() {
-        Time_Loop();
+        this.Time_Loop();
         this.loopCycles++;
         this.loopsDuration += this.deltaTime;
     }
     // The InitReInit called by ExeSys
     ExecuteInitReInit() {
-        Init_ReInit();
+        this.Init_ReInit();
         this.initCycles++;
     }
 

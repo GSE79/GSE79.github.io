@@ -40,7 +40,7 @@ class modelExecutionSystem {
     // helper methods to paint html elements
     paintHeader() {
         let htmlString = `<h1>Simple Model Explorer</h1>
-            <h2>from TT Digital Systems</h2>
+            <h2>TT Digital Systems</h2>
             <h3 id="activeModel">active model: no model selected</h3>`;
         this.headerLink.innerHTML = htmlString;
         this.headerActiveModel = document.getElementById("activeModel");
