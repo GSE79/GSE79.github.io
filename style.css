@@ -63,9 +63,38 @@
     width: 10%;
 }
 
+/* Clickable Items
+*/
 .clickablelistitem{
     color: white;
 }
 .clickablelistitem:hover{
     color: blue;
+}
+
+/* Treeview - Model Nodes
+*/
+ul.tree, .tree ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.tree li {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.tree li::before {
+    content: "▶";
+    position: absolute;
+    left: -15px;
+    transition: transform 0.2s;
+}
+.tree li.expanded::before {
+    transform: rotate(90deg);
+}
+.tree ul {
+    display: none;
+}
+.tree li.expanded > ul {
+    display: block;
 }
