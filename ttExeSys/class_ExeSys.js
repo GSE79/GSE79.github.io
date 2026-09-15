@@ -71,7 +71,7 @@ class modelExecutionSystem {
     paintTreeView(){
         if(this.activeModel != null)
         {
-            this.paintModelsListTreeView();
+            this.paintActiveModelTreeView();
         }
         else
         {
