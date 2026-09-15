@@ -143,7 +143,7 @@ class modelExecutionSystem {
         // update relevant HTML
         // prepare next worker message
         if (this.intervalCounter % this.guitimerHTMLModulo == 0) {
-            ModelExeSys.updateHTML();
+            updateHTML();
             this.updateCounter++;
         }
 
