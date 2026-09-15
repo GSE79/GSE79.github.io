@@ -32,6 +32,7 @@
 .left {
     grid-area: left;
     background-color: #1c1c2c;
+    color: #ffffff;
     height: 100%;
     overflow: hidden;
 }
