@@ -64,11 +64,11 @@ class modelExecutionSystem {
     paintTreeView(){
         if(this.activeModel != null)
         {
-            paintModelsListTreeView();
+            this.paintModelsListTreeView();
         }
         else
         {
-            paintModelsListTreeView();
+            this.paintModelsListTreeView();
         }
         this.treeViewPainted = true;
     }
@@ -82,7 +82,7 @@ class modelExecutionSystem {
     updateHeader() {
         if(!this.headerPainted)
         {
-            paintHeader();
+            this.paintHeader();
             this.activeModelNameUpdate = true;
         }
         if(this.activeModelNameUpdate)
@@ -101,20 +101,21 @@ class modelExecutionSystem {
     updateTreeView() {
         if(!this.treeViewPainted)
         {
-            paintTreeView();
+            this.paintTreeView();
             
         }
     }
     updateFooter() {
         if(!this.footerPainted)
         {
-            paintFooter();
+            this.paintFooter();
             
         }
     }
     updateHTML() {
-        updateHeader();
-        updateTreeView();        
+        this.updateHeader();
+        this.updateTreeView();        
+        this.updateFooter();
 
         // Models HTML
         if(this.activeModel != null)
