@@ -59,7 +59,7 @@ class modelExecutionSystem {
         <dl>`;
         Model.modelInstanceArray.forEach((modelInstance) => {
             htmlString = htmlString + "\n<dt class='clickablelistitem' onclick='Model.modelSelectionArray["+modelscount.toString(10)+"]()'>" + modelInstance.instanceName + "</dt>";
-            htmlString = htmlString + "\n<dd class='clickablelistitem'>" + modelInstance.modelDescription + "</dd>"; 
+            htmlString = htmlString + "\n<dd class='clickablelistitem' onclick='Model.modelSelectionArray["+modelscount.toString(10)+"]()'>" + modelInstance.modelDescription + "</dd>"; 
         });
         htmlString = htmlString + "\n</dl>"; 
         this.treeViewLink.innerHTML = htmlString;
