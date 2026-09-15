@@ -72,7 +72,29 @@ class modelExecutionSystem {
     }
     paintActiveModelTreeView(){
         let htmlString = "<h3>"+this.activeModel.instanceName+"</h3>";
+        htmlString += "\n<ul class='tree'>";
+        htmlString += "\n<li>Execution System";
+        htmlString += "\n<ul>";
+
+        htmlString += "\n</ul>";
+        htmlString += "\n</li>";
+        htmlString += "\n<li>"+this.activeModel.modelType;
+        htmlString += "\n<ul>";
+
+        htmlString += "\n</ul>";
+        htmlString += "\n</li>";
+        htmlString += "\n</ul>";
         this.treeViewLink.innerHTML = htmlString;
+
+        // Attach click event to all <li> that have children
+        document.querySelectorAll(".tree li").forEach(function (li) {
+            if (li.querySelector("ul")) {
+                li.addEventListener("click", function (e) {
+                    e.stopPropagation(); // Prevent event bubbling
+                    li.classList.toggle("expanded");
+                });
+            }
+        });
     }
     paintTreeView(){
         if(this.activeModel != null)
