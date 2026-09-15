@@ -61,7 +61,7 @@ class modelExecutionSystem {
         });
         htmlString = htmlString + "\n</dl>"; 
         this.treeViewLink.innerHTML = htmlString;
-
+        console.log(this.treeViewLink.innerHTML);
 
     }
     paintActiveModelTreeView(){
