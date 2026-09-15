@@ -18,6 +18,7 @@ class modelExecutionSystem {
 
     // Constructor for the Execution System Class
     constructor(guitimerPeriodMSIn, guitimerHTMLModuloIn) {
+        
         this.guitimerPeriodMS = guitimerPeriodMSIn;
         this.guitimerHTMLModulo = guitimerHTMLModuloIn;
         this.activeModel = null;
@@ -40,13 +41,18 @@ class modelExecutionSystem {
         this.activeModelNameUpdate = true;      // trigger to update header name field
         this.treeViewPainted = false;           // trigger to repaint treeview div
     }
+    resetActiveModel(){
+        this.activeModel = null;                // reset active model link
+        this.activeModelNameUpdate = true;      // trigger to update header name field
+        this.treeViewPainted = false;           // trigger to repaint treeview div
+    }
 
     /////////////////////////////////////////////////////////////////
     // helper methods to paint html elements
     paintHeader() {
         let htmlString = `<h1>Simple Model Explorer</h1>
             <h2>TT Digital Systems</h2>
-            <h3 id="activeModel">active model: no model selected</h3>`;
+            <h3 id="activeModel" class='clickablelistitem' onclick='ModelExeSys.resetActiveModel().bind(ModelExeSys)'>active model: no model selected</h3>`;
         this.headerLink.innerHTML = htmlString;
         this.headerActiveModel = document.getElementById("activeModel");
         this.headerPainted = true;
@@ -97,7 +103,7 @@ class modelExecutionSystem {
         {
             if(this.activeModel != null)
             {
-                this.headerActiveModel.innerHTML = this.activeModel.modelType;
+                this.headerActiveModel.innerHTML = this.activeModel.modelType + ": "+this.activeModel.instanceName+" (click to de-select)";
             }
             else
             {

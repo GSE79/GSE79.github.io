@@ -31,7 +31,7 @@ class Model {
         this.instanceName = instanceName;
         // Link Instance with Execution System Instance
         this.exeSysLink = exeSysLinkIn;
-        
+        this.staticarrayindex = 0;
         // Create Property Values Array
         this.properties = [new Valueclass(this.modelType, null),
                             new Valueclass(this.instanceName, null),
@@ -45,6 +45,7 @@ class Model {
          
         Model.modelInstanceArray.push(this);                                    // add instance reference to static array
         let staticInstanceIndex = Model.modelInstanceArray.length-1;            // latch current array size for indexing
+        this.staticarrayindex = staticInstanceIndex;                            // latch static array index to model field
         Model.modelSelectionArray.push(function() {                             // add function
             const modelref = Model.modelInstanceArray[staticInstanceIndex];     // get model reference from static array
             const exesysref = modelref.exeSysLink;                              // get exesys reference from model
