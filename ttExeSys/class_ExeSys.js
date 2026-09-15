@@ -36,9 +36,9 @@ class modelExecutionSystem {
         this.treeViewPainted = false;                                       // trigger to (re)paint treeview div
     }
     setActiveModel(modelLink){
-        this.activeModel = modelLink;
-        this.activeModelNameUpdate = true; 
-        console.log("exesysfunction()");
+        this.activeModel = modelLink;           // set active model link
+        this.activeModelNameUpdate = true;      // trigger to update header name field
+        this.treeViewPainted = false;           // trigger to repaint treeview div
     }
 
     /////////////////////////////////////////////////////////////////
@@ -51,6 +51,7 @@ class modelExecutionSystem {
         this.headerActiveModel = document.getElementById("activeModel");
         this.headerPainted = true;
         this.activeModelNameUpdate = true; 
+        
     }
     paintModelsListTreeView(){
         let modelscount = 0;
@@ -58,15 +59,14 @@ class modelExecutionSystem {
         <dl>`;
         Model.modelInstanceArray.forEach((modelInstance) => {
             htmlString = htmlString + "\n<dt class='clickablelistitem' onclick='Model.modelSelectionArray["+modelscount.toString(10)+"]()'>" + modelInstance.instanceName + "</dt>";
-            htmlString = htmlString + "\n<dd>" + modelInstance.modelDescription + "</dd>"; 
+            htmlString = htmlString + "\n<dd class='clickablelistitem'>" + modelInstance.modelDescription + "</dd>"; 
         });
         htmlString = htmlString + "\n</dl>"; 
         this.treeViewLink.innerHTML = htmlString;
-        console.log(this.treeViewLink.innerHTML);
 
     }
     paintActiveModelTreeView(){
-
+        let htmlString = "<h3>"+this.activeModel.instanceName+"</h3>";
     }
     paintTreeView(){
         if(this.activeModel != null)
@@ -96,7 +96,7 @@ class modelExecutionSystem {
         {
             if(this.activeModel != null)
             {
-                this.headerActiveModel.innerHTML = this.activeModel.instanceName;
+                this.headerActiveModel.innerHTML = this.activeModel.modelType;
             }
             else
             {

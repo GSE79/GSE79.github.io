@@ -50,8 +50,7 @@ class Model {
             const exesysref = modelref.exeSysLink;                              // get exesys reference from model
             const ufunc = exesysref.setActiveModel;                             // get unbound function
             const bfunc = ufunc.bind(exesysref);                                // bind to model's exesyslink
-            bfunc(modelref);                                                    // call bound function
-            console.log("modelfunction()");               
+            bfunc(modelref);                                                    // call bound function            
         });
     }
     // Init / Re-Init Method
