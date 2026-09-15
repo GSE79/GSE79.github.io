@@ -20,8 +20,8 @@ if (typeof(Worker) !== "undefined") {
     bResetActiveModel();
 
     // Create the Model(s), link the execution system instance
-    var GarysGearShaft = new ideal_GearShaft("Gary's Gear Shaft", ModelExeSys);
-    var SholandasGearShaft = new ideal_GearShaft("Sholanda's Gear Shaft", ModelExeSys);
+    var GarysGearShaft = new ideal_GearShaft("Gary's Ideal Gear Shaft", ModelExeSys);
+    var SholandasGearShaft = new ideal_GearShaft("Sholanda's Ideal Gear Shaft", ModelExeSys);
 
     // Launch WebWorker Thread
     var worker = new Worker('worker.js');
