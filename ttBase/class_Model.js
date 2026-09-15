@@ -42,9 +42,13 @@ class Model {
                         new Valueclass(this.loopCycles, null),
                         new Valueclass(this.loopsDuration, Units.Time)
         ];
-
+         
         Model.modelInstanceArray.push(this);
-        Model.modelSelectionArray.push(function(){this.exeSysLink.setActiveModel(this);console.log("modelfunction()");});
+        let staticInstanceIndex = Model.modelInstanceArray.length-1;
+        Model.modelSelectionArray.push(function() {
+            Model.modelInstanceArray[staticInstanceIndex].exeSysLink.setActiveModel(Model.modelInstanceArray[staticInstanceIndex]).bind(Model.modelInstanceArray[staticInstanceIndex].exeSysLink);
+            console.log("modelfunction()");
+        });
     }
     // Init / Re-Init Method
     Init_ReInit() {
