@@ -15,6 +15,8 @@ if (typeof(Worker) !== "undefined") {
 
     // Create the Execution System, link to gui timer period
     var ModelExeSys = new modelExecutionSystem(guitimerPeriodMS, guitimerHTMLModulo);
+    const uResetActiveModel = ModelExeSys.resetActiveModel;
+    const bResetActiveModel = ModelExeSys.resetActiveModel.bind(ModelExeSys);
 
     // Create the Model(s), link the execution system instance
     var IdealGearShaft = new ideal_GearShaft("Ideal Gear Shaft", ModelExeSys);
