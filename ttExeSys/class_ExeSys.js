@@ -38,6 +38,7 @@ class modelExecutionSystem {
     setActiveModel(modelLink){
         this.activeModel = modelLink;
         this.activeModelNameUpdate = true; 
+        console.log("exesysfunction()");
     }
 
     /////////////////////////////////////////////////////////////////

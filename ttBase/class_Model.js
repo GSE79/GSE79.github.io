@@ -44,7 +44,7 @@ class Model {
         ];
 
         Model.modelInstanceArray.push(this);
-        Model.modelSelectionArray.push(function(){this.exeSysLink.setActiveModel(this)});
+        Model.modelSelectionArray.push(function(){this.exeSysLink.setActiveModel(this);console.log("modelfunction()");});
     }
     // Init / Re-Init Method
     Init_ReInit() {
