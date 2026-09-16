@@ -70,15 +70,15 @@ class modelExecutionSystem {
         let htmlString = `<h3>Select a Model Instance</h3>
         <dl>`;
         Model.modelInstanceArray.forEach((modelInstance) => {
-            htmlString = htmlString + "\n<dt class='clickablelistitem' onclick='Model.modelSelectionArray["+modelInstance.staticarrayindex.toString(10)+"]()'>" + modelInstance.instanceName + "</dt>";
-            htmlString = htmlString + "\n<dd class='clickablelistitem' onclick='Model.modelSelectionArray["+modelInstance.staticarrayindex.toString(10)+"]()'>" + modelInstance.modelDescription + "</dd>"; 
+            htmlString = htmlString + "\n<dt class='clickablelistitem' onclick='Model.modelSelectionArray["+modelInstance.staticarrayindex.toString(10)+"]()'>" + modelInstance.instanceName.value + "</dt>";
+            htmlString = htmlString + "\n<dd class='clickablelistitem' onclick='Model.modelSelectionArray["+modelInstance.staticarrayindex.toString(10)+"]()'>" + modelInstance.modelDescription.value + "</dd>"; 
         });
         htmlString = htmlString + "\n</dl>"; 
         this.treeViewLink.innerHTML = htmlString;
 
     }
     paintActiveModelTreeView(){
-        let htmlString = "<h3>"+this.activeModel.instanceName+"</h3>";
+        let htmlString = "<h3>"+this.activeModel.instanceName.value+"</h3>";
         htmlString += "\n<ul class='tree'>";
         htmlString += "\n<li>Execution System";
         htmlString += "\n<ul>";
@@ -94,7 +94,7 @@ class modelExecutionSystem {
         htmlString += "\n</li>";
         htmlString += "\n</ul>";
         htmlString += "\n</li>";
-        htmlString += "\n<li>"+this.activeModel.modelType;
+        htmlString += "\n<li>"+this.activeModel.modelType.value;
         htmlString += "\n<ul>";
         htmlString += "\n<li>Properties";
         htmlString += "\n<ul>";
