@@ -25,8 +25,11 @@ class Model {
         let staticInstanceIndex = Model.modelInstanceArray.length-1;            // latch current array size for indexing
         this.staticarrayindex = staticInstanceIndex;                            // latch static array index to model field
         Model.modelSelectionArray.push(function() {                             // add function
-            let modelref = Model.modelInstanceArray[staticInstanceIndex];       // get model reference from static array
-            modelref.exeSysLink.setActiveModel(modelref);                       // call bound function            
+            const modelref = Model.modelInstanceArray[staticInstanceIndex];     // get model reference from static array
+            const exesysref = modelref.exeSysLink;                              // get exesys reference from model
+            const ufunc = exesysref.setActiveModel;                             // get unbound function
+            const bfunc = ufunc.bind(exesysref);                                // bind to model's exesyslink
+            bfunc(modelref);                                                    // call bound function           
         });
         
         // Set Unique Instance Name
@@ -56,13 +59,6 @@ class Model {
                         this.loopsDuration
         ];
 
-        // Get all defined class methods
-        const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
-
-        // Bind all methods
-        methods
-            .filter(method => (method !== 'constructor'))
-            .forEach((method) => { this[method] = this[method].bind(this); });
     }
     // Init / Re-Init Method
     Init_ReInit() {
