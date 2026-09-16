@@ -32,13 +32,6 @@ class ideal_GearShaft extends Model {
         this.position = new Valueclass(0.0,Units.Angle);            // rad      Angular position of gear shaft
         this.states.push(this.position);
         
-         // Get all defined class methods
-        const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
-
-        // Bind all methods
-        methods
-            .filter(method => (method !== 'constructor'))
-            .forEach((method) => { this[method] = this[method].bind(this); });
     }
     // Init / Re-Init of Ideal Gear Shaft Model
     Init_ReInit(...args){
