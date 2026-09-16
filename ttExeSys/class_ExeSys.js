@@ -35,13 +35,6 @@ class modelExecutionSystem {
         this.treeViewLink = document.getElementById("ttExeSys_treeview");   // link to exesys treeview div
         this.treeViewPainted = false;                                       // trigger to (re)paint treeview div
 
-         // Get all defined class methods
-        const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
-
-        // Bind all methods
-        methods
-            .filter(method => (method !== 'constructor'))
-            .forEach((method) => { this[method] = this[method].bind(this); });
     }
     setActiveModel(modelLink){
         this.activeModel = modelLink;           // set active model link
