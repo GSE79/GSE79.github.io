@@ -110,7 +110,7 @@ class modelExecutionSystem {
 
         // Attach click event to all <li> that have children
         document.querySelectorAll(".tree li").forEach(function (li) {
-            if (li.querySelector("ul")) {
+            if (li.querySelector("ul")!=null) {
                 li.addEventListener("click", function (e) {
                     e.stopPropagation(); // Prevent event bubbling
                     li.classList.toggle("expanded");
