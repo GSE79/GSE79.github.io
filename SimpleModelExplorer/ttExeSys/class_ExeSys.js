@@ -104,7 +104,7 @@ class modelExecutionSystem {
         htmlString += "\n<li>States";
         htmlString += "\n<ul>";
         this.activeModel.properties.forEach(function (prop) {
-            htmlString += "\n<li>" + prop.prototype. + "</li>";
+            htmlString += "\n<li>" + "" +"</li>";
         });
         htmlString += "\n</ul>";
         htmlString += "\n</li>";
