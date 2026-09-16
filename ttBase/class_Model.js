@@ -22,9 +22,10 @@ class Model {
         
         // Add this instance to static array with static function to set the instance as active model on exesys
         Model.modelInstanceArray.push(this);                                    // add instance reference to static array
-        this.staticarrayindex = Model.modelInstanceArray.length-1;            // latch current array size for indexing
+        let staticInstanceIndex = Model.modelInstanceArray.length-1;            // latch current array size for indexing
+        this.staticarrayindex = staticInstanceIndex;                            // latch static array index to model field
         Model.modelSelectionArray.push(function() {                             // add function
-            let modelref = Model.modelInstanceArray[this.staticarrayindex];       // get model reference from static array
+            let modelref = Model.modelInstanceArray[staticInstanceIndex];       // get model reference from static array
             modelref.exeSysLink.setActiveModel(modelref);                       // call bound function            
         });
         
