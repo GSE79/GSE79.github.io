@@ -25,7 +25,7 @@ class Model {
 
         // Base Model Properties
         this.modelType = new Valueclass("baseModelType", null);
-        this.modelDescription = "";    
+        this.modelDescription = new Valueclass("", null);   
         this.instanceName = new Valueclass("", null);
         this.deltaTime = new Valueclass(0.001, Units.Time); // s Time Loop Period
         this.exeSysLink = null;
