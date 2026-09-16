@@ -15,4 +15,4 @@ var SholandasGearShaft = new ideal_GearShaft("Sholanda's Ideal Gear Shaft", Mode
 // Start GUI Timer
 const uGUITimer = ModelExeSys.GUITimer;
 const bGUITimer = uGUITimer.bind(ModelExeSys);
-let guiTimer = setInterval(bGUITimer(), ModelExeSys.guitimerPeriodMS);
+let guiTimer = setInterval(bGUITimer(), 100);
