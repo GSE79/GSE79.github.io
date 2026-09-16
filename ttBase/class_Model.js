@@ -14,26 +14,13 @@ class Model {
     
     // Base Model Constructor
     constructor(instanceNamein, exeSysLinkIn) {
+
         // Dis-allow instantiation of base class: Model
         if (new.target === Model) {
             throw new Error("Cannot instantiate abstract class Model directly.");
-        }        
-        // Set Unique Instance Name
-        this.instanceName.value = instanceNamein;
-        // Link Model Instance with Execution System Instance
-        this.exeSysLink = exeSysLinkIn;
-
-        // Base Model Properties
-        this.modelType = new Valueclass("baseModelType", null);
-        this.modelDescription = new Valueclass("", null);   
-        this.instanceName = new Valueclass("", null);
-        this.deltaTime = new Valueclass(0.001, Units.Time); // s Time Loop Period
-        this.exeSysLink = null;
-        // Base Model States
-        this.initCycles = new Valueclass(0, null);
-        this.loopCycles = new Valueclass(0, null);
-        this.loopsDuration = new Valueclass(0.0, Units.Time); // s Time cummulative total of all loop periods
+        }   
         
+        // Add this instance to static array with static function to set the instance as active model on exesys
         Model.modelInstanceArray.push(this);                                    // add instance reference to static array
         let staticInstanceIndex = Model.modelInstanceArray.length-1;            // latch current array size for indexing
         this.staticarrayindex = staticInstanceIndex;                            // latch static array index to model field
@@ -41,7 +28,23 @@ class Model {
             let modelref = Model.modelInstanceArray[staticInstanceIndex];       // get model reference from static array
             modelref.exeSysLink.setActiveModel(modelref);                       // call bound function            
         });
+        
+        // Set Unique Instance Name
+        this.instanceName = new Valueclass(instanceNamein, null);
 
+        // Link Model Instance with Execution System Instance
+        this.exeSysLink = exeSysLinkIn;
+
+        // Base Model Properties
+        this.modelType = new Valueclass("baseModelType", null);
+        this.modelDescription = new Valueclass("abstract base class from which models are built", null);           
+        this.deltaTime = new Valueclass(0.001, Units.Time); // s Time Loop Period
+
+        // Base Model States
+        this.initCycles = new Valueclass(0, null);
+        this.loopCycles = new Valueclass(0, null);
+        this.loopsDuration = new Valueclass(0.0, Units.Time); // s Time cummulative total of all loop periods
+        
         // Create Property Values Array
         this.properties = [this.modelType,
                             this.instanceName,
