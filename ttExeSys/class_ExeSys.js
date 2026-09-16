@@ -98,14 +98,12 @@ class modelExecutionSystem {
         htmlString += "\n<ul>";
         htmlString += "\n<li>Properties";
         htmlString += "\n<ul>";
-        this.activeModel.properties.forEach(function (prop) {
-            htmlString += "\n<li>" + "" +"</li>";
-        });
+
         htmlString += "\n</ul>";
         htmlString += "\n</li>";
         htmlString += "\n<li>States";
         htmlString += "\n<ul>";
-        this.activeModel.states.forEach(function (prop) {
+        this.activeModel.properties.forEach(function (prop) {
             htmlString += "\n<li>" + "" +"</li>";
         });
         htmlString += "\n</ul>";

@@ -11,7 +11,16 @@ class Model {
     // Static Model Properties
     static modelInstanceArray = [];
     static modelSelectionArray = [];
-    
+    // Base Model Properties
+    modelType = new Valueclass("baseModelType", null);
+    modelDescription = "";    
+    instanceName = new Valueclass("", null);
+    deltaTime = new Valueclass(0.001, Units.Time); // s Time Loop Period
+    exeSysLink = null;
+    // Base Model States
+    initCycles = new Valueclass(0, null);
+    loopCycles = new Valueclass(0, null);
+    loopsDuration = new Valueclass(0.0, Units.Time); // s Time cummulative total of all loop periods
     // Base Model Constructor
     constructor(instanceNamein, exeSysLinkIn) {
         // Dis-allow instantiation of base class: Model
@@ -22,16 +31,6 @@ class Model {
         this.instanceName.value = instanceNamein;
         // Link Instance with Execution System Instance
         this.exeSysLink = exeSysLinkIn;
-
-        // Base Model Properties
-        this.modelType = new Valueclass("baseModelType", null);
-        this.modelDescription = new Valueclass("", null);  
-        this.instanceName = new Valueclass("", null);
-        this.deltaTime = new Valueclass(0.001, Units.Time); // s Time Loop Period        
-        // Base Model States
-        this.initCycles = new Valueclass(0, null);
-        this.loopCycles = new Valueclass(0, null);
-        this.loopsDuration = new Valueclass(0.0, Units.Time); // s Time cummulative total of all loop periods
         
         Model.modelInstanceArray.push(this);                                    // add instance reference to static array
         let staticInstanceIndex = Model.modelInstanceArray.length-1;            // latch current array size for indexing
@@ -77,6 +76,9 @@ class Model {
     // The InitReInit called by ExeSys
     ExecuteInitReInit() {
         this.Init_ReInit();
-        this.initCycles.value++;
+        this.initCycles++;
     }
+
+
+
 }
