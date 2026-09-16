@@ -1,0 +1,100 @@
+/*set to border-box for all elements
+ - to make sizing include border and padding*/
+* {
+    box-sizing: border-box;
+}
+/* Grid Container
+*/
+.grid-container {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 19vh 69vh 10vh;
+    grid-template-areas:
+        'header header'
+        'left main'
+        'footer footer';
+    background-color: #000000;
+    
+}
+/* Grid Container - header
+*/
+.header {
+    grid-area: header;
+    background-color: #33333f;
+    text-align: center;
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+/* Grid Container - left
+*/
+.left {
+    grid-area: left;
+    background-color: #1c1c2c;
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+.left > button {
+    height: 20%;
+    width: 100%;
+}
+/* Grid Container - main
+*/
+.main {
+    grid-area: main;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+/* Grid Container - footer
+*/
+.footer {
+    grid-area: footer;
+    background-color: #4a4a5c;
+    text-align: center;
+    color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+.footer > button {
+    height: 100%;
+    width: 10%;
+}
+
+/* Clickable Items
+*/
+.clickablelistitem{
+    color: white;
+}
+.clickablelistitem:hover{
+    color: rgb(58, 180, 211);
+}
+
+/* Treeview - Model Nodes
+*/
+ul.tree, .tree ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.tree li {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.tree li::before {
+    content: "▶";
+    position: absolute;
+    left: -15px;
+    transition: transform 0.2s;
+}
+.tree li.expanded::before {
+    transform: rotate(90deg);
+}
+.tree ul {
+    display: none;
+}
+.tree li.expanded > ul {
+    display: block;
+}
