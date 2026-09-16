@@ -12,47 +12,52 @@ class Model {
     static modelInstanceArray = [];
     static modelSelectionArray = [];
     // Base Model Properties
-    modelType = "baseModelType";
+    modelType = new Valueclass("baseModelType", null);
     modelDescription = "";    
-    instanceName = "";
-    deltaTime = 0.001; // s Time Loop Period
+    instanceName = new Valueclass("", null);
+    deltaTime = new Valueclass(0.001, Units.Time); // s Time Loop Period
     exeSysLink = null;
     // Base Model States
-    initCycles = 0;
-    loopCycles = 0;
-    loopsDuration = 0.0; // s Time cummulative total of all loop periods
+    initCycles = new Valueclass(0, null);
+    loopCycles = new Valueclass(0, null);
+    loopsDuration = new Valueclass(0.0, Units.Time); // s Time cummulative total of all loop periods
     // Base Model Constructor
-    constructor(instanceName, exeSysLinkIn) {
+    constructor(instanceNamein, exeSysLinkIn) {
         // Dis-allow instantiation of base class: Model
         if (new.target === Model) {
             throw new Error("Cannot instantiate abstract class Model directly.");
         }        
         // Set Unique Instance Name
-        this.instanceName = instanceName;
+        this.instanceName.value = instanceNamein;
         // Link Instance with Execution System Instance
         this.exeSysLink = exeSysLinkIn;
-        this.staticarrayindex = 0;
-        // Create Property Values Array
-        this.properties = [new Valueclass(this.modelType, null),
-                            new Valueclass(this.instanceName, null),
-                            new Valueclass(this.deltaTime, Units.Time)
-        ];
-        // Create State Values Array
-        this.states = [new Valueclass(this.initCycles, null),
-                        new Valueclass(this.loopCycles, null),
-                        new Valueclass(this.loopsDuration, Units.Time)
-        ];
-         
+        
         Model.modelInstanceArray.push(this);                                    // add instance reference to static array
         let staticInstanceIndex = Model.modelInstanceArray.length-1;            // latch current array size for indexing
         this.staticarrayindex = staticInstanceIndex;                            // latch static array index to model field
         Model.modelSelectionArray.push(function() {                             // add function
-            const modelref = Model.modelInstanceArray[staticInstanceIndex];     // get model reference from static array
-            const exesysref = modelref.exeSysLink;                              // get exesys reference from model
-            const ufunc = exesysref.setActiveModel;                             // get unbound function
-            const bfunc = ufunc.bind(exesysref);                                // bind to model's exesyslink
-            bfunc(modelref);                                                    // call bound function            
+            let modelref = Model.modelInstanceArray[staticInstanceIndex];       // get model reference from static array
+            modelref.exeSysLink.setActiveModel(modelref);                       // call bound function            
         });
+
+        // Create Property Values Array
+        this.properties = [this.modelType,
+                            this.instanceName,
+                            this.deltaTime
+        ];
+        // Create State Values Array
+        this.states = [this.initCycles,
+                        this.loopCycles,
+                        this.loopsDuration
+        ];
+
+        // Get all defined class methods
+        const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
+
+        // Bind all methods
+        methods
+            .filter(method => (method !== 'constructor'))
+            .forEach((method) => { this[method] = this[method].bind(this); });
     }
     // Init / Re-Init Method
     Init_ReInit() {
@@ -65,8 +70,8 @@ class Model {
     // The Timed Loop called by ExeSys
     ExecuteTimeSlice() {
         this.Time_Loop();
-        this.loopCycles++;
-        this.loopsDuration += this.deltaTime;
+        this.loopCycles.value++;
+        this.loopsDuration.value += this.deltaTime.value;
     }
     // The InitReInit called by ExeSys
     ExecuteInitReInit() {

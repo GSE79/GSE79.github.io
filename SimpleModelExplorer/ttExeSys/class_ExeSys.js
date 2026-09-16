@@ -17,10 +17,9 @@ class modelExecutionSystem {
     //messageInCounter;       // Worker Response Message Counter
 
     // Constructor for the Execution System Class
-    constructor(guitimerPeriodMSIn, guitimerHTMLModuloIn) {
-        
-        this.guitimerPeriodMS = guitimerPeriodMSIn;
-        this.guitimerHTMLModulo = guitimerHTMLModuloIn;
+    constructor() {
+        this.guitimerPeriodMS = 100;         // 100 ms main gui timer
+        this.guitimerHTMLModulo = 10;        // update html every 10th cycle
         this.activeModel = null;
         this.intervalCounter = 0;
         this.updateCounter = 0;
@@ -35,6 +34,14 @@ class modelExecutionSystem {
         this.footerPainted = false;                                         // trigger to (re)paint footer
         this.treeViewLink = document.getElementById("ttExeSys_treeview");   // link to exesys treeview div
         this.treeViewPainted = false;                                       // trigger to (re)paint treeview div
+
+         // Get all defined class methods
+        const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
+
+        // Bind all methods
+        methods
+            .filter(method => (method !== 'constructor'))
+            .forEach((method) => { this[method] = this[method].bind(this); });
     }
     setActiveModel(modelLink){
         this.activeModel = modelLink;           // set active model link
@@ -96,7 +103,9 @@ class modelExecutionSystem {
         htmlString += "\n</li>";
         htmlString += "\n<li>States";
         htmlString += "\n<ul>";
-
+        this.activeModel.properties.forEach(function (prop) {
+            htmlString += "\n<li>" + prop.prototype. + "</li>";
+        });
         htmlString += "\n</ul>";
         htmlString += "\n</li>";
         htmlString += "\n</ul>";

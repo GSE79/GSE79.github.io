@@ -69,7 +69,7 @@
     color: white;
 }
 .clickablelistitem:hover{
-    color: blue;
+    color: rgb(58, 180, 211);
 }
 
 /* Treeview - Model Nodes
