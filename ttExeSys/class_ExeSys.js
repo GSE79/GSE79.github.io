@@ -186,11 +186,6 @@ class modelExecutionSystem {
     GUITimer() {
 
         // once per gui timer period
-        // prepare container for possible
-        // command and value strings
-        let workermessagearray = "";
-
-        // once per gui timer period
         // execute the models
         if(this.activeModel != null)
         {
@@ -206,28 +201,7 @@ class modelExecutionSystem {
         }
 
         // once per gui timer period
-        // if a message should be sent this cycle
-        if (workermessagearray.length > 0) {
-            this.worker.postMessage(workermessagearray);  // send the message to the worker
-            this.messageOutCounter++;
-        }
-
-        // once per gui timer period
         // increment counter
         this.intervalCounter++;
-    }
-
-    /////////////////////////////////////////////////////////////////
-    // WORKER MESSAGE CALLBACK - On each rx'd msg
-    workerMsgParse(workermessage) {
-
-        const receivedString = workermessage.data;
-
-        if(receivedString.length > 0)
-        {
-
-            this.messageInCounter++;
-        }
-    }
-
+    } 
 }
