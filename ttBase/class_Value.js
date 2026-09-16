@@ -8,10 +8,8 @@
 // Values have graphical input and output features.
 class Valueclass {
 
-    constructor(ValueName, ValueDescription, ValueReference, UnitsReference){
-        this.name = ValueName;
-        this.description = ValueDescription;
-        this.value = ValueReference;
+    constructor(ValueReferenceorInitialValue, UnitsReference){
+        this.value = ValueReferenceorInitialValue;
         this.units = UnitsReference;
 
         // Get all defined class methods
