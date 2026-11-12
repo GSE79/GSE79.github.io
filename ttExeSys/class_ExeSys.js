@@ -132,8 +132,8 @@ class modelExecutionSystem {
                 let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
                 if (userInput !== null) {
                     el.valueobject.value = userInput;
-                    el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
-                
+                    //el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
+                    el.valueobject.treeviewLIref = el;
                 }
             });
             index++;
@@ -147,8 +147,8 @@ class modelExecutionSystem {
                 let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
                 if (userInput !== null) {
                     el.valueobject.value = userInput;
-                    el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
-                
+                    //el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
+                    el.valueobject.treeviewLIref = el;
                 }
             });  
             index++;
@@ -197,6 +197,13 @@ class modelExecutionSystem {
             this.paintTreeView();
             
         }
+        this.activeModel.properties.forEach(function (prop) {
+            prop.treeviewLIref.innerHTML = prop.getValueDescriptionAndValueString();
+            }); 
+        this.activeModel.states.forEach(function (prop) {
+            prop.treeviewLIref.innerHTML = prop.getValueDescriptionAndValueString();
+            });  
+        
     }
     updateFooter() {
         if(!this.footerPainted)

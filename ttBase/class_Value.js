@@ -13,6 +13,7 @@ class Valueclass {
         this.units = UnitsReference;
         this.instancedesc = InstanceDescription;
         this.SelectedUnitsIndex = 0;
+        this.treeviewLIref = null;
 
         // Get all defined class methods
         const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
