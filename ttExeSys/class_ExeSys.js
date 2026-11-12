@@ -91,15 +91,19 @@ class modelExecutionSystem {
         htmlString += "\n<ul>";
         htmlString += "\n<li>Properties";
         htmlString += "\n<ul>";
+        let index = 0;
         this.activeModel.properties.forEach(function (prop) {
-            htmlString += "\n<li>" + prop.getValueDescriptionAndValueString() + "</li>";
+            htmlString += "\n<li id=prop"+index+">" + prop.getValueDescriptionAndValueString() + "</li>";
+            index++;
         });
         htmlString += "\n</ul>";
         htmlString += "\n</li>";
         htmlString += "\n<li>States";
         htmlString += "\n<ul>";
+        index = 0;
         this.activeModel.states.forEach(function (prop) {
-            htmlString += "\n<li>" + prop.getValueDescriptionAndValueString() + "</li>";
+            htmlString += "\n<li id=state"+index+">" + prop.getValueDescriptionAndValueString() + "</li>";
+            index++;
         });
         htmlString += "\n</ul>";
         htmlString += "\n</li>";
@@ -109,14 +113,14 @@ class modelExecutionSystem {
         this.treeViewLink.innerHTML = htmlString;
 
         // Attach click event to all <li> that have children
-        document.querySelectorAll(".tree li").forEach(function (li) {
+/*         document.querySelectorAll(".tree li").forEach(function (li) {
             if (li.querySelector("ul")!=null) {
                 li.addEventListener("click", function (e) {
                     e.stopPropagation(); // Prevent event bubbling
                     li.classList.toggle("expanded");
                 });
             }
-        });
+        }); */
     }
     paintTreeView(){
         if(this.activeModel != null)
