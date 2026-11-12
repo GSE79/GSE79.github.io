@@ -16,20 +16,20 @@ class ideal_GearShaft extends Model {
         this.modelType.value = "ideal_GearShaft";
         this.modelDescription.value = "The ideal gear shaft has no friction and is infinitely stiff.  Total inertia is lumped; mismatch of input/output inertias is not considered.  Dynamics are driven by a Net Torque applied as the sum of Input Torque and Distrubance Torque";
         // Public Model Properties
-        this.inertia = new Valueclass(1.0,Units.Inertia);           // kg*m^2 Lumped inertia of gear shaft    
+        this.inertia = new Valueclass("Lumped Inertia", 1.0,Units.Inertia);           // kg*m^2 Lumped inertia of gear shaft    
         this.properties.push(this.inertia);
         // Public Model States
-        this.inputTorque = new Valueclass(0.0,Units.Torque);        // (kg*m^2)/(s^2) Torque applied as input to drive dynamics
+        this.inputTorque = new Valueclass("Input Torque", 0.0,Units.Torque);        // (kg*m^2)/(s^2) Torque applied as input to drive dynamics
         this.states.push(this.inputTorque);
-        this.disturbanceTorque = new Valueclass(0.0,Units.Torque);  // (kg*m^2)/(s^2) Torque applied as disturbance also drives dynamics
+        this.disturbanceTorque = new Valueclass("Disturbance Torque", 0.0,Units.Torque);  // (kg*m^2)/(s^2) Torque applied as disturbance also drives dynamics
         this.states.push(this.disturbanceTorque);
-        this.netTorque = new Valueclass(0.0,Units.Torque);          // (kg*m^2)/(s^2) Net Torque, sum of input+disturbance
+        this.netTorque = new Valueclass("Net Torque", 0.0,Units.Torque);          // (kg*m^2)/(s^2) Net Torque, sum of input+disturbance
         this.states.push(this.netTorque);
-        this.acceleration = new Valueclass(0.0,Units.AngleAccel);   // rad/s^2  Angular acceleration of gear shaft
+        this.acceleration = new Valueclass("Acceleration",0.0,Units.AngleAccel);   // rad/s^2  Angular acceleration of gear shaft
         this.states.push(this.acceleration);
-        this.velocity = new Valueclass(0.0,Units.AngleVel);         // rad/s    Angular velocity of gear shaft
+        this.velocity = new Valueclass("Velocity", 0.0,Units.AngleVel);         // rad/s    Angular velocity of gear shaft
         this.states.push(this.velocity);        
-        this.position = new Valueclass(0.0,Units.Angle);            // rad      Angular position of gear shaft
+        this.position = new Valueclass("Position", 0.0,Units.Angle);            // rad      Angular position of gear shaft
         this.states.push(this.position);
         
     }

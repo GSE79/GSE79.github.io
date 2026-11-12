@@ -39,14 +39,14 @@ class Model {
         this.exeSysLink = exeSysLinkIn;
 
         // Base Model Properties
-        this.modelType = new Valueclass("baseModelType", null);
-        this.modelDescription = new Valueclass("abstract base class from which models are built", null);           
-        this.deltaTime = new Valueclass(0.001, Units.Time); // s Time Loop Period
+        this.modelType = new Valueclass("Model Type", "baseModelType", null);
+        this.modelDescription = new Valueclass("Model Description", "abstract base class from which models are built", null);           
+        this.deltaTime = new Valueclass("Loop Period", 0.001, Units.Time); // s Time Loop Period
 
         // Base Model States
-        this.initCycles = new Valueclass(0, null);
-        this.loopCycles = new Valueclass(0, null);
-        this.loopsDuration = new Valueclass(0.0, Units.Time); // s Time cummulative total of all loop periods
+        this.initCycles = new Valueclass("Init Cycles", 0, null);
+        this.loopCycles = new Valueclass("Loop Cycles", 0, null);
+        this.loopsDuration = new Valueclass("Execution Time", 0.0, Units.Time); // s Time cummulative total of all loop periods
         
         // Create Property Values Array
         this.properties = [this.modelType,
