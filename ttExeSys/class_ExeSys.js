@@ -127,13 +127,14 @@ class modelExecutionSystem {
         this.activeModel.properties.forEach(function (prop) {
             let el = document.getElementById("prop"+index)
             el.valueobject = prop;  
+            el.valueobject.treeviewLIref = el;
             el.addEventListener('contextmenu', function(event) {
                 event.preventDefault(); // Prevent default browser menu
                 let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
                 if (userInput !== null) {
                     el.valueobject.value = userInput;
                     //el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
-                    el.valueobject.treeviewLIref = el;
+                    
                 }
             });
             index++;
@@ -142,13 +143,14 @@ class modelExecutionSystem {
         this.activeModel.states.forEach(function (prop) {
             let el = document.getElementById("state"+index)
             el.valueobject = prop;  
+            el.valueobject.treeviewLIref = el;
             el.addEventListener('contextmenu', function(event) {
                 event.preventDefault(); // Prevent default browser menu
                 let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
                 if (userInput !== null) {
                     el.valueobject.value = userInput;
                     //el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
-                    el.valueobject.treeviewLIref = el;
+                    
                 }
             });  
             index++;
