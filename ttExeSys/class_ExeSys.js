@@ -143,6 +143,7 @@ class modelExecutionSystem {
                 let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
                 if (userInput !== null) {
                     el.valueobject.value = userInput;
+                    el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
                 } else {
                     alert("You cancelled the prompt.");
                 }
