@@ -92,9 +92,8 @@ class modelExecutionSystem {
         htmlString += "\n<li>Properties";
         htmlString += "\n<ul>";
         let index = 0;
-        this.activeModel.properties.forEach(function (prop) {
-            
-            htmlString += "\n<li><label  for=prop"+index+">"+prop.instancedesc+"</label><input type=text id=prop"+index+"></li>";
+        this.activeModel.properties.forEach(function (prop) {            
+            htmlString += "\n<li id=prop"+index+">" + prop.getValueDescriptionAndValueString() + "</li>";
             index++;
         });
         htmlString += "\n</ul>";
@@ -130,7 +129,12 @@ class modelExecutionSystem {
             el.valueobject = prop;  
             el.addEventListener('contextmenu', function(event) {
                 event.preventDefault(); // Prevent default browser menu
-                alert(el.valueobject.instancedesc);
+                let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
+                if (userInput !== null) {
+                    el.valueobject.value = userInput;
+                    el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
+                
+                }
             });
             index++;
         });
@@ -144,8 +148,7 @@ class modelExecutionSystem {
                 if (userInput !== null) {
                     el.valueobject.value = userInput;
                     el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
-                } else {
-                    alert("You cancelled the prompt.");
+                
                 }
             });  
             index++;
