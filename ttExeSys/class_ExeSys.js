@@ -93,7 +93,8 @@ class modelExecutionSystem {
         htmlString += "\n<ul>";
         let index = 0;
         this.activeModel.properties.forEach(function (prop) {
-            htmlString += "\n<li id=prop"+index+">" + prop.getValueDescriptionAndValueString() + "</li>";
+            
+            htmlString += "\n<li><label  for=prop"+index+">"+prop.instancedesc+"</label><input type=text id=prop"+index+"></li>";
             index++;
         });
         htmlString += "\n</ul>";
