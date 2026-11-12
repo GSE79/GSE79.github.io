@@ -113,14 +113,26 @@ class modelExecutionSystem {
         this.treeViewLink.innerHTML = htmlString;
 
         // Attach click event to all <li> that have children
-/*         document.querySelectorAll(".tree li").forEach(function (li) {
+        document.querySelectorAll(".tree li").forEach(function (li) {
             if (li.querySelector("ul")!=null) {
                 li.addEventListener("click", function (e) {
                     e.stopPropagation(); // Prevent event bubbling
                     li.classList.toggle("expanded");
                 });
             }
-        }); */
+        });
+
+        // link list items with value objects
+        index = 0;
+        this.activeModel.properties.forEach(function (prop) {
+            document.getElementById("prop"+index).valueobject = prop;  
+            index++;
+        });
+        index = 0;
+        this.activeModel.states.forEach(function (prop) {
+            document.getElementById("state"+index).valueobject = prop;  
+            index++;
+        });
     }
     paintTreeView(){
         if(this.activeModel != null)
