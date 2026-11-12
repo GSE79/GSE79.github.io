@@ -22,7 +22,10 @@ class Valueclass {
             .forEach((method) => { this[method] = this[method].bind(this); });
     }
     getValueDescriptionAndValueString() {
-        return this.instancedesc + " : " + this.value + " " + this.units.getUnitsString();
+        if(this.units != null)
+            return this.instancedesc + " : " + this.value + " " + this.units.getUnitsString();
+        else
+            return this.instancedesc + " : " + this.value;
     }
     getValueString() {
         return this.value;
