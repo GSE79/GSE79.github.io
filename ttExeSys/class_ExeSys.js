@@ -125,12 +125,22 @@ class modelExecutionSystem {
         // link list items with value objects
         index = 0;
         this.activeModel.properties.forEach(function (prop) {
-            document.getElementById("prop"+index).valueobject = prop;  
+            let el = document.getElementById("prop"+index)
+            el.valueobject = prop;  
+            el.addEventListener('contextmenu', function(event) {
+                event.preventDefault(); // Prevent default browser menu
+                alert(el.valueobject.instancedesc);
+            });
             index++;
         });
         index = 0;
         this.activeModel.states.forEach(function (prop) {
-            document.getElementById("state"+index).valueobject = prop;  
+            let el = document.getElementById("state"+index)
+            el.valueobject = prop;  
+            el.addEventListener('contextmenu', function(event) {
+                event.preventDefault(); // Prevent default browser menu
+                alert(el.valueobject.instancedesc);
+            });  
             index++;
         });
     }
