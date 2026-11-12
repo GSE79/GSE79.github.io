@@ -33,7 +33,7 @@ class Model {
         });
         
         // Set Unique Instance Name
-        this.instanceName = new Valueclass(instanceNamein, null);
+        this.instanceName = new Valueclass("Model Instance Name", instanceNamein, null);
 
         // Link Model Instance with Execution System Instance
         this.exeSysLink = exeSysLinkIn;
