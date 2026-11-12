@@ -27,4 +27,7 @@ class Units {
         this.LabelConversionPairs = LabelConversionPairs;
     }
 
+    getUnitsString() {
+        return this.LabelConversionPairs[0].keys[0];
+    }
 }
