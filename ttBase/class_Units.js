@@ -28,6 +28,7 @@ class Units {
     }
 
     getUnitsString() {
-        return Object.keys(this.LabelConversionPairs[0])[0];
+        let Kys = Object.keys(this.LabelConversionPairs[0]);
+        return Kys[0];
     }
 }
