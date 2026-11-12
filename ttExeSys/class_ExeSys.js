@@ -140,6 +140,12 @@ class modelExecutionSystem {
             el.valueobject = prop;  
             el.addEventListener('contextmenu', function(event) {
                 event.preventDefault(); // Prevent default browser menu
+                let userInput = prompt("Please enter your name", "Harry Potter");
+                if (userInput !== null) {
+                    alert("Hello " + userInput + "! How are you today?");
+                } else {
+                    alert("You cancelled the prompt.");
+                }
                 alert(el.valueobject.instancedesc);
             });  
             index++;
