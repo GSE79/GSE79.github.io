@@ -197,12 +197,16 @@ class modelExecutionSystem {
             this.paintTreeView();
             
         }
-        this.activeModel.properties.forEach(function (prop) {
+        if(this.activeModel!=null){
+            this.activeModel.properties.forEach(function (prop) {
+            prop.treeviewLIref.innerHTML = prop.getValueDescriptionAndValueString();
+            });
+            this.activeModel.states.forEach(function (prop) {
             prop.treeviewLIref.innerHTML = prop.getValueDescriptionAndValueString();
             }); 
-        this.activeModel.states.forEach(function (prop) {
-            prop.treeviewLIref.innerHTML = prop.getValueDescriptionAndValueString();
-            });  
+        }
+         
+         
         
     }
     updateFooter() {
