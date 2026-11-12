@@ -12,6 +12,7 @@ class Valueclass {
         this.value = ValueReferenceorInitialValue;
         this.units = UnitsReference;
         this.instancedesc = InstanceDescription;
+        this.SelectedUnitsIndex = 0;
 
         // Get all defined class methods
         const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
@@ -23,7 +24,7 @@ class Valueclass {
     }
     getValueDescriptionAndValueString() {
         if(this.units != null)
-            return this.instancedesc + " : " + this.value + " " + this.units.getUnitsString();
+            return this.instancedesc + " : " + this.value + " " + this.units.getUnitsString(this.SelectedUnitsIndex);
         else
             return this.instancedesc + " : " + this.value;
     }

@@ -13,8 +13,8 @@
 // Mass: (kilograms, pounds)
 // Time: (seconds, hours)
 class Units {
-    static Torque = new Units({"(kg*m^2)/(s^2)":1.0});
-    static Inertia = new Units({"kg*m^2)":1.0});
+    static Torque = new Units({"kg*m^2/s^2":1.0});
+    static Inertia = new Units({"kg*m^2":1.0});
     static Length = new Units({"m":1.0, "in":0.0254, "ft":0.3048});
     static Mass = new Units({"kg":1.0, "lbs":0.45359237});
     static Time = new Units({"s":1.0, "hrs":3600.0});
@@ -25,10 +25,10 @@ class Units {
     
     constructor(LabelConversionPairs){
         this.LabelConversionPairs = LabelConversionPairs;
+        
     }
 
-    getUnitsString() {
-        let Kys = Object.keys(this.LabelConversionPairs);
-        return Kys[0];
+    getUnitsString(SelectedUnitsIndex) {
+        return Object.keys(this.LabelConversionPairs)[SelectedUnitsIndex];
     }
 }
