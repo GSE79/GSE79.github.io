@@ -132,9 +132,7 @@ class modelExecutionSystem {
                 event.preventDefault(); // Prevent default browser menu
                 let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
                 if (userInput !== null) {
-                    el.valueobject.value = userInput;
-                    //el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
-                    
+                    el.valueobject.value = userInput;                    
                 }
             });
             index++;
@@ -149,8 +147,6 @@ class modelExecutionSystem {
                 let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
                 if (userInput !== null) {
                     el.valueobject.value = userInput;
-                    //el.innerHTML = el.valueobject.getValueDescriptionAndValueString();
-                    
                 }
             });  
             index++;
