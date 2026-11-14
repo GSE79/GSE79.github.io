@@ -14,7 +14,7 @@ class Valueclass {
         this.instancedesc = InstanceDescription;
         this.SelectedUnitsIndex = 0;
         this.treeviewLIref = null;
-
+        this.yValues = [];
         // Get all defined class methods
         const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
 
@@ -31,6 +31,29 @@ class Valueclass {
     }
     getValueString() {
         return this.value;
+    }
+    addValuetoSciChart(){
+        // 1. Create and populate the DataSeries
+        const dataSeries = new XyDataSeries(wasmcontext, {
+            xValues: ModelExeSys.activeModel.xValues,
+            yValues: this.yValues,
+            dataSeriesName: this.instancedesc
+        });
+
+        // 2. Create the line series and link the data
+        const lineSeries = new FastLineRenderableSeries(wasmcontext, {
+            stroke: "#FF6600",
+            strokeThickness: 3,
+            dataSeries: dataSeries
+        });
+
+        // 3. Add to the SciChartSurface (triggers automatic redraw)
+        scicharsurfaceref.renderableSeries.add(lineSeries);
+        
+
+        // 4. Optional: Rescale axes to fit the new line
+        scicharsurfaceref.zoomExtents();
+
     }
 
 } 

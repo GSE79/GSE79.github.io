@@ -34,7 +34,22 @@ class modelExecutionSystem {
         this.footerPainted = false;                                         // trigger to (re)paint footer
         this.treeViewLink = document.getElementById("ttExeSys_treeview");   // link to exesys treeview div
         this.treeViewPainted = false;                                       // trigger to (re)paint treeview div
+        this.mainViewDiv = document.getElementById("ttExeSys_mainview");
 
+        this.mainViewDiv.addEventListener('dragover', function(event) {
+            event.preventDefault();
+            event.dataTransfer.dropEffect = "copy";                            
+        });
+        this.mainViewDiv.addEventListener('drop', function(event) {
+            event.preventDefault();
+            // this.draggedObject now references element.valueobject
+            
+            // add this valueobject to the chart            
+            draggedObject.addValuetoSciChart();
+            
+            // reset the reference
+            draggedObject = null;
+        });
     }
     setActiveModel(modelLink){
         this.activeModel = modelLink;           // set active model link
@@ -69,6 +84,33 @@ class modelExecutionSystem {
         htmlString = htmlString + "\n</dl>"; 
         this.treeViewLink.innerHTML = htmlString;
 
+    }
+    linkElementsValues(prefixString, valueArray)
+    {
+        // link list items with value objects
+        // add right click handler for editing values
+        let index = 0;
+        valueArray.forEach(function (prop) {
+            let el = document.getElementById(prefixString+index)
+            el.valueobject = prop;  
+            el.valueobject.treeviewLIref = el;
+            el.draggable = true;
+            el.addEventListener('contextmenu', function(event) {
+                event.preventDefault(); // Prevent default browser menu
+                let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
+                if (userInput !== null) {
+                    el.valueobject.value = userInput;                    
+                }                              
+            });
+            el.addEventListener('dragstart', function(event) {
+                draggedObject = el.valueobject;
+                event.dataTransfer.setData("text/plain", "");                             
+            });
+            el.addEventListener('dragend', function(event) {
+                draggedObject = null;                            
+            });
+            index++;
+        });
     }
     paintActiveModelTreeView(){
         let htmlString = "<h3>"+this.activeModel.instanceName.value+"</h3>";
@@ -112,28 +154,43 @@ class modelExecutionSystem {
         htmlString += "\n</ul>";
         this.treeViewLink.innerHTML = htmlString;
 
+        // link list items with value objects
+        this.linkElementsValues("prop", this.activeModel.properties);
+        this.linkElementsValues("state", this.activeModel.states);
+
         // Attach click event to all <li> that have children
         document.querySelectorAll(".tree li").forEach(function (li) {
             if (li.querySelector("ul")!=null) {
                 li.addEventListener("click", function (e) {
                     e.stopPropagation(); // Prevent event bubbling
-                    li.classList.toggle("expanded");
+                    li.classList.toggle("expanded");                                            
                 });
             }
         });
 
-        // link list items with value objects
-        index = 0;
+        
+        /* index = 0;
         this.activeModel.properties.forEach(function (prop) {
             let el = document.getElementById("prop"+index)
             el.valueobject = prop;  
             el.valueobject.treeviewLIref = el;
+            el.dblclick = false;
             el.addEventListener('contextmenu', function(event) {
                 event.preventDefault(); // Prevent default browser menu
-                let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
-                if (userInput !== null) {
-                    el.valueobject.value = userInput;                    
-                }
+                setTimeout(() => {
+                    if(!el.dblclick)
+                    {
+                        let userInput = prompt(el.valueobject.instancedesc, el.valueobject.value);
+                        if (userInput !== null) {
+                            el.valueobject.value = userInput;                    
+                        }
+                    }
+                }, 10);// 10 ms wait before evaluation of dblclick
+                
+                
+            });
+            el.addEventListener('dbclick', function(event) {
+                el.dblclick = true;
             });
             index++;
         });
@@ -150,8 +207,9 @@ class modelExecutionSystem {
                 }
             });  
             index++;
-        });
+        }); */
     }
+    
     paintTreeView(){
         if(this.activeModel != null)
         {

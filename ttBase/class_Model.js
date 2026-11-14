@@ -38,6 +38,9 @@ class Model {
         // Link Model Instance with Execution System Instance
         this.exeSysLink = exeSysLinkIn;
 
+        // Create empty container for model time data
+        this.xValues = [];
+
         // Base Model Properties
         this.modelType = new Valueclass("Model Type", "baseModelType", null);
         this.modelDescription = new Valueclass("Model Description", "abstract base class from which models are built", null);           
